@@ -18,16 +18,72 @@
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
     <!-- page name -->
-    <title>Ashley</title>
+    <title>SITECIA</title>
 
 </head>
 
 <body>
+    <style>
+/* Estilo para listas desordenadas (ul) */
+.mil-ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    list-style: none; /* Sin marcadores predeterminados */
+}
+
+.mil-li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem; /* Espacio para el ícono */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.mil-li::before {
+    content: "\f058"; /* Ícono de check-circle */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #0AA68E;
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    font-size: 1rem;
+}
+
+/* Estilo para listas ordenadas (ol) */
+.mil-ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    counter-reset: custom-counter;
+}
+
+.mil-ol-li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    counter-increment: custom-counter;
+}
+
+.mil-ol-li::before {
+    content: counter(custom-counter) ". ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0AA68E;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+    </style>
 
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
 
-        <!-- cursor -->
+        <!-- cursor 
         <div class="mil-ball">
             <span class="mil-icon-1">
                 <svg viewBox="0 0 128 128">
@@ -36,10 +92,10 @@
             </span>
             <div class="mil-more-text">More</div>
             <div class="mil-choose-text">Сhoose</div>
-        </div>
+        </div>-->
         <!-- cursor end -->
 
-        <!-- preloader -->
+        <!-- preloader 
         <div class="mil-preloader">
             <div class="mil-preloader-animation">
                 <div class="mil-pos-abs mil-animation-1">
@@ -54,7 +110,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- preloader end -->
 
         <!-- scrollbar progress -->
@@ -67,7 +123,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">A.</a>
+                <a href="home-1.html" class="mil-logo">S.</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -80,43 +136,31 @@
 
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
-                                    <li class="mil-has-children">
-                                        <a href="#.">Homepage</a>
-                                        <ul>
-                                            <li><a href="home-1.html">Landing page</a></li>
-                                            <li><a href="home-2.html">Personal</a></li>
-                                            <li><a href="portfolio-3.html">Portfolio slider</a></li>
-                                        </ul>
+                                    <li class="mil-has-children ">
+                                        <a href="home-1.html">Página de Inicio</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Portfolio</a>
-                                        <ul>
-                                            <li><a href="portfolio-1.html">Grid type 1</a></li>
-                                            <li><a href="portfolio-2.html">Grid type 2</a></li>
-                                            <li><a href="portfolio-3.html">Slider</a></li>
-                                        </ul>
+                                        <a href="services.html">Acerca de Sitecia</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Services</a>
+                                        <a href="team.html">Nuestro Equipo</a>
+                                    </li>
+                                    <li class="mil-has-children">
+                                        <a href="#.">Producción Científica</a>
                                         <ul>
-                                            <li><a href="services.html">Services List</a></li>
-                                            <li><a href="service.html">Single service</a></li>
+                                            <li><a href="project-3.html">Ciencias de Datos</a></li>
+                                            <li><a href="#">Gestión y Gobierno de Datos</a></li>
+                                            <li><a href="#">Inteligencia Artificial</a></li>
+                                            <li><a href="#">Ciberseguridad</a></li>
+                                            <li><a href="#">Infraestructura de TI</a></li>
+                                            <li><a href="#">Redes</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children mil-active">
-                                        <a href="#.">Newsletter</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog List</a></li>
-                                            <li><a href="publication.html">Publication</a></li>
-                                        </ul>
+                                        <a href="blog-inner.html">Proyectos</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Other pages</a>
-                                        <ul>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                        </ul>
+                                        <a href="#.">Contacto</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -194,7 +238,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">A.</a>
+                <a href="home-1.html" class="mil-logo">S.</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -203,7 +247,7 @@
                 <div class="mil-current-page"></div>
                 <div class="mil-back-to-top">
                     <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Back to top</span>
+                        <span>Volver al Inicio</span>
                     </a>
                 </div>
             </div>
@@ -219,11 +263,11 @@
                     <div class="mil-banner-content mil-center mil-up">
                         <div class="container">
                             <ul class="mil-breadcrumbs mil-center mil-mb-60">
-                                <li><a href="home-1.html">Homepage</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog.html">Publication</a></li>
+                                <li><a href="home-1.html">PÁGINA PRINCIPAL</a></li>
+                                <li><a href="blog.html">PROYECTOS</a></li>
+                                <li><a href="blog.html">¿Cómo Fortalecer la Seguridad en la Era Digital?</a></li>
                             </ul>
-                            <h2>How to Become a <span class="mil-thin">Graphic</span><br> Designer in <span class="mil-thin">10 Simple Steps</span></h2>
+                            <h2>¿Cómo Fortalecer la <span class="mil-thin">Seguridad</span><br> en la Era <span class="mil-thin">Digital?</span></h2>
                         </div>
                     </div>
                 </div>
@@ -239,59 +283,193 @@
                                     <img src="img/blog/3.jpg" alt="Publication cover" class="mil-scale" data-value-1=".90" data-value-2="1.15">
                                 </div>
                                 <div class="mil-info mil-up mil-mb-90">
-                                    <div>Category: &nbsp;<span class="mil-dark">Technology</span></div>
-                                    <div>Date: &nbsp;<span class="mil-dark">April 2023</span></div>
-                                    <div>Author: &nbsp;<span class="mil-dark">Paul Trueman</span></div>
+                                    <div class="stc-info">
+                                        <span class="stc-icon" style="color: #0AA68E;"><i class="fas fa-folder"></i></span>
+                                        Categoría: &nbsp;<span class="mil-dark">Tecnología</span>
+                                    </div>
+                                    <div class="stc-info">
+                                        <span class="stc-icon" style="color: #0AA68E;"><i class="fas fa-calendar-alt"></i></span>
+                                        Fecha: &nbsp;<span class="mil-dark">Abril 2023</span>
+                                    </div>
+                                    <div class="stc-info">
+                                        <span class="stc-icon" style="color: #0AA68E;"><i class="fas fa-user"></i></span>
+                                        Autor: &nbsp;<span class="mil-dark">Paul Trueman</span>
+                                    </div>
                                 </div>
+                                
 
                             </div>
                             <div class="col-lg-8">
+                              
+                            
+                                <blockquote class="mil-up mil-mb-60">  <p class="mil-text-xl mil-dark mil-up mil-mb-60">Resumen </p>
+                                    <p class=" mil-dark mil-up mil-mb-30">
+                                        En un mundo cada vez más digital, la ciberseguridad es fundamental para proteger información crítica y garantizar la continuidad de operaciones en sectores clave. Este proyecto se enfoca en desarrollar estrategias y herramientas innovadoras para fortalecer la seguridad en redes y sistemas informáticos.
+                                    </p></blockquote>
+                            
+                                <h5 class="mil-up mil-mb-30">Objetivos del Proyecto</h5>
 
-                                <p class="mil-text-xl mil-dark mil-up mil-mb-60">Are you passionate about design and interested in pursuing a career as a graphic designer? Graphic design is a dynamic field that combines creativity, technical skills, and a keen eye for aesthetics. Whether you're a beginner or someone looking to enhance their skills, this article will guide you through 10 simple steps to become a graphic designer.</p>
+                                <p class="mil-up mil-mb-60" style="margin-bottom:15px">
+                                    El principal objetivo es diseñar soluciones integrales que permitan prevenir y mitigar riesgos asociados a ciberataques. Esto incluye:
+                                    <ul class="mil-ul">
+                                        <li class="mil-li">Desarrollar sistemas avanzados de detección de intrusiones.</li>
+                                        <li class="mil-li">Implementar protocolos de criptografía robusta para proteger datos sensibles.</li>
+                                        <li class="mil-li">Fortalecer la seguridad en infraestructuras críticas como la banca y la salud.</li>
+                                    </ul>
+                                </p>
+                                <br>
+                                <br>
 
-                                <blockquote class="mil-up mil-mb-60">"Creativity is intelligence having fun." - Albert Einstein</blockquote>
+                                <h5 class="mil-up mil-mb-30" >Metodología</h5>
+                                <p class="mil-up mil-mb-60" style="margin-bottom:15px">
+                                    Este proyecto emplea un enfoque interdisciplinario, combinando herramientas de análisis de datos, simulación de ataques y técnicas de inteligencia artificial. Las principales etapas son:
+                                    <ol class="mil-ol">
+                                        <li class="mil-ol-li">Análisis de vulnerabilidades en sistemas actuales.</li>
+                                        <li class="mil-ol-li">Diseño e implementación de soluciones personalizadas.</li>
+                                        <li class="mil-ol-li">Pruebas y validación en entornos simulados y reales.</li>
+                                    </ol>
+                                </p>
+                                <br>
+                                <br>
 
-                                <h5 class="mil-up mil-mb-30">Understand the Field</h5>
-                                <p class="mil-up mil-mb-60">Start by gaining a comprehensive understanding of what graphic design entails. Research the different types of graphic design, such as branding, web design, print design, and illustration. Explore the work of successful graphic designers and analyze their portfolios to learn about various design styles and techniques.</p>
+                                <h5 class="mil-up mil-mb-30">Resultados Esperados</h5>
+                                <p class="mil-up mil-mb-60" style="margin-bottom:15px">
+                                    Se espera que este proyecto permita:
+                                    <ul class="mil-ul">
+                                        <li class="mil-li">Reducir significativamente el riesgo de ciberataques en organizaciones participantes.</li>
+                                        <li class="mil-li">Establecer un modelo replicable para mejorar la seguridad digital en Ecuador.</li>
+                                        <li class="mil-li">Formar talento humano especializado en gestión de ciberseguridad.</li>
+                                    </ul>
+                                </p>
+                                <br>
+                                <br>
 
-                                <h5 class="mil-up mil-mb-30">Get a Design Education</h5>
-                                <p class="mil-up mil-mb-60">While formal education is not always a requirement, it can provide you with a solid foundation and enhance your credibility as a graphic designer. Consider pursuing a degree or diploma in graphic design or a related field. Look for reputable design schools or online courses that offer comprehensive programs to learn both theory and practical skills.</p>
+                                <h5 class="mil-up mil-mb-30">Impacto</h5>
+                                <p class="mil-up mil-mb-60" style="margin-bottom:15px">
+                                    Este proyecto tendrá un impacto directo en sectores clave como:
+                                    <ul class="mil-ul">
+                                        <li class="mil-li"><b>Banca:</b> Prevención de fraudes y protección de transacciones.</li>
+                                        <li class="mil-li"><b>Salud:</b> Resguardo de datos médicos y continuidad de servicios.</li>
+                                        <li class="mil-li"><b>Comercio electrónico:</b> Confianza en las plataformas digitales.</li>
+                                    </ul>
+                                </p>
 
-                                <h5 class="mil-up mil-mb-30">Build Your Portfolio</h5>
-                                <p class="mil-up mil-mb-60">Your portfolio is your calling card as a graphic designer. Compile a collection of your best design projects to showcase your abilities and style. Include a variety of work, such as logos, brochures, websites, or illustrations, to demonstrate your versatility. Constantly update your portfolio as you complete new projects or improve existing ones.</p>
-
-                                <h5 class="mil-up mil-mb-30">Gain Practical Experience</h5>
-                                <p class="mil-up mil-mb-60">To become a successful graphic designer, practical experience is crucial. Seek internships, freelance opportunities, or entry-level positions to gain hands-on experience in the field. This will allow you to apply your skills in real-world scenarios, understand client requirements, work with deadlines, and collaborate with others in a professional environment.</p>
-
-                                <div class="row">
-                                    <div class="col-lg-6">
-
-                                        <div class="mil-image-frame mil-horizontal mil-up mil-mb-30">
-                                            <img src="img/blog/4.jpg" alt="Publication cover">
-                                        </div>
-
-                                    </div>
-                                    <div class="col-lg-6">
-
-                                        <div class="mil-image-frame mil-horizontal mil-up mil-mb-60">
-                                            <img src="img/blog/7.jpg" alt="Publication cover">
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <p class="mil-up mil-mb-60">Remember that creativity is at the core of graphic design. Embrace your creativity, experiment with different ideas, and think outside the box to create unique and impactful designs. Don't be afraid to take risks and push the boundaries of traditional design. Steve Jobs once said:</p>
-
+                                <!--
+                                <h5 class="mil-up mil-mb-30">Equipo de Investigación</h5>
+                                <p class="mil-up mil-mb-60">
+                                    Este proyecto es liderado por un equipo multidisciplinario de SITECIA, que incluye a expertos en ciberseguridad, análisis de datos y desarrollo de software. 
+                                    <ul>
+                                        <li><b>Dr. Henry N. Roa:</b> Líder del proyecto y experto en transformación digital.</li>
+                                        <li><b>Ing. Karol Novoa:</b> Especialista en seguridad de redes.</li>
+                                        <li><b>Dr. Javier Guaña:</b> Investigador en criptografía aplicada.</li>
+                                    </ul>
+                                </p>-->
+                                <br>
+                                <br>
+                                <p class="mil-up mil-mb-30">
+                                    Este proyecto forma parte de los esfuerzos de SITECIA para avanzar en la investigación aplicada, contribuyendo al desarrollo sostenible y a la mejora de la seguridad digital en Ecuador y la región.
+                                </p>
+                            
                                 <blockquote class="mil-up mil-mb-60">
-                                    "Design is not just what it looks like and feels like. Design is how it works." So go ahead, unleash your creativity, and embark on your path to becoming a graphic designer!
+                                    "La ciberseguridad es el escudo que protege nuestro mundo conectado. Invertir en ella es invertir en el futuro."
                                 </blockquote>
+                            
+                                <p class="mil-up mil-mb-30">
+                                    Para más información sobre este y otros proyectos, no dudes en ponerte en contacto con nosotros a través de nuestras redes sociales o nuestro correo electrónico.
+                                </p>
 
-                                <p class="mil-up mil-mb-30">In addition to the aforementioned steps, other important aspects of becoming a graphic designer include networking with industry professionals, staying updated on design trends and technologies, and continuously learning and improving your skills.</p>
+                                
+                                
+                            </div>
+                              <!-- reviews -->
+                <section class="mil-soft-bg">
+                    <div class="container mil-p-120-120">
 
-                                <p class="mil-up mil-mb-30">Becoming a graphic designer is an exciting journey that requires dedication, hard work, and a genuine passion for design. By following these 10 simple steps, you'll be well on your way to establishing yourself as a skilled graphic designer and opening doors to a rewarding and fulfilling career.</p>
+                        <div class="row">
+                            <div class="col-lg-10">
+
+                                <span class="mil-suptitle mil-suptitle-right mil-suptitle-dark mil-up">Customer reviews are a valuable source <br>of information for both businesses and consumers.</span>
 
                             </div>
                         </div>
+
+                        <h2 class="mil-center mil-up mil-mb-60">Equipo <span class="mil-thin">Encargado:</span>  <!--<br>Hear What <span class="mil-thin">They Say!</span>--></h2>
+
+                        <div class="mil-revi-pagination mil-up mil-mb-60"></div>
+
+                        <div class="row mil-relative justify-content-center">
+                            <div class="col-lg-8">
+
+                                <div class="mil-slider-nav mil-soft mil-reviews-nav mil-up">
+                                    <div class="mil-slider-arrow mil-prev mil-revi-prev mil-arrow-place"></div>
+                                    <div class="mil-slider-arrow mil-revi-next mil-arrow-place"></div>
+                                </div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="mil-quote-icon mil-up">
+                                    <path d="M 13.5 10 A 8.5 8.5 0 0 0 13.5 27 A 8.5 8.5 0 0 0 18.291016 25.519531 C 17.422273 29.222843 15.877848 31.803343 14.357422 33.589844 C 12.068414 36.279429 9.9433594 37.107422 9.9433594 37.107422 A 1.50015 1.50015 0 1 0 11.056641 39.892578 C 11.056641 39.892578 13.931586 38.720571 16.642578 35.535156 C 19.35357 32.349741 22 27.072581 22 19 A 1.50015 1.50015 0 0 0 21.984375 18.78125 A 8.5 8.5 0 0 0 13.5 10 z M 34.5 10 A 8.5 8.5 0 0 0 34.5 27 A 8.5 8.5 0 0 0 39.291016 25.519531 C 38.422273 29.222843 36.877848 31.803343 35.357422 33.589844 C 33.068414 36.279429 30.943359 37.107422 30.943359 37.107422 A 1.50015 1.50015 0 1 0 32.056641 39.892578 C 32.056641 39.892578 34.931586 38.720571 37.642578 35.535156 C 40.35357 32.349741 43 27.072581 43 19 A 1.50015 1.50015 0 0 0 42.984375 18.78125 A 8.5 8.5 0 0 0 34.5 10 z" fill="#000000" />
+                                </svg>
+
+                                <div class="swiper-container mil-reviews-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                <h5 class="mil-up mil-mb-10">Sarah Newman</h5>
+                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Envato market</p>
+                                                <p class="mil-text-xl mil-up">This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                <h5 class="mil-up mil-mb-10">Emma Trueman</h5>
+                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Envato market</p>
+                                                <p class="mil-text-xl mil-up">I had the pleasure of working with this creative agency, and I must say, they truly impressed me. They consistently think outside the box, resulting in impressive and impactful work. I highly recommend this agency for their consistent delivery of exceptional creative solutions.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                <h5 class="mil-up mil-mb-10">Sarah Newman</h5>
+                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Envato market</p>
+                                                <p class="mil-text-xl mil-up">This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                <h5 class="mil-up mil-mb-10">Emma Trueman</h5>
+                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Envato market</p>
+                                                <p class="mil-text-xl mil-up">I had the pleasure of working with this creative agency, and I must say, they truly impressed me. They consistently think outside the box, resulting in impressive and impactful work. I highly recommend this agency for their consistent delivery of exceptional creative solutions.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                <h5 class="mil-up mil-mb-10">Sarah Newman</h5>
+                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Envato market</p>
+                                                <p class="mil-text-xl mil-up">This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                <h5 class="mil-up mil-mb-10">Emma Trueman</h5>
+                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Envato market</p>
+                                                <p class="mil-text-xl mil-up">I had the pleasure of working with this creative agency, and I must say, they truly impressed me. They consistently think outside the box, resulting in impressive and impactful work. I highly recommend this agency for their consistent delivery of exceptional creative solutions.</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                <h5 class="mil-up mil-mb-10">Sarah Newman</h5>
+                                                <p class="mil-mb-5 mil-upper mil-up mil-mb-30">Envato market</p>
+                                                <p class="mil-text-xl mil-up">This creative agency stands out with their exceptional talent and expertise. Their ability to think outside the box and bring unique ideas to life is truly impressive. With meticulous attention to detail, they consistently deliver visually stunning and impactful work.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- reviews end -->
+                            
                     </div>
                 </section>
                 <!-- publication end -->
