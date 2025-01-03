@@ -68,7 +68,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
+                <a href="home.html" class="mil-logo">
                     <img src="img/Logo Escala de Grises.png" alt="Logo SITECIA" class="logo-sitecia-img">
                 </a>
                 <div class="mil-menu-btn">
@@ -85,7 +85,7 @@
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-has-children mil-active">
-                                        <a href="home-1.html">Página de Inicio</a>
+                                        <a href="home.html">Página de Inicio</a>
                                     </li>
                                     <li class="mil-has-children">
                                         <a href="services.html">Acerca de Sitecia</a>
@@ -186,9 +186,29 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
-                    <!-- <img src="img/Logo Escala de Grises.png" alt="Logo Escala de Grises" /> -->
+                <a href="home.html" class="mil-logo">
+                    <img src="img/Logo Sitecia Negro.png" alt="Logo SITECIA" class="logo-sitecia-img" />
                 </a>
+                
+                <style>
+
+                img.logo-sitecia-img {
+                    max-width: 100%; /* Ajusta al tamaño del contenedor */
+                    height: auto; /* Mantén las proporciones */
+                    display: block; /* Elimina espacios adicionales */
+                    opacity: 1; /* Asegúrate de que no sea transparente */
+                    filter: none; /* Elimina cualquier filtro que pueda oscurecer la imagen */
+                    overflow: visible; /* Permite que el contenido de la imagen sea visible */
+                    overflow-clip-margin: unset; /* Restablece cualquier margen de recorte */
+                }
+                .mil-logo {
+                    display: inline-block; /* Asegura que el contenedor del logo se ajuste a su contenido */
+                    width: auto; /* Ajusta al tamaño de la imagen */
+                    height: auto;
+                }
+   
+
+                </style>
                   
                 <div class="mil-menu-btn">
                     <span></span>
@@ -261,45 +281,65 @@
 
                 <!-- about -->
                 <section id="about">
-                    <div class="container mil-p-120-30">
+                    <div class="container mil-p-120-10">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-lg-6 col-xl-5">
-                              <div class="mil-mb-90">
-                                <h2 class="mil-up mil-mb-60">Nuestra <span class="mil-thin">Experiencia</span></h2>
-                                <p>SITECIA es un grupo de investigación en Sistemas y Tecnologías de la Información Aplicados que fue establecido en octubre de 2022 en la Pontificia Universidad Católica del Ecuador (PUCE), como parte de la Facultad de Ingeniería. El equipo de SITECIA está conformado por docentes investigadores de la PUCE e investigadores asociados de otras universidades.</p>
-                                <div class="mil-stats">
-                                  <div class="mil-stat">
-                                    <span class="mil-counter" data-target="50">0</span>
-                                    <p>Proyectos Completados</p>
-                                  </div>
-                                  <div class="mil-stat">
-                                    <span class="mil-counter" data-target="10">0</span>
-                                    <p>Años de Experiencia</p>
-                                  </div>
-                                  <div class="mil-stat">
-                                    <span class="mil-counter" data-target="30">0</span>
-                                    <p>Publicaciones Científicas</p>
-                                  </div>
+                                <div class="mil-mb-90">
+                                    <h2 class="mil-up mil-mb-60">Nuestra <span class="mil-thin">Experiencia</span></h2>
+                                    <p>SITECIA es un grupo de investigación en Sistemas y Tecnologías de la Información Aplicados que fue establecido en octubre de 2022 en la Pontificia Universidad Católica del Ecuador (PUCE), como parte de la Facultad de Ingeniería. El equipo de SITECIA está conformado por docentes investigadores de la PUCE e investigadores asociados de otras universidades.</p>
+                                    <div class="mil-stats">
+                                        <div class="mil-stat">
+                                            <span class="mil-counter" data-target="50">0</span>
+                                            <p>Proyectos Completados</p>
+                                        </div>
+                                        <div class="mil-stat">
+                                            <span class="mil-counter" data-target="10">0</span>
+                                            <p>Años de Experiencia</p>
+                                        </div>
+                                        <div class="mil-stat">
+                                            <span class="mil-counter" data-target="30">0</span>
+                                            <p>Publicaciones Científicas</p>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
                             <div class="col-lg-5">
-                              <div class="mil-about-photo mil-mb-90">
-                                <div class="mil-lines-place"></div>
-                                <div class="mil-up mil-img-frame" style="padding-bottom: 160%;">
-                                  <img src="img/Home/NuestraeXPERIENCIA.webp" alt="Imagen representativa de SITECIA" class="mil-scale" data-value-1="1" data-value-2="1.2">
+                                <div class="mil-about-photo mil-mb-90">
+                                    <div class="mil-lines-place"></div>
+                                    <div class="mil-up mil-img-frame" style="padding-bottom: 160%;">
+                                        <img src="img/Home/NuestraeXPERIENCIA.webp" alt="Imagen representativa de SITECIA" class="mil-scale" data-value-1="1" data-value-2="1.2" style="top: 75px; height: 74%;">
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
-                          
+                        </div>
+                
+                       <!-- Botón circular añadido aquí -->
+                        <div class="mil-circle-text" style="right: 200px; bottom: 45px;">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
+                                <defs>
+                                    <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                                </defs>
+                                <circle cx="150" cy="100" r="75" fill="none" />
+                                <g>
+                                    <use xlink:href="#circlePath" fill="none" />
+                                    <text style="letter-spacing: 6.5px; fill: black; font-weight: bold;">
+                                        <textPath xlink:href="#circlePath">Desplázate hacia abajo - Desplázate hacia abajo - </textPath>
+                                    </text>
+                                    
+                                </g>
+                            </svg>
+                            <a href="#Projects" class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
+                        </div>
+
+                        <!-- Fin del botón circular -->
                     </div>
                 </section>
+                
                 <!-- about end -->
 
 
                 <!-- Projects -->
-                <section class="mil-dark-bg">
+                <section class="mil-dark-bg" id="Projects">
                     <div class="mi-invert-fix">
                         <div class="mil-animation-frame">
                             <div class="mil-animation mil-position-1 mil-scale" data-value-1="2.4" data-value-2="1.4" style="top: 300px; right: -100px"></div>
@@ -308,78 +348,103 @@
                         <div class="container mil-p-120-0">
 
                             <div class="mil-mb-120">
-                                <div class="row">
+                                <div class="row justify-content-center">
                                     <div class="col-lg-10">
-
-                                        <span class="mil-suptitle mil-light-soft mil-suptitle-right mil-up">Proyectos enfocados en transformar desafíos tecnológicos<br> en soluciones prácticas e innovadoras.</span>
-
+                            
+                                        <div class="mil-complex-text justify-content-center mil-up mil-mb-15">
+                                            <span class="mil-text-image"><img src="img/photo/2.jpg" alt="team"></span>
+                                            <h2 class="mil-h1 mil-muted mil-center">Proyectos <span class="mil-thin">Transformadores</span></h2>
+                                        </div>
+                            
+                                        <div class="mil-complex-text justify-content-center mil-up">
+                                            <h2 class="mil-h1 mil-muted mil-center">Enfrentando <span class="mil-thin">Desafíos Tecnológicos</span></h2>
+                                            <a href="blog-inner.html" class="mil-services-button mil-button mil-arrow-place"><span>Nuestros Proyectos</span></a>
+                                        </div>
+                            
                                     </div>
                                 </div>
+                            </div>
+                            
 
-                                <div class="mil-complex-text justify-content-center mil-up mil-mb-15">
-
-                                    <span class="mil-text-image"><img src="img/photo/2.jpg" alt="team"></span>
-                                    <h2 class="mil-h1 mil-muted mil-center">Proyectos  <span class="mil-thin">Innovadores</span></h2>
-
+                            <div class="row mil-services-grid m-0 justify-content-center">
+                                <div class="col-lg-4 col-md-2 mil-services-grid-item p-3" style="padding-bottom: 0;">
+                                    <a href="service.html" class="mil-service-card-sm mil-up" style="display: flex; flex-direction: column; padding-bottom: 20px; border-radius: 15px;">
+                                        <div>
+                                            <div class="mil-service-img-wrapper">
+                                                <img src="img/Home/ProyectosInnovadoresIA.webp" alt="Inteligencia Artificial" class="mil-service-img">
+                                            </div>
+                                            <h5 class="mil-muted mil-mb-15" style="font-size: 1.5rem;">Inteligencia Artificial</h5>
+                                            <p class="mil-light-soft mil-mb-15" style="font-size: 1rem;">Explorando la IA para resolver problemas complejos.</p>
+                                        </div>
+                                        <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
+                                    </a>
                                 </div>
-                                <div class="mil-complex-text justify-content-center mil-up">
-
-                                    <h2 class="mil-h1 mil-muted mil-center">Para el <span class="mil-thin">Desarrollo.</span></h2>
-                                    <a href="blog-inner.html" class="mil-services-button mil-button mil-arrow-place"><span>Nuestros Proyectos</span></a>
-
+                                <div class="col-lg-4 col-md-2 mil-services-grid-item p-3" style="padding-bottom: 0;">
+                                    <a href="service.html" class="mil-service-card-sm mil-up" style="display: flex; flex-direction: column; padding-bottom: 20px; border-radius: 15px;">
+                                        <div>
+                                            <div class="mil-service-img-wrapper">
+                                                <img src="img/Home/ProyectosInnovadoresCDD.webp" alt="Ciencia de Datos" class="mil-service-img">
+                                            </div>
+                                            <h5 class="mil-muted mil-mb-15" style="font-size: 1.5rem;">Ciencia de Datos</h5>
+                                            <p class="mil-light-soft mil-mb-15" style="font-size: 1rem;">Indagando en minería de datos, modelado predictivo y visualización de datos.</p>
+                                        </div>
+                                        <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-2 mil-services-grid-item p-3" style="padding-bottom: 0;">
+                                    <a href="service.html" class="mil-service-card-sm mil-up" style="display: flex; flex-direction: column; padding-bottom: 20px; border-radius: 15px;">
+                                        <div>
+                                            <div class="mil-service-img-wrapper">
+                                                <img src="img/Home/ProyectosInnovadoresSeg.webp" alt="Ciberseguridad y Protección de Datos" class="mil-service-img">
+                                            </div>
+                                            <h5 class="mil-muted mil-mb-15" style="font-size: 1.5rem;">Ciberseguridad y <br>Protección de Datos</h5>
+                                            <p class="mil-light-soft mil-mb-15" style="font-size: 1rem;">Desarrollando soluciones para proteger sistemas y datos contra amenazas cibernéticas.</p>
+                                        </div>
+                                        <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-2 mil-services-grid-item p-3" style="padding-bottom: 0;">
+                                    <a href="service.html" class="mil-service-card-sm mil-up" style="display: flex; flex-direction: column; padding-bottom: 20px; border-radius: 15px;">
+                                        <div>
+                                            <div class="mil-service-img-wrapper">
+                                                <img src="img/Home/ProyectosInnovadoresInfra.webp" alt="Infraestructura de TI y Redes" class="mil-service-img">
+                                            </div>
+                                            <h5 class="mil-muted mil-mb-15" style="font-size: 1.5rem;">Infraestructura TI</h5>
+                                            <p class="mil-light-soft mil-mb-15" style="font-size: 1rem;">Generando soluciones para optimizar la infraestructura TI y mejorar la conectividad.</p>
+                                        </div>
+                                        <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-2 mil-services-grid-item p-3" style="padding-bottom: 0;">
+                                    <a href="service.html" class="mil-service-card-sm mil-up" style="display: flex; flex-direction: column; padding-bottom: 20px; border-radius: 15px;">
+                                        <div>
+                                            <div class="mil-service-img-wrapper">
+                                                <img src="img/Home/ProyectosInnovadoresGDD.webp" alt="Gestión y Gobierno de Datos" class="mil-service-img">
+                                            </div>
+                                            <h5 class="mil-muted mil-mb-15" style="font-size: 1.5rem;">Gobierno de Datos</h5>
+                                            <p class="mil-light-soft mil-mb-15" style="font-size: 1rem;">Implementar estrategias avanzadas para la gestión y calidad de datos, asegurando la información.</p>
+                                        </div>
+                                        <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
+                                    </a>
                                 </div>
                             </div>
-
-                            <div class="row mil-services-grid m-0">
-                                <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-                                    <a href="service.html" class="mil-service-card-sm mil-up">
-                                        <!-- Contenedor de la imagen -->
-                                        <div class="mil-service-img-wrapper">
-                                            <img src="img/Home/ProyectosInnovadoresIA.webp" alt="Inteligencia Artificial" class="mil-service-img">
-                                        </div>
-                                        <!-- Título y descripción -->
-                                        <h5 class="mil-muted mil-mb-30">Inteligencia Artificial <br></h5>
-                                        <p class="mil-light-soft mil-mb-30">Explorando la IA para resolver problemas complejos.</p>
-                                        <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
-                                    </a>
-                                </div>
-                                <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-
-                                    <a href="service.html" class="mil-service-card-sm mil-up">
-                                        <div class="mil-service-img-wrapper">
-                                            <img src="img/Home/ProyectosInnovadoresCDD.webp" alt="Inteligencia Artificial" class="mil-service-img">
-                                        </div>
-                                        <h5 class="mil-muted mil-mb-30">Ciencia de Datos <br></h5>
-                                        <p class="mil-light-soft mil-mb-30">Indagando en minería de datos,modelado predictivo y visualización de datos.</p>
-                                        <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
-                                    </a>
-
-                                </div>
-                                <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-
-                                    <a href="service.html" class="mil-service-card-sm mil-up">
-                                        <div class="mil-service-img-wrapper">
-                                            <img src="img/Home/ProyectosInnovadoresSeg.webp" alt="Inteligencia Artificial" class="mil-service-img">
-                                        </div>   
-                                        <h5 class="mil-muted mil-mb-30">Ciberseguridad y <br>Protección de Datos</h5>
-                                        <p class="mil-light-soft mil-mb-30">Desarrollando soluciones para proteger sistemas y datos contra amenazas cibernéticas.</p>
-                                        <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
-                                    </a>
-
-                                </div>
-                                <div class="col-md-6 col-lg-3 mil-services-grid-item p-0">
-                                    
-                                    <a href="service.html" class="mil-service-card-sm mil-up">
-                                        <div class="mil-service-img-wrapper">
-                                            <img src="img/Home/ProyectosInnovadoresInfra.webp" alt="Inteligencia Artificial" class="mil-service-img">
-                                        </div>
-                                        <h5 class="mil-muted mil-mb-30">Infraestructura de <br>TI y Redes</h5>
-                                        <p class="mil-light-soft mil-mb-30">Generando soluciones para optimizar la infraestructura TI y mejorar la conectividad.</p>
-                                        <div class="mil-button mil-icon-button-sm mil-arrow-place"></div>
-                                    </a>
-
-                                </div>
+                            
+                            <div class="mil-circle-text" style="right: 150px;;">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
+                                    <defs>
+                                        <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                                    </defs>
+                                    <circle cx="150" cy="100" r="75" fill="none" />
+                                    <g>
+                                        <use xlink:href="#circlePath" fill="none" />
+                                        <text style="letter-spacing: 6.5px">
+                                            <textPath xlink:href="#circlePath">Desplázate hacia abajo - Desplázate hacia abajo - </textPath>
+                                        </text>
+                                    </g>
+                                </svg>
+                                <a href="#ConoceSitecia" class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
                             </div>
+                            
                         </div>
                     </div>
                 </section>
@@ -387,7 +452,7 @@
 
                <!-- SITECIA Section -->
                 <!-- Conoce SITECIA -->
-                <section>
+                <section id="ConoceSitecia">
                     <div class="container mil-p-120-30">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-lg-6">
