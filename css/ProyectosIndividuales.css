@@ -1,0 +1,70 @@
+/* Estilo para listas desordenadas (ul) */
+.mil-ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    list-style: none; /* Sin marcadores predeterminados */
+}
+
+.mil-li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem; /* Espacio para el ícono */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.mil-li::before {
+    content: "\f058"; /* Ícono de check-circle */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #0A8CBF;
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    font-size: 1rem;
+}
+
+/* Estilo para listas ordenadas (ol) */
+.mil-ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    counter-reset: custom-counter;
+    list-style: none; /* Elimina los números predeterminados */
+}
+
+.mil-ol-li {
+    position: relative;
+    margin-bottom: 0.8rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    counter-increment: custom-counter;
+}
+
+.mil-ol-li::before {
+    content: counter(custom-counter) ". ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0A8CBF;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+/* Contenedor de la Imagen */
+.stc-image-frame {
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  margin: 0 auto 20px auto; /* Elimina márgenes innecesarios */
+  max-width: 600px; /* Define un ancho máximo */
+  overflow: hidden; /* Evita espacios vacíos si la imagen excede */
+  border-radius: 8px; /* Bordes redondeados opcional */
+}
+
+.stc-responsive-image {
+  width: 100%; /* La imagen ocupa todo el contenedor */
+  height: auto; /* Mantiene las proporciones originales */
+  object-fit: cover; /* Ajusta la imagen sin deformarse */
+}

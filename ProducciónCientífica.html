@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produccionCientífica.css">
+
     <!-- page name -->
     <title>SITECIA</title>
 
@@ -24,38 +26,10 @@
 
 <body>
 
+    
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
 
-        <!-- cursor -->
-        <!-- <div class="mil-ball">
-            <span class="mil-icon-1">
-                <svg viewBox="0 0 128 128">
-                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z" />
-                </svg>
-            </span>
-            <div class="mil-more-text">More</div>
-            <div class="mil-choose-text">Сhoose</div>
-        </div> -->
-        <!-- cursor end -->
-
-        <!-- preloader -->
-        <!-- <div class="mil-preloader">
-            <div class="mil-preloader-animation">
-                <div class="mil-pos-abs mil-animation-1">
-                    <p class="mil-h3 mil-muted mil-thin">Pioneering</p>
-                    <p class="mil-h3 mil-muted">Creative</p>
-                    <p class="mil-h3 mil-muted mil-thin">Excellence</p>
-                </div>
-                <div class="mil-pos-abs mil-animation-2">
-                    <div class="mil-reveal-frame">
-                        <p class="mil-reveal-box"></p>
-                        <p class="mil-h3 mil-muted mil-thin">ashley.com</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- preloader end -->
 
         <!-- scrollbar progress -->
         <div class="mil-progress-track">
@@ -104,10 +78,10 @@
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="blog-inner.html">Proyectos</a>
+                                        <a href="Proyectos.html">Proyectos</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Contacto</a>
+                                        <a href="contact.html">Contacto</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -223,109 +197,11 @@
             </div>
         </div>
         <!-- frame end -->
-        <style>
-            /* Contenedor de tarjetas */
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                justify-content: center; /* Centrar las tarjetas */
-            }
-            
-            /* Tarjetas individuales */
-            .mil-service-card-lg {
-                border: 2px solid #D0E1F9; /* Borde azul claro */
-                border-radius: 10px;
-                width: 300px; /* Fijar ancho */
-                height: 450px; /* Fijar alto */
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                transition: transform 0.3s, box-shadow 0.3s;
-                text-align: left;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            }
-            
-            .mil-service-card-lg:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-                border-color: #62B6F9; /* Resaltar borde al pasar */
-            }
-            
-            /* Títulos */
-            .mil-service-card-lg h4 {
-                font-size: 22px;
-                color: #003F88; /* Azul oscuro */
-                margin-bottom: 15px;
-            }
-            
-            /* Texto descriptivo */
-            .mil-service-card-lg p {
-                font-size: 14px;
-                color: #5A6473; /* Gris oscuro */
-                line-height: 1.6;
-                margin-bottom: 15px;
-            }
-            
-            /* Texto de "Aquí encontrarás temas" */
-            .mil-service-card-lg .temas-header {
-                font-size: 14px;
-                color: #003F88; /* Azul oscuro */
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
-            
-            /* Lista de temas */
-            .mil-service-list {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-            
-            .mil-service-list li {
-                font-size: 14px;
-                color: #1A73E8; /* Azul vibrante */
-                padding: 5px 0;
-                border-left: 3px solid #D0E1F9; /* Línea decorativa azul claro */
-                padding-left: 10px;
-                transition: all 0.3s;
-            }
-            
-            .mil-service-list li:hover {
-                color: #003F88; /* Azul más oscuro */
-                border-left: 3px solid #62B6F9; /* Cambiar línea al pasar */
-                padding-left: 15px;
-            }
-            
-            /* Botón "Read more" */
-            .mil-link {
-                display: inline-flex;
-                align-items: center;
-                font-size: 14px;
-                font-weight: bold;
-                text-transform: uppercase;
-                transition: color 0.3s;
-            }
-            
-            .mil-link:hover {
-                color: #62B6F9; /* Azul más claro al pasar */
-            }
-            
-            .mil-link span {
-                margin-left: 8px;
-                display: inline-block;
-                transition: transform 0.3s;
-            }
-            
-            .mil-link:hover span {
-                transform: translateX(5px); /* Mover flecha hacia la derecha */
-            }
-         </style>
+
         <!-- content -->
         <div class="mil-content">
             <div id="swupMain" class="mil-main-transition">
-
+        
                 <!-- banner -->
                 <div class="mil-inner-banner">
                     <div class="mil-animation-frame">
@@ -342,20 +218,29 @@
                             </h1>
                             <a href="#service" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
                                 <span> Nuestras Líneas de Investigación</span>
-                            </a> 
+                            </a>
                         </div>
                     </div>
                 </div>
                 <!-- banner end -->
-                <!-- other services -->
-                <section id="service">
-                    <div class="container mil-p-120-90">
-            
-                       
-                            
-                            <div class="row">
-                                <div class="mil-service-card-lg">
-                                    <h4>Ciencia de Datos</h4>
+        
+                <!-- Línea de separación -->
+                <div class="mil-separator">
+                    <hr class="mil-line" />
+                </div>
+        
+                <!-- Líneas de investigación -->
+                <section id="service" class="mil-section-bg py-5">
+                    <div class="container mil-p-110-90">
+                        <div class="mil-title-container text-center mb-4">
+                            <h2>Nuestras Líneas de Investigación</h2>
+                            <p>Explora las áreas clave en las que trabajamos para generar innovación científica y tecnológica.</p>
+                        </div>
+                        <div class="row gy-4">
+                            <!-- Tarjeta: Ciencia de Datos -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mil-service-card-lg p-4 border rounded shadow-sm h-100">
+                                    <h4><span class="mil-icon">📊</span> Ciencia de Datos</h4>
                                     <p>Explora el análisis, modelado y visualización de datos para resolver problemas complejos y tomar decisiones informadas.</p>
                                     <p class="temas-header">Aquí encontrarás temas:</p>
                                     <ul class="mil-service-list">
@@ -364,10 +249,13 @@
                                         <li>Machine Learning</li>
                                         <li>Data Mining</li>
                                     </ul>
-                                    <a href="#" class="mil-link">Read more <span>→</span></a>
+                                    <a href="CienciaDeDatos.html" class="mil-link">Conoce Más <span>→</span></a>
                                 </div>
-                                <div class="mil-service-card-lg">
-                                    <h4>Gestión y Gobierno de Datos</h4>
+                            </div>
+                            <!-- Tarjeta: Gestión y Gobierno de Datos -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mil-service-card-lg p-4 border rounded shadow-sm h-100">
+                                    <h4><span class="mil-icon">🔍</span> Gestión y Gobierno de Datos</h4>
                                     <p>Desarrolla estrategias para la administración y control de datos empresariales, asegurando calidad y seguridad.</p>
                                     <p class="temas-header">Aquí encontrarás temas:</p>
                                     <ul class="mil-service-list">
@@ -376,10 +264,13 @@
                                         <li>Calidad de Datos</li>
                                         <li>Metadatos</li>
                                     </ul>
-                                    <a href="#" class="mil-link">Read more <span>→</span></a>
+                                    <a href="#" class="mil-link">Conoce Más <span>→</span></a>
                                 </div>
-                                <div class="mil-service-card-lg">
-                                    <h4>Inteligencia Artificial</h4>
+                            </div>
+                            <!-- Tarjeta: Inteligencia Artificial -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mil-service-card-lg p-4 border rounded shadow-sm h-100">
+                                    <h4><span class="mil-icon">🤖</span> Inteligencia Artificial</h4>
                                     <p>Descubre cómo los algoritmos y modelos de inteligencia artificial transforman industrias y resuelven desafíos complejos.</p>
                                     <p class="temas-header">Aquí encontrarás temas:</p>
                                     <ul class="mil-service-list">
@@ -388,10 +279,13 @@
                                         <li>Visión por Computadora</li>
                                         <li>Aprendizaje Profundo</li>
                                     </ul>
-                                    <a href="#" class="mil-link">Read more <span>→</span></a>
+                                    <a href="#" class="mil-link">Conoce Más <span>→</span></a>
                                 </div>
-                                <div class="mil-service-card-lg">
-                                    <h4>Ciberseguridad</h4>
+                            </div>
+                            <!-- Tarjeta: Ciberseguridad -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mil-service-card-lg p-4 border rounded shadow-sm h-100">
+                                    <h4><span class="mil-icon">🔒</span> Ciberseguridad</h4>
                                     <p>Protege datos, redes y sistemas contra amenazas digitales con estrategias avanzadas de ciberseguridad.</p>
                                     <p class="temas-header">Aquí encontrarás temas:</p>
                                     <ul class="mil-service-list">
@@ -400,10 +294,13 @@
                                         <li>Hacking Ético</li>
                                         <li>Gestión de Riesgos</li>
                                     </ul>
-                                    <a href="#" class="mil-link">Read more <span>→</span></a>
+                                    <a href="#" class="mil-link">Conoce Más <span>→</span></a>
                                 </div>
-                                <div class="mil-service-card-lg">
-                                    <h4>Infraestructura de TI</h4>
+                            </div>
+                            <!-- Tarjeta: Infraestructura de TI -->
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mil-service-card-lg p-4 border rounded shadow-sm h-100">
+                                    <h4><span class="mil-icon">💻</span> Infraestructura de TI</h4>
                                     <p>Optimiza los recursos tecnológicos para garantizar rendimiento, escalabilidad y disponibilidad de servicios.</p>
                                     <p class="temas-header">Aquí encontrarás temas:</p>
                                     <ul class="mil-service-list">
@@ -412,15 +309,18 @@
                                         <li>Redes Definidas por Software</li>
                                         <li>Gestión de Servidores</li>
                                     </ul>
-                                    <a href="#" class="mil-link">Read more <span>→</span></a>
+                                    <a href="#" class="mil-link">Conoce Más <span>→</span></a>
                                 </div>
                             </div>
-                            
-                        
+                        </div>
                     </div>
                 </section>
+                
+            </div>
+        </div>
+        
 
-                <!-- prices -->
+
             
                 <!-- other services end -->
 

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ProyectosIndividuales.css">
     <!-- page name -->
     <title>SITECIA</title>
 
@@ -25,92 +26,12 @@
 </head>
 
 <body>
-    <style>
-/* Estilo para listas desordenadas (ul) */
-.mil-ul {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    list-style: none; /* Sin marcadores predeterminados */
-}
 
-.mil-li {
-    position: relative;
-    margin-bottom: 0.8rem;
-    padding-left: 1.5rem; /* Espacio para el ícono */
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-}
-
-.mil-li::before {
-    content: "\f058"; /* Ícono de check-circle */
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #0AA68E;
-    position: absolute;
-    left: 0;
-    top: 0.1rem;
-    font-size: 1rem;
-}
-
-/* Estilo para listas ordenadas (ol) */
-.mil-ol {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-    counter-reset: custom-counter;
-}
-
-.mil-ol-li {
-    position: relative;
-    margin-bottom: 0.8rem;
-    padding-left: 2rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-    counter-increment: custom-counter;
-}
-
-.mil-ol-li::before {
-    content: counter(custom-counter) ". ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #0AA68E;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-/* Contenedor de la Imagen */
-.stc-image-frame {
-  display: flex;
-  justify-content: center; /* Centra la imagen horizontalmente */
-  align-items: center; /* Centra la imagen verticalmente */
-  margin: 0 auto 20px auto; /* Elimina márgenes innecesarios */
-  max-width: 600px; /* Define un ancho máximo */
-  overflow: hidden; /* Evita espacios vacíos si la imagen excede */
-  border-radius: 8px; /* Bordes redondeados opcional */
-}
-
-.stc-responsive-image {
-  width: 100%; /* La imagen ocupa todo el contenedor */
-  height: auto; /* Mantiene las proporciones originales */
-  object-fit: cover; /* Ajusta la imagen sin deformarse */
-}
-
-    </style>
 
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
 
-        <!-- cursor 
-        <div class="mil-ball">
-            <span class="mil-icon-1">
-                <svg viewBox="0 0 128 128">
-                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z" />
-                </svg>
-            </span>
-            <div class="mil-more-text">More</div>
-            <div class="mil-choose-text">Сhoose</div>
-        </div>-->
+
         <!-- cursor end -->
 
         <!-- preloader 
@@ -138,16 +59,18 @@
         <!-- scrollbar progress end -->
 
         <!-- menu -->
+        <!-- menu -->
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
+                <a href="home.html" class="mil-logo">
                     <img src="img/Logo Escala de Grises.png" alt="Logo SITECIA" class="logo-sitecia-img">
                 </a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
             </div>
+            
             <!-- frame clone end -->
             <div class="container">
                 <div class="mil-menu-content">
@@ -157,18 +80,18 @@
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-has-children ">
-                                        <a href="home-1.html">Página de Inicio</a>
+                                        <a href="home.html">Página de Inicio</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="services.html">Acerca de Sitecia</a>
+                                        <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="team.html">Nuestro Equipo</a>
+                                        <a href="NuestroEquipo.html">Nuestro Equipo</a>
                                     </li>
                                     <li class="mil-has-children">
                                         <a href="#.">Producción Científica</a>
                                         <ul>
-                                            <li><a href="project-3.html">Ciencias de Datos</a></li>
+                                            <li><a href="CienciaDeDatos.html">Ciencias de Datos</a></li>
                                             <li><a href="#">Gestión y Gobierno de Datos</a></li>
                                             <li><a href="#">Inteligencia Artificial</a></li>
                                             <li><a href="#">Ciberseguridad</a></li>
@@ -177,10 +100,10 @@
                                         </ul>
                                     </li>
                                     <li class="mil-has-children mil-active">
-                                        <a href="blog-inner.html">Proyectos</a>
+                                        <a href="Proyectos.html">Proyectos</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Contacto</a>
+                                        <a href="contact.html">Contacto</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -203,7 +126,7 @@
                                             <ul class="mil-menu-list">
                                                 <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
                                                 <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
+                                                <li><a href="CienciaDeDatos.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
                                                 <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
                                                 <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
                                                 <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
@@ -250,7 +173,7 @@
             </div>
         </div>
         <!-- menu -->
-
+        
         <!-- curtain -->
         <div class="mil-curtain"></div>
         <!-- curtain end -->
@@ -258,9 +181,11 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
-                    <!-- <img src="img/Logo Escala de Grises.png" alt="Logo Escala de Grises" /> -->
+                <a href="home.html" class="mil-logo">
+                    <img src="img/Logo Sitecia Negro.png" alt="Logo SITECIA" class="logo-sitecia-img" />
                 </a>
+            
+                  
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -269,7 +194,7 @@
                 <div class="mil-current-page"></div>
                 <div class="mil-back-to-top">
                     <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Volver al Inicio</span>
+                        <span>Volver Arriba</span>
                     </a>
                 </div>
             </div>
@@ -285,11 +210,11 @@
                     <div class="mil-banner-content mil-center mil-up">
                         <div class="container">
                             <ul class="mil-breadcrumbs mil-center mil-mb-60">
-                                <li><a href="home-1.html">PÁGINA PRINCIPAL</a></li>
-                                <li><a href="blog.html">PROYECTOS</a></li>
+                                <li><a href="home.html">PÁGINA PRINCIPAL</a></li>
+                                <li><a href="Proyectos.html">PROYECTOS</a></li>
                                 <li><a href="blog.html">¿Cómo Fortalecer la Seguridad en la Era Digital?</a></li>
                             </ul>
-                            <h2>¿Cómo Fortalecer la <span class="mil-thin">Seguridad</span><br> en la Era <span class="mil-thin">Digital?</span></h2>
+                            <h2 style="color: #074073;">¿Cómo Fortalecer la <span class="mil-thin">Seguridad</span><br> en la Era <span class="mil-thin">Digital?</span></h2>
                         </div>
                     </div>
                 </div>
@@ -306,15 +231,15 @@
                                 </div>
                                 <div class="mil-info mil-up mil-mb-90">
                                     <div class="stc-info">
-                                        <span class="stc-icon" style="color: #0AA68E;"><i class="fas fa-folder"></i></span>
+                                        <span class="stc-icon" style="color: #0A8CBF;"><i class="fas fa-folder"></i></span>
                                         Categoría: &nbsp;<span class="mil-dark">Tecnología</span>
                                     </div>
                                     <div class="stc-info">
-                                        <span class="stc-icon" style="color: #0AA68E;"><i class="fas fa-calendar-alt"></i></span>
+                                        <span class="stc-icon" style="color: #0A8CBF;"><i class="fas fa-calendar-alt"></i></span>
                                         Fecha: &nbsp;<span class="mil-dark">Abril 2023</span>
                                     </div>
                                     <div class="stc-info">
-                                        <span class="stc-icon" style="color: #0AA68E;"><i class="fas fa-user"></i></span>
+                                        <span class="stc-icon" style="color: #0A8CBF;"><i class="fas fa-user"></i></span>
                                         Autor: &nbsp;<span class="mil-dark">Paul Trueman</span>
                                     </div>
                                 </div>
@@ -376,16 +301,7 @@
                                     </ul>
                                 </p>
 
-                                <!--
-                                <h5 class="mil-up mil-mb-30">Equipo de Investigación</h5>
-                                <p class="mil-up mil-mb-60">
-                                    Este proyecto es liderado por un equipo multidisciplinario de SITECIA, que incluye a expertos en ciberseguridad, análisis de datos y desarrollo de software. 
-                                    <ul>
-                                        <li><b>Dr. Henry N. Roa:</b> Líder del proyecto y experto en transformación digital.</li>
-                                        <li><b>Ing. Karol Novoa:</b> Especialista en seguridad de redes.</li>
-                                        <li><b>Dr. Javier Guaña:</b> Investigador en criptografía aplicada.</li>
-                                    </ul>
-                                </p>-->
+                               
                                 <br>
                                 <br>
                                 <p class="mil-up mil-mb-30">
@@ -396,139 +312,55 @@
                                     "La ciberseguridad es el escudo que protege nuestro mundo conectado. Invertir en ella es invertir en el futuro."
                                 </blockquote>
                             
-                                <p class="mil-up mil-mb-30">
-                                    Para más información sobre este y otros proyectos, no dudes en ponerte en contacto con nosotros a través de nuestras redes sociales o nuestro correo electrónico.
-                                </p>
+                        
 
                                 
                                 
                             </div>
                               <!-- reviews -->
-                <section class="mil-soft-bg">
-                    <div class="container mil-p-120-120">
-                        <div class="row">
-                            <div class="col-lg-10">
-                                <span class="mil-suptitle mil-suptitle-right mil-suptitle-dark mil-up">Autores de la publicación</span>
-                            </div>
-                        </div>
-                        <h2 class="mil-center mil-up mil-mb-60">Equipo <span class="mil-thin">Encargado:</span></h2>
-                        <div class="mil-revi-pagination mil-up mil-mb-60"></div>
-                        <div class="row mil-relative justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="mil-slider-nav mil-soft mil-reviews-nav mil-up">
-                                    <div class="mil-slider-arrow mil-prev mil-revi-prev mil-arrow-place"></div>
-                                    <div class="mil-slider-arrow mil-revi-next mil-arrow-place"></div>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="mil-quote-icon mil-up"></svg>
-                                    <path d="M 13.5 10 A 8.5 8.5 0 0 0 13.5 27 A 8.5 8.5 0 0 0 18.291016 25.519531 C 17.422273 29.222843 15.877848 31.803343 14.357422 33.589844 C 12.068414 36.279429 9.9433594 37.107422 9.9433594 37.107422 A 1.50015 1.50015 0 1 0 11.056641 39.892578 C 11.056641 39.892578 13.931586 38.720571 16.642578 35.535156 C 19.35357 32.349741 22 27.072581 22 19 A 1.50015 1.50015 0 0 0 21.984375 18.78125 A 8.5 8.5 0 0 0 13.5 10 z M 34.5 10 A 8.5 8.5 0 0 0 34.5 27 A 8.5 8.5 0 0 0 39.291016 25.519531 C 38.422273 29.222843 36.877848 31.803343 35.357422 33.589844 C 33.068414 36.279429 30.943359 37.107422 30.943359 37.107422 A 1.50015 1.50015 0 1 0 32.056641 39.892578 C 32.056641 39.892578 34.931586 38.720571 37.642578 35.535156 C 40.35357 32.349741 43 27.072581 43 19 A 1.50015 1.50015 0 0 0 42.984375 18.78125 A 8.5 8.5 0 0 0 34.5 10 z" fill="#000000" />
-                                </svg>
-                                <div class="swiper-container mil-reviews-slider">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">Sarah Newman</h5>
+                                <section class="mil-soft-bg" style="background-color: transparent;">
+                                    <div class="container mil-p-60-60" ></div>
+                                        <div class="row">
+                                            <div class="col-lg-10">
+                                                <!-- <span class="mil-suptitle mil-suptitle-right mil-suptitle-dark mil-up">Autores de la publicación</span> -->
                                             </div>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">Emma Trueman</h5>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">Sarah Newman</h5>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">Emma Trueman</h5>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">Sarah Newman</h5>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">Emma Trueman</h5>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
-                                                <h5 class="mil-up mil-mb-10">Sarah Newman</h5>
+                                        <h2 class="mil-center mil-up mil-mb-30"> <span style="color: #0A8CBF;">Autores de la</span> <span class="mil-thin">Publicación:</span></h2>
+                                        <div class="mil-revi-pagination mil-up mil-mb-30"></div>
+                                        <div class="row mil-relative justify-content-center">
+                                            <div class="col-lg-6"></div>
+                                                <div class="mil-slider-nav mil-soft mil-reviews-nav mil-up">
+                                                    <div class="mil-slider-arrow mil-prev mil-revi-prev mil-arrow-place"></div>
+                                                    <div class="mil-slider-arrow mil-revi-next mil-arrow-place"></div>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="mil-quote-icon mil-up"></svg>
+                                                <path d="M 13.5 10 A 8.5 8.5 0 0 0 13.5 27 A 8.5 8.5 0 0 0 18.291016 25.519531 C 17.422273 29.222843 15.877848 31.803343 14.357422 33.589844 C 12.068414 36.279429 9.9433594 37.107422 9.9433594 37.107422 A 1.50015 1.50015 0 1 0 11.056641 39.892578 C 11.056641 39.892578 13.931586 38.720571 16.642578 35.535156 C 19.35357 32.349741 22 27.072581 22 19 A 1.50015 1.50015 0 0 0 21.984375 18.78125 A 8.5 8.5 0 0 0 13.5 10 z M 34.5 10 A 8.5 8.5 0 0 0 34.5 27 A 8.5 8.5 0 0 0 39.291016 25.519531 C 38.422273 29.222843 36.877848 31.803343 35.357422 33.589844 C 33.068414 36.279429 30.943359 37.107422 30.943359 37.107422 A 1.50015 1.50015 0 1 0 32.056641 39.892578 C 32.056641 39.892578 34.931586 38.720571 37.642578 35.535156 C 40.35357 32.349741 43 27.072581 43 19 A 1.50015 1.50015 0 0 0 42.984375 18.78125 A 8.5 8.5 0 0 0 34.5 10 z" fill="#000000" />
+                                                </svg>
+                                                <div class="swiper-container mil-reviews-slider">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                                <h5 class="mil-up mil-mb-10">Hnery Roa</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                                <h5 class="mil-up mil-mb-10">Susana Masapanta</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="mil-review-frame mil-center" data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                                                                <h5 class="mil-up mil-mb-10">Paul Trueman</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                                </section>
                 <!-- reviews end -->
-                            
-                <!-- publication end -->
 
-                <!-- similar -->
-                <!-- <section class="mil-soft-bg">
-                    <div class="container mil-p-120-60">
-                        <div class="row align-items-center mil-mb-30">
-                            <div class="col-lg-6 mil-mb-30">
-                                <h3 class="mil-up">Similar Publications:</h3>
-                            </div>
-                            <div class="col-lg-6 mil-mb-30">
-                                <div class="mil-adaptive-right mil-up">
-                                    <a href="blog-inner.html" class="mil-link mil-dark mil-arrow-place">
-                                        <span>View all</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                                <a href="publication.html" class="mil-blog-card mil-mb-60">
-                                    <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/8.jpg" alt="cover">
-                                    </div>
-                                    <div class="mil-post-descr">
-                                        <div class="mil-labels mil-up mil-mb-30">
-                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                        </div>
-                                        <h4 class="mil-up mil-mb-30">How to Become a Graphic Designer in 10 Simple Steps</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae id ut at iure! Totam, a!</p>
-                                        <div class="mil-link mil-dark mil-arrow-place mil-up">
-                                            <span>Read more</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div class="col-lg-6">
-
-                                <a href="publication.html" class="mil-blog-card mil-mb-60">
-                                    <div class="mil-cover-frame mil-up">
-                                        <img src="img/blog/1.jpg" alt="cover">
-                                    </div>
-                                    <div class="mil-post-descr">
-                                        <div class="mil-labels mil-up mil-mb-30">
-                                            <div class="mil-label mil-upper mil-accent">TECHNOLOGY</div>
-                                            <div class="mil-label mil-upper">may 24 2023</div>
-                                        </div>
-                                        <h4 class="mil-up mil-mb-30">16 Best Graphic Design Online and Offline Courses</h4>
-                                        <p class="mil-post-text mil-up mil-mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae id ut at iure! Totam, a!</p>
-                                        <div class="mil-link mil-dark mil-arrow-place mil-up">
-                                            <span>Read more</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-                <!-- similar end -->
 
                 <!-- footer -->
                 <footer class="mil-dark-bg">

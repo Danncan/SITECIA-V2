@@ -25,77 +25,16 @@
 </head>
 
 <body>
+    <script src="js/Proyectos.js"></script>
 <!-- Swiper.js Library -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<script>
-  let swiperInstance;
 
-  function initializeSwiper() {
-    swiperInstance = new Swiper('.swiper-container', {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      grabCursor: true,
-      keyboard: { enabled: true },
-      breakpoints: {
-        768: { slidesPerView: 1 },
-        1024: { slidesPerView: 2 },
-      },
-    });
-  }
-
-  document.addEventListener("DOMContentLoaded", initializeSwiper);
-
-  // Solución para reiniciar Swiper al volver a la página
-  window.addEventListener('pageshow', function (event) {
-    if (event.persisted || performance.getEntriesByType("navigation")[0].type === 'back_forward') {
-      if (swiperInstance) swiperInstance.destroy(); // Destruir instancia antigua
-      initializeSwiper(); // Crear una nueva instancia
-    }
-  });
-</script>
 
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
 
-        <!-- cursor 
-        <div class="mil-ball">
-            <span class="mil-icon-1">
-                <svg viewBox="0 0 128 128">
-                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2	c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2	L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9	z" />
-                </svg>
-            </span>
-            <div class="mil-more-text">More</div>
-            <div class="mil-choose-text">Сhoose</div>
-        </div>-->
-        <!-- cursor end -->
-
-        <!-- preloader -->
-        <!-- <div class="mil-preloader">
-            <div class="mil-preloader-animation">
-                <div class="mil-pos-abs mil-animation-1">
-                    <p class="mil-h3 mil-muted mil-thin">Pioneering</p>
-                    <p class="mil-h3 mil-muted">Creative</p>
-                    <p class="mil-h3 mil-muted mil-thin">Excellence</p>
-                </div>
-                <div class="mil-pos-abs mil-animation-2">
-                    <div class="mil-reveal-frame">
-                        <p class="mil-reveal-box"></p>
-                        <p class="mil-h3 mil-muted mil-thin">ashley.com</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- preloader end -->
+       
 
         <!-- scrollbar progress -->
         <div class="mil-progress-track">
@@ -103,17 +42,18 @@
         </div>
         <!-- scrollbar progress end -->
 
-        <!-- menu -->
-        <div class="mil-menu-frame">
+         <!-- menu -->
+         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
+                <a href="home.html" class="mil-logo">
                     <img src="img/Logo Escala de Grises.png" alt="Logo SITECIA" class="logo-sitecia-img">
                 </a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
             </div>
+            
             <!-- frame clone end -->
             <div class="container">
                 <div class="mil-menu-content">
@@ -123,18 +63,18 @@
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-has-children ">
-                                        <a href="home-1.html">Página de Inicio</a>
+                                        <a href="home.html">Página de Inicio</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="services.html">Acerca de Sitecia</a>
+                                        <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="team.html">Nuestro Equipo</a>
+                                        <a href="NuestroEquipo.html">Nuestro Equipo</a>
                                     </li>
                                     <li class="mil-has-children">
                                         <a href="#.">Producción Científica</a>
                                         <ul>
-                                            <li><a href="project-3.html">Ciencias de Datos</a></li>
+                                            <li><a href="CienciaDeDatos.html">Ciencias de Datos</a></li>
                                             <li><a href="#">Gestión y Gobierno de Datos</a></li>
                                             <li><a href="#">Inteligencia Artificial</a></li>
                                             <li><a href="#">Ciberseguridad</a></li>
@@ -143,10 +83,10 @@
                                         </ul>
                                     </li>
                                     <li class="mil-has-children mil-active">
-                                        <a href="blog-inner.html">Proyectos</a>
+                                        <a href="Proyectos.html">Proyectos</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="#.">Contacto</a>
+                                        <a href="contact.html">Contacto</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -169,7 +109,7 @@
                                             <ul class="mil-menu-list">
                                                 <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
                                                 <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
+                                                <li><a href="CienciaDeDatos.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
                                                 <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
                                                 <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
                                                 <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
@@ -216,7 +156,7 @@
             </div>
         </div>
         <!-- menu -->
-
+        
         <!-- curtain -->
         <div class="mil-curtain"></div>
         <!-- curtain end -->
@@ -224,9 +164,10 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="home-1.html" class="mil-logo">
-                    <!-- <img src="img/Logo Escala de Grises.png" alt="Logo Escala de Grises" /> -->
+                <a href="home.html" class="mil-logo">
+                    <img src="img/Logo Sitecia Negro.png" alt="Logo SITECIA" class="logo-sitecia-img" />
                 </a>
+            
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -235,7 +176,7 @@
                 <div class="mil-current-page"></div>
                 <div class="mil-back-to-top">
                     <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Volver al Inicio</span>
+                        <span>Volver Arriba</span>
                     </a>
                 </div>
             </div>
@@ -254,10 +195,10 @@
                         </div>
                         <div class="container">
                             <ul class="mil-breadcrumbs mil-mb-60">
-                                <li><a href="home-1.html">PÁGINA DE INICIO</a></li>
+                                <li><a href="home.html">PÁGINA DE INICIO</a></li>
                                 <li><a href="blog.html">PROYECTOS</a></li>
                             </ul>
-                            <h1 class="mil-mb-60">Proyectos <br> <span class="mil-thin"></span></h1>
+                            <h1 class="mil-mb-60" style="color: #074073;">Proyectos <br> <span class="mil-thin"></span></h1>
                             <br>
                             <p>Aquí encontrarás información detallada sobre nuestros proyectos más recientes y destacados. Cada proyecto refleja nuestro compromiso con la innovación y la excelencia en el campo de la tecnología. Desde el diseño de interiores hasta la inteligencia artificial, exploramos diversas áreas para ofrecer soluciones creativas y efectivas. Descubre cómo transformamos ideas en realidades tangibles a través de nuestros proyectos.</p>
                             <br>
@@ -270,160 +211,187 @@
                 <!-- banner end -->
 
 
-                <!-- Destacado -->
-                <!-- Sección Destacado -->
-                <!-- Sección Destacado -->
-                <!-- Sección Destacado -->
-            <section class="stc-featured-section" id="blog">
-                <div class="container stc-p-120-60">
-                <!-- Título de la sección -->
-                <div class="row align-items-center stc-mb-30">
-                    <div class="col-lg-12 stc-mb-30">
-                    <h3 class="stc-up stc-featured-title">Destacado</h3>
-                    </div>
-                </div>
-            
-                <!-- Swiper Container -->
-                <div class="swiper-container stc-swiper-container">
-                    <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <a href="publication.html" class="stc-blog-card">
-                        <div class="stc-cover-frame">
-                            <img src="img/Home/ProyectosInnovadoresSeg.webp" alt="Cybersecurity">
-                        </div>
-                        <div class="stc-post-descr">
-                            <div class="stc-labels">
-                            <div class="stc-label stc-accent">CIBERSEGURIDAD</div>
-                            <div class="stc-label">Nov 27 2024</div>
-                            </div>
-                            <h4>¿Cómo Fortalecer la Seguridad en la Era Digital?</h4>
-                        </div>
-                        </a>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <a href="publication.html" class="stc-blog-card">
-                        <div class="stc-cover-frame">
-                            <img src="img/Home/ProyectosInnovadoresCDD.webp" alt="Inteligencia Artificial">
-                        </div>
-                        <div class="stc-post-descr">
-                            <div class="stc-labels">
-                            <div class="stc-label stc-accent">Inteligencia Artificial</div>
-                            <div class="stc-label">May 24 2023</div>
-                            </div>
-                            <h4>16 Best Graphic Design Online and Offline Courses</h4>
-                        </div>
-                        </a>
-                    </div>
-                    <!-- Slide 3 -->
-                    <!-- <div class="swiper-slide">
-                        <a href="publication.html" class="stc-blog-card">
-                        <div class="stc-cover-frame">
-                            <img src="img/blog/8.jpg" alt="Ciencia de Datos">
-                        </div>
-                        <div class="stc-post-descr">
-                            <div class="stc-labels">
-                            <div class="stc-label stc-accent">Ciencia de Datos</div>
-                            <div class="stc-label">Dec 15 2023</div>
-                            </div>
-                            <h4>Innovative Solutions for Modern Problems</h4>
-                        </div>
-                        </a>
-                    </div> -->
-                    </div>
-            
-                    <!-- Paginación y Flechas -->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev stc-arrow"></div>
-                    <div class="swiper-button-next stc-arrow"></div>
-                </div>
-                </div>
-            </section>
-  
-
-
                 
                 <section class="stc-featured-section" id="blog">
                     <div class="container stc-p-120-60">
-                        <!-- Título con Espacio Ajustado -->
-                        <div class="row align-items-center stc-mb-30">
-                            <div class="col-lg-12 stc-mb-30">
-                                <h3 class="stc-up stc-featured-title">Recientes</h3>
+                    <!-- Título de la sección -->
+                    <div class="row align-items-center stc-mb-30">
+                        <div class="col-lg-12 stc-mb-30">
+                        <h3 class="stc-up stc-featured-title">Destacado</h3>
+                        </div>
+                    </div>
+                
+                    <!-- Swiper Container -->
+                    <div class="swiper-container stc-swiper-container">
+                        <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <a href="publication.html" class="stc-blog-card">
+                            <div class="stc-cover-frame">
+                                <img src="img/Home/ProyectosInnovadoresSeg.webp" alt="Cybersecurity">
                             </div>
+                            <div class="stc-post-descr">
+                                <div class="stc-labels">
+                                <div class="stc-label stc-accent">CIBERSEGURIDAD</div>
+                                <div class="stc-label">Nov 27 2024</div>
+                                </div>
+                                <h4>¿Cómo Fortalecer la Seguridad en la Era Digital?</h4>
+                            </div>
+                            </a>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <a href="publication.html" class="stc-blog-card">
+                            <div class="stc-cover-frame">
+                                <img src="img/Home/ProyectosInnovadoresCDD.webp" alt="Inteligencia Artificial">
+                            </div>
+                            <div class="stc-post-descr">
+                                <div class="stc-labels">
+                                <div class="stc-label stc-accent">Inteligencia Artificial</div>
+                                <div class="stc-label">May 24 2023</div>
+                                </div>
+                                <h4>16 Best Graphic Design Online and Offline Courses</h4>
+                            </div>
+                            </a>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <a href="publication.html" class="stc-blog-card">
+                            <div class="stc-cover-frame">
+                                <img src="img/blog/8.jpg" alt="Ciencia de Datos">
+                            </div>
+                            <div class="stc-post-descr">
+                                <div class="stc-labels">
+                                <div class="stc-label stc-accent">Ciencia de Datos</div>
+                                <div class="stc-label">Dec 15 2023</div>
+                                </div>
+                                <h4>Innovative Solutions for Modern Problems</h4>
+                            </div>
+                            </a>
+                        </div> 
                         </div>
                 
-                        <!-- Swiper Container -->
-                        <div class="swiper-container stc-swiper-container">
-                            <div class="swiper-wrapper">
-                                <!-- Slide 1 -->
-                                <div class="swiper-slide">
-                                    <a href="publication.html" class="stc-blog-card">
-                                        <div class="stc-cover-frame">
-                                            <img src="img/blog/cybersecurity.jpg" alt="Cybersecurity">
+                        <!-- Paginación y Flechas -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev stc-arrow" style="top: 310px"></div>
+                        <div class="swiper-button-next stc-arrow"style="top: 310px"></div>
+                    </div>
+                    </div>
+                </section>
+  
+                <section id="portfolio">
+                    <div class="container mil-portfolio mil-p-60-60">
+                        <h2 class="mil-title">Explora los proyectos de nuestros años pasados</h2>
+
+                        <div class="mil-lines-place"></div>
+                        <div class="mil-lines-place mil-lines-long"></div>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-lg-5">
+                                <div class="mil-portfolio-item mil-more mil-mb-60">
+                                    <div class="mil-descr">
+                                        <div class="mil-labels mil-up mil-mb-15">
+                                            <div class="mil-label mil-upper mil-accent">2019</div>
                                         </div>
-                                        <div class="stc-post-descr">
-                                            <div class="stc-labels">
-                                                <div class="stc-label stc-accent">CIBERSEGURIDAD</div>
-                                                <div class="stc-label">Nov 27 2024</div>
-                                            </div>
-                                            <h4>¿Cómo Fortalecer la Seguridad en la Era Digital?</h4>
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- Slide 2 -->
-                                <div class="swiper-slide">
-                                    <a href="publication.html" class="stc-blog-card">
-                                        <div class="stc-cover-frame">
-                                            <img src="img/blog/8.jpg" alt="Tecnología">
-                                        </div>
-                                        <div class="stc-post-descr">
-                                            <div class="stc-labels">
-                                                <div class="stc-label stc-accent">TECNOLOGÍA</div>
-                                                <div class="stc-label">May 24 2023</div>
-                                            </div>
-                                            <h4>16 Best Graphic Design Online and Offline Courses</h4>
-                                        </div>
-                                    </a>
+                                        <h4 class="mil-up">Proyectos realizados en 2019</h4>
+                                        <p class="mil-up">Explora los proyectos e investigaciones que marcaron el año 2019.</p>
+                                        <a href="2019.html" class="mil-button-small">Ver proyectos del año</a>
+                                    </div>
                                 </div>
                             </div>
-                
-                            <!-- Navegación del Carrusel -->
-                            <div class="swiper-pagination"></div>
-                            <div class="swiper-button-prev stc-arrow"></div>
-                            <div class="swiper-button-next stc-arrow"></div>
+                            <div class="col-lg-5">
+                                <div class="mil-portfolio-item mil-more mil-mb-60">
+                                    <div class="mil-descr">
+                                        <div class="mil-labels mil-up mil-mb-15">
+                                            <div class="mil-label mil-upper mil-accent">2020</div>
+                                        </div>
+                                        <h4 class="mil-up">Proyectos realizados en 2020</h4>
+                                        <p class="mil-up">Revive los proyectos clave llevados a cabo durante el 2020.</p>
+                                        <a href="2020.html" class="mil-button-small">Ver proyectos del año</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="mil-portfolio-item mil-more mil-mb-60">
+                                    <div class="mil-descr">
+                                        <div class="mil-labels mil-up mil-mb-15">
+                                            <div class="mil-label mil-upper mil-accent">2021</div>
+                                        </div>
+                                        <h4 class="mil-up">Proyectos realizados en 2021</h4>
+                                        <p class="mil-up">Descubre cómo evolucionaron las investigaciones en 2021.</p>
+                                        <a href="2021.html" class="mil-button-small">Ver proyectos del año</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="mil-portfolio-item mil-more mil-mb-60">
+                                    <div class="mil-descr">
+                                        <div class="mil-labels mil-up mil-mb-15">
+                                            <div class="mil-label mil-upper mil-accent">2022</div>
+                                        </div>
+                                        <h4 class="mil-up">Proyectos realizados en 2022</h4>
+                                        <p class="mil-up">Consulta los desarrollos realizados durante el 2022.</p>
+                                        <a href="2022.html" class="mil-button-small">Ver proyectos del año</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="mil-portfolio-item mil-more mil-mb-60">
+                                    <div class="mil-descr">
+                                        <div class="mil-labels mil-up mil-mb-15">
+                                            <div class="mil-label mil-upper mil-accent">2023</div>
+                                        </div>
+                                        <h4 class="mil-up">Proyectos realizados en 2023</h4>
+                                        <p class="mil-up">Descubre los logros más recientes de este año.</p>
+                                        <a href="2023.html" class="mil-button-small">Ver proyectos del año</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <h2 class="mil-title">Explora los proyectos de nuestros años pasados</h2>
+                <section class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-title">Proyectos realizados en 2019</div>
+                        <div class="timeline-description">Explora los proyectos e investigaciones que marcaron el año 2019.</div>
+                        <a href="2019.html" class="timeline-button">Ver proyectos del año</a>
+                    </div>
+                
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-title">Proyectos realizados en 2020</div>
+                        <div class="timeline-description">Revive los proyectos clave llevados a cabo durante el 2020.</div>
+                        <a href="2020.html" class="timeline-button">Ver proyectos del año</a>
+                    </div>
+                
+                    <div class="timeline-item">
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-title">Proyectos realizados en 2021</div>
+                        <div class="timeline-description">Descubre cómo evolucionaron las investigaciones en 2021.</div>
+                        <a href="2021.html" class="timeline-button">Ver proyectos del año</a>
+                    </div>
+                
+                    <div class="timeline-item">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-title">Proyectos realizados en 2022</div>
+                        <div class="timeline-description">Consulta los desarrollos realizados durante el 2022.</div>
+                        <a href="2022.html" class="timeline-button">Ver proyectos del año</a>
+                    </div>
+                
+                    <div class="timeline-item">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-title">Proyectos realizados en 2023</div>
+                        <div class="timeline-description">Descubre los logros más recientes de este año.</div>
+                        <a href="2023.html" class="timeline-button">Ver proyectos del año</a>
                     </div>
                 </section>
 
 
-                <!-- blog end -->
-
-                <!-- call to action -->
-                <!-- <section class="mil-soft-bg">
-                    <div class="container mil-p-120-120">
-                        <div class="row">
-                            <div class="col-lg-10">
-
-                                <span class="mil-suptitle mil-suptitle-right mil-suptitle-dark mil-up">Looking to make your mark? We'll help you turn <br> your project into a success story.</span>
-
-                            </div>
-                        </div>
-                        <div class="mil-center">
-                            <h2 class="mil-up mil-mb-60">Stay up-to-date <span class="mil-thin">with the</span><br> latest news by <span class="mil-thin">subscribing</span><br> to our <span class="mil-thin">newsletter!</span></h2>
-                            <div class="row justify-content-center mil-up">
-                                <div class="col-lg-4">
-                                    <form class="mil-subscribe-form mil-subscribe-form-2 mil-up">
-                                        <input type="text" placeholder="Enter our email">
-                                        <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-                <!-- call to action end -->
-
+              
                 <!-- footer -->
                 <footer class="mil-dark-bg">
                     <div class="mi-invert-fix">
@@ -581,7 +549,7 @@
                         <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z" />
                     </svg>
 
-                    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
+                    <svg width="200" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines" style="padding-left: 30px;">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
@@ -601,6 +569,7 @@
     <!-- wrapper end -->
 
     <!-- jQuery js -->
+     <script src="js/Proyectos.js"></script>
     <script src="js/plugins/jquery.min.js"></script>
     <!-- swup js -->
     <script src="js/plugins/swup.min.js"></script>

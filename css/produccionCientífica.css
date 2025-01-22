@@ -1,0 +1,161 @@
+/*** Producción Científica***/
+/* Línea de separación */
+.mil-separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  .mil-line {
+    width: 80%;
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, #074073, #004a7c);
+    border-radius: 1px;
+  }
+  
+  /* Fondo de la sección de investigación */
+  .mil-section-bg {
+    padding: 60px 0;
+  }
+  
+  /* Títulos */
+  .mil-title-container h2 {
+    text-align: center;
+    color: #074073;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .mil-title-container p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Animación de hover */
+  .mil-service-card-lg {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .mil-service-card-lg:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Íconos */
+  .mil-service-card-lg h4 .mil-icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #074073;
+  }
+  
+  /* Botones */
+  .mil-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #074073;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .mil-link:hover {
+    color: #012d5c;
+  }
+  
+              /* Tarjetas individuales */
+              .mil-service-card-lg {
+                border: 2px solid #D0E1F9; /* Borde azul claro */
+                border-radius: 10px;
+                width: 300px; /* Fijar ancho */
+                height: 450px; /* Fijar alto */
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                transition: transform 0.3s, box-shadow 0.3s;
+                text-align: left;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            
+            .mil-service-card-lg:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+                border-color: #62B6F9; /* Resaltar borde al pasar */
+            }
+            
+            /* Títulos */
+            .mil-service-card-lg h4 {
+                font-size: 22px;
+                color: #003F88; /* Azul oscuro */
+                margin-bottom: 15px;
+            }
+            
+            /* Texto descriptivo */
+            .mil-service-card-lg p {
+                font-size: 14px;
+                color: #5A6473; /* Gris oscuro */
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+            
+            /* Texto de "Aquí encontrarás temas" */
+            .mil-service-card-lg .temas-header {
+                font-size: 14px;
+                color: #003F88; /* Azul oscuro */
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            
+            /* Lista de temas */
+            .mil-service-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .mil-service-list li {
+                font-size: 14px;
+                color: #1A73E8; /* Azul vibrante */
+                padding: 5px 0;
+                border-left: 3px solid #D0E1F9; /* Línea decorativa azul claro */
+                padding-left: 10px;
+                transition: all 0.3s;
+            }
+            
+            .mil-service-list li:hover {
+                color: #003F88; /* Azul más oscuro */
+                border-left: 3px solid #62B6F9; /* Cambiar línea al pasar */
+                padding-left: 15px;
+            }
+            
+            /* Botón "Conoce Más" */
+            .mil-link {
+                display: inline-flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: color 0.3s;
+            }
+            
+            .mil-link:hover {
+                color: #62B6F9; /* Azul más claro al pasar */
+            }
+            
+            .mil-link span {
+                margin-left: 8px;
+                display: inline-block;
+                transition: transform 0.3s;
+            }
+            
+            .mil-link:hover span {
+                transform: translateX(5px); /* Mover flecha hacia la derecha */
+            }
+  /*** Fin Producción Científica***/
