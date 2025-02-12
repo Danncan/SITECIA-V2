@@ -1307,6 +1307,14 @@ frame
   height: auto; /* Mantiene la proporción de la imagen */
   display: block; /* Evita espacios no deseados alrededor de la imagen */
 }
+
+@media screen and (max-width: 992px) {
+  .logo-sitecia-img {
+    background-image: url('../img/Logo\ Escala\ de\ Grises.png');
+  }
+}
+
+
 /*** Fin IMagen Frame**/
 
 /* -------------------------------------------

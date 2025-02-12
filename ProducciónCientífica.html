@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produccionCientífica.css">
 
     <!-- page name -->
     <title>SITECIA</title>
@@ -25,23 +26,11 @@
 
 <body>
 
-
+    
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
-        <link rel="stylesheet" href="css/produccionCientífica.css">
 
-        <div class="mil-preloader">
-            <div class="mil-preloader-animation">
-                <div class="mil-pos-abs mil-animation-1">
-                  
-                </div>
-                <div class="mil-pos-abs mil-animation-2">
-                    <div class="mil-reveal-frame">
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- scrollbar progress -->
         <div class="mil-progress-track">
             <div class="mil-progress"></div>
@@ -53,7 +42,7 @@
             <!-- frame clone -->
             <div class="mil-frame-top">
                 <a href="home.html" class="mil-logo">
-                    <img src="img/Logo Escala de Grises.png" alt="Logo SITECIA" class="logo-sitecia-img">
+                    <img src="img/Logo_Escala_Grises.png" alt="Logo SITECIA" class="logo-sitecia-img">
                 </a>
                 <div class="mil-menu-btn">
                     <span></span>
@@ -171,28 +160,12 @@
         <div class="mil-frame">
             <div class="mil-frame-top">
                 <a href="home.html" class="mil-logo">
-                    <img src="img/Logo Sitecia Negro.png" alt="Logo SITECIA" class="logo-sitecia-img" />
+                    <picture>
+                        <source srcset="img/Logo_Escala_Grises.png" media="(max-width: 1200px)">
+                        <img src="img/Logo Sitecia Negro.png" alt="Logo SITECIA" class="logo-sitecia-img">
+                    </picture>
                 </a>
                 
-                <style>
-
-                img.logo-sitecia-img {
-                    max-width: 100%; /* Ajusta al tamaño del contenedor */
-                    height: auto; /* Mantén las proporciones */
-                    display: block; /* Elimina espacios adicionales */
-                    opacity: 1; /* Asegúrate de que no sea transparente */
-                    filter: none; /* Elimina cualquier filtro que pueda oscurecer la imagen */
-                    overflow: visible; /* Permite que el contenido de la imagen sea visible */
-                    overflow-clip-margin: unset; /* Restablece cualquier margen de recorte */
-                }
-                .mil-logo {
-                    display: inline-block; /* Asegura que el contenedor del logo se ajuste a su contenido */
-                    width: auto; /* Ajusta al tamaño de la imagen */
-                    height: auto;
-                }
-   
-
-                </style>
                   
                 <div class="mil-menu-btn">
                     <span></span>
