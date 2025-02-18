@@ -2340,8 +2340,7 @@ about
 .mil-stat p {
   margin-top: 10px;
   font-size: 18px;
-  color: var(--primary-color);  /* Cambiado a tu color secundario */
-}
+  color: rgba(255, 255, 255, 0.4);}
 /*** Finde de la Animación ****/
 /* -------------------------------------------
 
