@@ -787,8 +787,6 @@ $(function () {
             },
         });
     
-        // Reiniciar otros componentes (menús, acordeones, sliders, etc.)
-        reiniciarOtrosComponentes();
     });
 
     document.addEventListener("swup:contentReplaced", function () {
@@ -815,10 +813,65 @@ $(function () {
             },
         });
     
-        // Reinicia otros componentes (animaciones, menús, etc.)
+        
+    });
+    
+    let swiperInstance; // Variable global para almacenar la instancia de Swiper
+
+    // Función para inicializar Swiper
+    function initializeSwiper() {
+        swiperInstance = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            grabCursor: true,
+            keyboard: { enabled: true },
+            breakpoints: {
+                768: { slidesPerView: 1 },
+                1024: { slidesPerView: 2 },
+            },
+        });
+    }
+    
+    // Reiniciar Swiper cuando Swup reemplace el contenido
+    document.addEventListener("swup:contentReplaced", function () {
+        console.log("Contenido reemplazado por Swup Proyectos");
+    
+        // Destruir la instancia anterior de Swiper (si existe)
+        if (swiperInstance) {
+            swiperInstance.destroy(true, true); // Destruir Swiper y limpiar eventos
+            swiperInstance = null; // Limpiar la referencia
+        }
+    
+        // Inicializar Swiper nuevamente
+        initializeSwiper();
+    
+        // Reiniciar otros componentes (si es necesario)
         reiniciarOtrosComponentes();
     });
     
+    // Inicializar Swiper cuando el DOM esté listo
+    document.addEventListener("DOMContentLoaded", function () {
+        initializeSwiper();
+    });
+    
+    // Manejo de la caché del navegador
+    window.addEventListener('pageshow', function (event) {
+        if (event.persisted || performance.getEntriesByType("navigation")[0].type === 'back_forward') {
+            // Recargar la página si se carga desde la caché
+            window.location.reload();
+        }
+    });
+    
+    // Función para reiniciar otros componentes
     function reiniciarOtrosComponentes() {
-        // Lógica para reiniciar otros componentes
+        // Lógica para reiniciar otros componentes (menús, animaciones, etc.)
     }
