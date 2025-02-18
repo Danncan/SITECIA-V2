@@ -2319,7 +2319,7 @@ about
   top: -120px;
   left: -27%;
 }
-/*Animated*/
+/*** Animación****/
 .mil-stats {
   display: flex;
   justify-content: space-between;
@@ -2342,7 +2342,7 @@ about
   font-size: 18px;
   color: var(--primary-color);  /* Cambiado a tu color secundario */
 }
-
+/*** Finde de la Animación ****/
 /* -------------------------------------------
 
 partners
