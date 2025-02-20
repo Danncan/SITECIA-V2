@@ -1642,7 +1642,7 @@ menu
           transform: translateX(5px);
 }
 .mil-main-menu ul li.mil-has-children ul.mil-active {
-  max-height: 200px;
+  max-height: 215px;
 }
 @media screen and (max-width: 1200px) {
   .mil-main-menu {
@@ -2818,9 +2818,33 @@ social icons
 
 .custom-icon-puce {
   display: inline-block;
-  width: 18px; /* Tamaño para coincidir con los otros íconos */
-  height: 18px;
+  width: 30px; /* Tamaño para coincidir con los otros íconos */
+  height: 30px;
   background-image: url('../img/OurTeam/PUCE\ SVG\ Icon.svg'); /* Ruta al archivo SVG de PUCE */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle; /* Alineación con los otros íconos */
+}
+
+.custom-icon-utpl {
+  color: #003b73;
+  display: inline-block;
+  width: 50px; /* Tamaño para coincidir con los otros íconos */
+  height: 50px;
+  background-image: url('../img/OurTeam/UTPL-V4.svg'); /* Ruta al archivo SVG de PUCE */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle; /* Alineación con los otros íconos */
+}
+
+.custom-icon-usfq {
+  color: #003b73;
+  display: inline-block;
+  width: 50px; /* Tamaño para coincidir con los otros íconos */
+  height: 50px;
+  background-image: url('../img/OurTeam/USFQ\ SVG\ Icon.svg'); /* Ruta al archivo SVG de PUCE */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
