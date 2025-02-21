@@ -3473,7 +3473,7 @@ portfolio
 }
 .mil-portfolio-item.mil-slider-item .mil-cover-frame {
   margin-bottom: 30px;
-  height: calc(100vh - 360px);
+  height: calc((100vh - 360px)/2);
 }
 @media screen and (max-width: 992px) {
   .mil-portfolio-item.mil-slider-item .mil-cover-frame {

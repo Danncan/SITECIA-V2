@@ -733,97 +733,24 @@ $(function () {
     Main Animation 
 
     ***************************/
-    document.addEventListener("swup:contentReplaced", function () {
-        console.log("Contenido reemplazado por Swup");
-    
-        // Reiniciar el contador
-        const counters = document.querySelectorAll(".mil-counter");
-    
-        const startCounter = (counter) => {
-            const target = +counter.getAttribute("data-target"); // Obtén el valor objetivo
-            const increment = target / 200; // Haz el incremento más pequeño para ralentizar la animación
-            let current = 0;
-    
-            const updateCounter = () => {
-                current += increment; // Incrementa el valor
-                if (current < target) {
-                    counter.textContent = Math.ceil(current); // Actualiza el valor mostrado
-                    setTimeout(updateCounter, 20); // Cambia la velocidad de actualización aquí
-                } else {
-                    counter.textContent = target; // Asegúrate de que termine en el número exacto
-                }
-            };
-    
-            updateCounter();
-        };
-    
-        const observer = new IntersectionObserver(
-            (entries, observer) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        const counter = entry.target;
-                        startCounter(counter);
-                        observer.unobserve(counter); // Detén la observación una vez que inicie
-                    }
-                });
-            },
-            { threshold: 0.5 } // Activa cuando el 50% del elemento sea visible
-        );
-    
-        counters.forEach((counter) => {
-            observer.observe(counter); // Observa cada contador
-        });
-    
-        // Resto del código de reinicialización (sliders, animaciones, etc.)
-        $('html, body').animate({
-            scrollTop: 0,
-        }, 0);
-    
-        gsap.to('.mil-progress', {
-            height: 0,
-            ease: 'sine',
-            onComplete: () => {
-                ScrollTrigger.refresh();
-            },
-        });
-    
-    });
-
-    document.addEventListener("swup:contentReplaced", function () {
-        console.log("Contenido reemplazado por Swup Produccion Cientifica");
-    
-        // Asegúrate de que los estilos se carguen correctamente
-        const link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.href = "../css/produccionCientífica.css";
-        document.head.appendChild(link);
-    
-        // Reinicia Swiper
-        const swiper = new Swiper('.mil-reviews-slider', {
-            pagination: {
-                el: '.mil-revi-pagination',
-                clickable: true,
-            },
-            speed: 800,
-            effect: 'fade',
-            parallax: true,
-            navigation: {
-                nextEl: '.mil-revi-next',
-                prevEl: '.mil-revi-prev',
-            },
-        });
-    
-        
-    });
-    
-    let swiperInstance; // Variable global para almacenar la instancia de Swiper
+    let swiperInstance;
 
     // Función para inicializar Swiper
     function initializeSwiper() {
+        console.log("🌀 Intentando inicializar Swiper...");
+        let slidesCount = document.querySelectorAll('.swiper-slide').length;
+    
+        // Verificar si ya está inicializado
+        if (swiperInstance instanceof Swiper) {
+            console.log("✅ Swiper ya está inicializado, evitando duplicación.");
+            return;
+        }
+    
+        // Crear nueva instancia
         swiperInstance = new Swiper('.swiper-container', {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
-            loop: true,
+            loop: slidesCount > 2, // Solo activar loop si hay más de 2 slides
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -836,42 +763,153 @@ $(function () {
             keyboard: { enabled: true },
             breakpoints: {
                 768: { slidesPerView: 1 },
-                1024: { slidesPerView: 2 },
+                1024: { slidesPerView: slidesCount > 2 ? 2 : 1 },
             },
         });
+    
+        console.log("✅ Swiper inicializado con éxito.");
     }
     
-    // Reiniciar Swiper cuando Swup reemplace el contenido
+    // Manejo del contenido reemplazado por Swup
     document.addEventListener("swup:contentReplaced", function () {
-        console.log("Contenido reemplazado por Swup Proyectos");
+        console.log("🔄 Contenido reemplazado por Swup");
     
-        // Destruir la instancia anterior de Swiper (si existe)
-        if (swiperInstance) {
-            swiperInstance.destroy(true, true); // Destruir Swiper y limpiar eventos
-            swiperInstance = null; // Limpiar la referencia
+        // Destruir instancia previa de Swiper de manera segura
+        if (swiperInstance instanceof Swiper) {
+            try {
+                console.log("🛑 Destruyendo instancia previa de Swiper...");
+                swiperInstance.destroy(true, true);
+                swiperInstance = null;
+                console.log("✅ Swiper destruido correctamente.");
+            } catch (error) {
+                console.error("❌ Error al destruir Swiper:", error);
+            }
+        } else {
+            console.log("⚠️ No hay una instancia previa válida de Swiper.");
         }
     
-        // Inicializar Swiper nuevamente
+        // Volver a inicializar Swiper
         initializeSwiper();
     
-        // Reiniciar otros componentes (si es necesario)
-        reiniciarOtrosComponentes();
+        // Recargar el CSS sin duplicaciones
+        let existingLink = document.querySelector("link[href*='produccionCientífica.css']");
+        if (existingLink) {
+            console.log("♻️ Eliminando y recargando CSS...");
+            existingLink.parentNode.removeChild(existingLink);
+        }
+    
+        let link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "../css/produccionCientífica.css";
+        document.head.appendChild(link);
+        console.log("✅ Estilos de 'produccionCientífica.css' recargados.");
+    
+        // Reiniciar animaciones
+        reiniciarAnimaciones();
+    
+        // Actualizar ScrollTrigger
+        ScrollTrigger.refresh();
+    
+        // Scroll al inicio de la página
+        $('html, body').animate({ scrollTop: 0 }, 0);
     });
+    
+    // Función para reiniciar animaciones
+    function reiniciarAnimaciones() {
+        console.log("🎬 Reiniciando animaciones...");
+        gsap.fromTo(".mil-up", {
+            opacity: 0,
+            y: 40,
+            scale: 0.98,
+        }, {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 0.4,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: ".mil-up",
+                start: "top 80%",
+                toggleActions: "play none none reverse",
+            },
+        });
+        console.log("✅ Animaciones reiniciadas.");
+    }
     
     // Inicializar Swiper cuando el DOM esté listo
     document.addEventListener("DOMContentLoaded", function () {
         initializeSwiper();
     });
     
-    // Manejo de la caché del navegador
-    window.addEventListener('pageshow', function (event) {
-        if (event.persisted || performance.getEntriesByType("navigation")[0].type === 'back_forward') {
-            // Recargar la página si se carga desde la caché
-            window.location.reload();
+    document.addEventListener("swup:contentReplaced", function () {
+        console.log("🔄 Contenido reemplazado por Swup");
+    
+        // Verificar si estamos en home.html antes de cargar animation.js
+        if (window.location.pathname.includes("home.html")) {
+            console.log("🏠 Estamos en home.html, cargando Animation.js...");
+    
+            // Eliminar script previo si ya está cargado
+            let existingScript = document.querySelector("script[src*='Animation.js']");
+            if (existingScript) {
+                existingScript.remove();
+            }
+    
+            // Cargar animation.js dinámicamente
+            let script = document.createElement("script");
+            script.src = "js/Animation.js?v=" + new Date().getTime(); // Evita caché
+            script.defer = true;
+            script.onload = function () {
+                console.log("✅ 'Animation.js' cargado correctamente.");
+                iniciarContadores(); // Llamar a la función para activar contadores
+            };
+            document.body.appendChild(script);
+        } else {
+            console.log("🚫 No estamos en home.html, no se carga Animation.js.");
         }
+    
+        // Reiniciar animaciones
+        reiniciarAnimaciones();
+        ScrollTrigger.refresh();
+        $('html, body').animate({ scrollTop: 0 }, 0);
     });
     
-    // Función para reiniciar otros componentes
-    function reiniciarOtrosComponentes() {
-        // Lógica para reiniciar otros componentes (menús, animaciones, etc.)
+    // Función para verificar y ejecutar Animation.js
+function cargarYActivarAnimation() {
+    if (window.location.pathname.includes("home.html")) {
+        console.log("🏠 Estamos en home.html, cargando Animation.js...");
+
+        // Eliminar script previo si ya está cargado
+        let existingScript = document.querySelector("script[src*='Animation.js']");
+        if (existingScript) {
+            existingScript.remove();
+        }
+
+        // Cargar animation.js dinámicamente
+        let script = document.createElement("script");
+        script.src = "js/Animation.js?v=" + new Date().getTime(); // Evita caché
+        script.defer = true;
+        script.onload = function () {
+            console.log("✅ 'Animation.js' cargado correctamente.");
+            iniciarContadores(); // Llamar a la función para activar contadores
+        };
+        document.body.appendChild(script);
+    } else {
+        console.log("🚫 No estamos en home.html, no se carga Animation.js.");
     }
+}
+
+// Ejecutar al cargar la página por primera vez
+document.addEventListener("DOMContentLoaded", function () {
+    cargarYActivarAnimation();
+});
+
+// Ejecutar cada vez que Swup cambie de contenido
+document.addEventListener("swup:contentReplaced", function () {
+    console.log("🔄 Contenido reemplazado por Swup");
+    cargarYActivarAnimation();
+
+    // Reiniciar animaciones
+    reiniciarAnimaciones();
+    ScrollTrigger.refresh();
+    $('html, body').animate({ scrollTop: 0 }, 0);
+});

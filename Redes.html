@@ -63,14 +63,14 @@
                                         <a href="NuestroEquipo.html">Nuestro Equipo</a>
                                     </li>
                                     <li class="mil-has-children mil-active">
-                                        <a href="#">Producción Científica</a>
+                                        <a href="">Producción Científica</a>
                                         <ul>
                                             <li><a href="CienciaDeDatos.html">Ciencias de Datos</a></li>
                                             <li><a href="GestionyGobiernodeDatos.html">Gestión y Gobierno de Datos</a></li>
                                             <li><a href="InteligenciaArtificial.html">Inteligencia Artificial</a></li>
-                                            <li><a href="#">Ciberseguridad</a></li>
-                                            <li><a href="#">Infraestructura de TI</a></li>
-                                            <li><a href="#">Redes</a></li>
+                                            <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+                                            <li><a href="InfraestructuraTI.html">Infraestructura de TI</a></li>
+                                            <li><a href="Redes.html">Redes</a></li>
                                         </ul>
                                     </li>
                                     <li class="mil-has-children">
@@ -356,36 +356,33 @@
                 <!-- footer -->
                 <footer class="mil-dark-bg">
                     <div class="mi-invert-fix">
-                        <div class="container mil-p-40-30 mil-pt-50"> <!-- Añadí mil-pt-50 para más espacio arriba -->
+                        <div class="container mil-p-40-30 mil-pt-70"> <!-- Añadí mil-pt-50 para más espacio arriba -->
                             <div class="row">
                                 <!-- Columna 1: Logo y derechos -->
                                 <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
                                     <div class="mil-muted mil-logo mil-up mil-mb-15">Sitecia.</div>
-                                    <p class="mil-light-soft mil-up mil-mb-10">© Copyright 2024 - SITECIA. All Rights Reserved.</p>
+                                    <p class="mil-light-soft mil-up mil-mb-10">© Copyright <span id="currentYear"></span> - SITECIA. All Rights Reserved.</p>
+                                    <script>
+                                        document.getElementById('currentYear').textContent = new Date().getFullYear();
+                                    </script>
                                     <p class="mil-light-soft mil-up">© Desarrollado por: Danny Cano Y.</p>
                                 </div>
                 
                                 <!-- Columna 2: Enlaces -->
                                 <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-                                    <h6 class="mil-muted mil-up mil-mb-15">Enlaces</h6>
-                                    <ul class="mil-menu-list mil-up">
-                                        <li><a href="#." class="mil-light-soft">Política de Privacidad</a></li>
-                                        <li><a href="#." class="mil-light-soft">Términos y Condiciones</a></li>
-                                        <li><a href="#." class="mil-light-soft">Política de Cookies</a></li>
-                                        <li><a href="#." class="mil-light-soft">Carreras</a></li>
-                                    </ul>
+
                                 </div>
                 
                                 <!-- Columna 3: Dirección, contacto y redes sociales -->
                                 <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-                                    <h6 class="mil-muted mil-up mil-mb-15">Ecuador</h6>
+                                    <h6 class="mil-muted mil-up mil-mb-15">Ubicación:</h6>
                                     <p class="mil-light-soft mil-up">Avenida 12 de Octubre, Quito, Ecuador</p>
                                     <p class="mil-light-soft mil-up mil-mb-20">+593 99 371 0389</p>
                 
                                     <!-- Íconos de redes sociales -->
                                     <ul class="mil-social-icons mil-up">
                                         <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                                        <!-- <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li> -->
                                         <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
                                         <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
