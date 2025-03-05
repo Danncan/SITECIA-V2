@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="css/plugins/swiper.min.css">
     <!-- fancybox css -->
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-    <!-- ashley scss -->
+    <!--  scss -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- page name -->
-    <title>SINTECIA</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <title>Nuestro Equipo - SITECIA</title>
 
 </head>
 
@@ -119,7 +121,6 @@
             </div>
         </div>
         <!-- frame end -->
-        <!-- frame end -->
 
         <!-- content -->
         <div class="mil-content">
@@ -127,6 +128,8 @@
 
                 <!-- banner -->
                 <div class="mil-inner-banner">
+                    <!--Barra de Navegación SUperior-->
+
                     <div class="sitecia-navbar">
                         <div class="sitecia-logo">
                             <a href="home.html"></a>
@@ -134,7 +137,7 @@
                         <ul class="sitecia-nav-links">
                             <li><a href="home.html">Inicio</a></li>
                             <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
-                            <li><a href="NuestroEquipo.html">Equipo</a></li>
+                            <li><a href="NuestroEquipo.html"class="active">Equipo</a></li>
                             <li class="sitecia-dropdown">
                                 <a href="#">Producción Científica ▾</a>
                                 <ul class="sitecia-dropdown-menu">
@@ -231,6 +234,10 @@
                             background-color: #00AEEF;
                             color: black;
                         }
+                        .sitecia-nav-links li a.active {
+                            color: #00AEEF;
+                            font-weight: bold;
+                        }
 
                         /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
                         @media (max-width: 1200px) {
@@ -242,7 +249,6 @@
                     </style>
                     <div class="mil-banner-content mil-up">
                         <div class="mil-animation-frame">
-                            <!-- <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div> -->
                         </div>
                         <div class="container">
                             <ul class="mil-breadcrumbs mil-mb-60">
@@ -256,9 +262,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- banner end -->
 
-                <!-- team -->
+                <!-- Sección de integrantes de SITECIA -->
                 <section id="team">
                     <div class="container mil-p-120-90">
                         <div class="row">
@@ -491,31 +496,32 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+                            <!--Ejemplo de agregar personas:-->
 
+                            <!-- <div class="col-sm-6 col-md-4 col-lg-3" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')">
                                 <div class="mil-team-card mil-up mil-mb-30">
-                                    <img src="img/faces/5.jpg" alt="Team member">
+                                    <img src="img/OurTeam/Amparo Alvarez.png" alt="Team member">
                                     <div class="mil-description">
                                         <div class="mil-secrc-text">
-                                            <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Tom Oldman</a></h5>
-                                            <p class="mil-link mil-light-soft mil-mb-10">Art Director</p>
+                                            <h5 class="mil-muted mil-mb-5">Amparo  Álvarez </h5>
+                                            <p class="mil-link mil-light-soft mil-mb-10">Docente Investigador</p>
                                             <ul class="mil-social-icons mil-center">
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-dribbble"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a></li>
+                                                <li>
+                                                    <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')" class="social-icon">
+                                                        <i class="custom-icon-puce"></i>
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-
                             </div> -->
 
 
                         </div>
                     </div>
                 </section>
-                <!-- team end -->
+                <!-- fin de nuestro equipo  -->
 
 
                 <!-- footer -->
