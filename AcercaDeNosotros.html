@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="css/plugins/swiper.min.css">
     <!-- fancybox css -->
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-    <!-- ashley scss -->
+    <!--  scss -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- page name -->
-    <title>SITECIA</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <title>Acerca de Nosotros - SITECIA</title>
 
 </head>
 
@@ -126,13 +128,14 @@
 
                 <!-- banner -->
                 <div class="mil-inner-banner">
+                    <!--Barra de Navegación-->
                     <div class="sitecia-navbar">
                         <div class="sitecia-logo">
                             <a href="home.html"></a>
                         </div>
                         <ul class="sitecia-nav-links">
                             <li><a href="home.html">Inicio</a></li>
-                            <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
+                            <li><a href="AcercaDeNosotros.html" class="active">Nosotros</a></li>
                             <li><a href="NuestroEquipo.html">Equipo</a></li>
                             <li class="sitecia-dropdown">
                                 <a href="#">Producción Científica ▾</a>
@@ -230,6 +233,10 @@
                             background-color: #00AEEF;
                             color: black;
                         }
+                        .sitecia-nav-links li a.active {
+                            color: #00AEEF;
+                            font-weight: bold;
+                        }
 
                         /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
                         @media (max-width: 1200px) {
@@ -261,7 +268,7 @@
                 </div>
                 <!-- banner end -->
 
-                <!-- service -->
+                <!-- Sección de Acerca del Contenido  -->
                 <section id="service">
                     <div class="container mil-p-0-90">
                         <div class="row justify-content-between">
@@ -277,7 +284,7 @@
 
                             </div>
                             <div class="col-lg-6">
-
+                                <!--Menú de acordeón que despliega la misión y visión -->
                                 <div class="mil-accordion-group mil-up">
                                     <div class="mil-accordion-menu">
 
@@ -316,14 +323,14 @@
                         </div>
                     </div>
                 </section>
-                <!-- service end -->
+                <!--  Fin de la sección de Acerca de Nosotros -->
+
+                <!--Script que Sirve para renderizar el cúbo -->
                 <script>
                     $(".mil-dodecahedron").clone().appendTo(".mil-animation");
 
                 </script>
-                <!-- prices -->
             
-                <!-- other services end -->
 
                 <!-- footer -->
                 <footer class="mil-dark-bg">
