@@ -20,8 +20,10 @@
     <link rel="stylesheet" href="css/produccionCientífica.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- page name -->
-    <title>SITECIA</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <title>Producción Científica - SITECIA</title>
 
 </head>
 
@@ -88,65 +90,6 @@
                             </nav>
 
                         </div>
-                        <div class="col-xl-7">
-
-                            <div class="mil-menu-right-frame">
-                                <div class="mil-animation-in">
-                                    <div class="mil-animation-frame">
-                                        <div class="mil-animation mil-position-1 mil-scale" data-value-1="2" data-value-2="2"></div>
-                                    </div>
-                                </div>
-                                <div class="mil-menu-right">
-                                    <div class="row">
-                                        <div class="col-lg-8 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Projects</h6>
-
-                                            <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="project-3.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
-                                            </ul>
-
-                                        </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Useful links</h6>
-
-                                            <ul class="mil-menu-list">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
-                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                    <div class="mil-divider mil-mb-60"></div>
-                                    <div class="row justify-content-between">
-
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Canada</h6>
-
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
-                                        </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Germany</h6>
-
-                                            <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -189,6 +132,125 @@
         
                 <!-- banner -->
                 <div class="mil-inner-banner">
+                                        <!--Barra de Navegación SUperior-->
+
+                                        <div class="sitecia-navbar">
+                                            <div class="sitecia-logo">
+                                                <a href="home.html"></a>
+                                            </div>
+                                            <ul class="sitecia-nav-links">
+                                                <li><a href="home.html">Inicio</a></li>
+                                                <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
+                                                <li><a href="NuestroEquipo.html">Equipo</a></li>
+                                                <li class="sitecia-dropdown">
+                                                    <a href="#" class="active">Producción Científica ▾</a>
+                                                    <ul class="sitecia-dropdown-menu">
+                                                        <li><a href="CienciaDeDatos.html">Ciencia de Datos</a></li>
+                                                        <li><a href="GestionyGobiernodeDatos.html">Gobierno de Datos</a></li>
+                                                        <li><a href="InteligenciaArtificial.html">IA</a></li>
+                                                        <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+                                                        <li><a href="InfraestructuraTI.html">Infraestructura TI</a></li>
+                                                        <li><a href="Redes.html">Redes</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="Proyectos.html">Proyectos</a></li>
+                                                <li><a href="contact.html">Contacto</a></li>
+                                            </ul>
+                                        </div>
+                                        <style>
+                                            .sitecia-navbar {
+                                                position: fixed;
+                                                top: 0;
+                                                left: 0;
+                                                width: 100%;
+                                                background-color: rgba(0, 0, 0, 0.95);
+                                                z-index: 1000;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                padding: 10px 40px;
+                                                font-family: 'Arial', sans-serif;
+                                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                                            }
+                    
+                                            .sitecia-logo a {
+                                                color: #00AEEF;
+                                                font-size: 24px;
+                                                font-weight: bold;
+                                                text-decoration: none;
+                                                letter-spacing: 1px;
+                                                text-transform: uppercase;
+                                            }
+                    
+                                            .sitecia-nav-links {
+                                                list-style: none;
+                                                display: flex;
+                                                gap: 30px;
+                                                margin: 0;
+                                                padding: 0;
+                                            }
+                    
+                                            .sitecia-nav-links li a {
+                                                color: white;
+                                                text-decoration: none;
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                                transition: color 0.3s ease;
+                                            }
+                    
+                                            .sitecia-nav-links li a:hover {
+                                                color: #00AEEF;
+                                            }
+                    
+                                            /* Dropdown */
+                                            .sitecia-dropdown {
+                                                position: relative;
+                                            }
+                    
+                                            .sitecia-dropdown-menu {
+                                                position: absolute;
+                                                top: 100%;
+                                                left: 0;
+                                                background-color: #111;
+                                                list-style: none;
+                                                padding: 10px 0;
+                                                margin: 0;
+                                                display: none;
+                                                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+                                            }
+                    
+                                            .sitecia-dropdown:hover .sitecia-dropdown-menu {
+                                                display: block;
+                                            }
+                    
+                                            .sitecia-dropdown-menu li {
+                                                padding: 8px 20px;
+                                            }
+                    
+                                            .sitecia-dropdown-menu li a {
+                                                color: white;
+                                                text-decoration: none;
+                                                font-size: 14px;
+                                                transition: background-color 0.3s ease;
+                                            }
+                    
+                                            .sitecia-dropdown-menu li a:hover {
+                                                background-color: #00AEEF;
+                                                color: black;
+                                            }
+                                            .sitecia-nav-links li a.active {
+                                                color: #00AEEF;
+                                                font-weight: bold;
+                                            }
+                    
+                                            /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
+                                            @media (max-width: 1200px) {
+                                                .sitecia-navbar {
+                                                    display: none;
+                                                }
+                                            }    
+                    
+                                        </style>
                     <div class="mil-animation-frame">
                         <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div>
                     </div>
@@ -214,7 +276,6 @@
                     <hr class="pc-line" />
                 </div>
 
-                <!-- Sección de producción científica -->
                 <!-- Sección de producción científica -->
                 <section id="research" class="pc-section-bg py-5">
                     <div class="container pc-p-110-90">
@@ -313,6 +374,7 @@
                                     <a href="Redes.html" class="pc-link">Artículos Relacionados <span>→</span></a>
                                 </div>
                             </div>
+                            <!--Agregar aquí tarjetas adecionales-->
                         </div>
                     </div>
                 </section>
@@ -320,7 +382,7 @@
 
 
             
-                <!-- other services end -->
+
 
                  <!-- footer -->
                  <footer class="mil-dark-bg">

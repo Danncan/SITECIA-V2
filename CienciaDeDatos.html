@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- page name -->
-    <title>Ciencia de Datos</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Ciencia de Datos - SITECIA</title>
 
 </head>
 
@@ -134,9 +135,9 @@
                             <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
                             <li><a href="NuestroEquipo.html">Equipo</a></li>
                             <li class="sitecia-dropdown">
-                                <a href="#">Producción Científica ▾</a>
+                                <a href="#"class="active">Producción Científica ▾</a>
                                 <ul class="sitecia-dropdown-menu">
-                                    <li><a href="CienciaDeDatos.html">Ciencia de Datos</a></li>
+                                    <li><a href="CienciaDeDatos.html"class="active">Ciencia de Datos</a></li>
                                     <li><a href="GestionyGobiernodeDatos.html">Gobierno de Datos</a></li>
                                     <li><a href="InteligenciaArtificial.html">IA</a></li>
                                     <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
@@ -229,6 +230,11 @@
                             background-color: #00AEEF;
                             color: black;
                         }
+                        .sitecia-nav-links li a.active {
+                            color: #00AEEF;
+                            font-weight: bold;
+                        }
+
 
                         /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
                         @media (max-width: 1200px) {
@@ -260,7 +266,7 @@
                 </div>
                 <!-- banner end -->
 
-                <!-- project -->
+                <!-- Ciencia de Datos Sección -->
                 <section id="project">
                     <div class="container mil-p-120-120">
                         <div class="mil-works-nav mil-up">
@@ -299,8 +305,8 @@
                                 
                             </div>
 
+                            <!-- Texto Informativo -->
                             <div class="row align-items-center stc-section">
-                                <!-- Texto Izquierda, Imagen Derecha -->
                                 <div class="col-lg-6" style="text-align: justify;">
                                     <p class="stc-text">
                                         En el área de ciencia de datos, el grupo SITECIA realiza investigaciones para aplicar técnicas y herramientas estadísticas,
@@ -316,7 +322,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Layout Alternativo: Texto Derecha, Imagen Izquierda -->
                             <div class="row align-items-center flex-row-reverse stc-section">
                                 <div class="col-lg-6" style="text-align: justify;">
                                     <p class="stc-text">
@@ -336,6 +341,9 @@
                             
                             <br>
                             <br>
+
+                            <!-- CARRUSEL EJEMPLO:-->
+
 
                             <!-- Swiper JS -->
                             <!-- <div class="mil-content">
@@ -415,43 +423,146 @@
                                     </section>
                                 </div>
                             </div> -->
+                                <!-- Sección de Artículos Relacionados:-->
                                 <h2 style="color: #074073; text-align: center;">Artículos Relacionados</h2>
                                 <section>
                                     <div class="container pc-section-bg">
                                     
                                         <div class="row justify-content-center">
                                     
-                                            <!-- Proyecto 1 -->
                                             <div class="col-md-6 col-lg-4 mb-4">
                                                 <div class="pc-research-card">
-                                                    <h4><i class="pc-icon fas fa-robot"></i> Current and emerging trends in the use of AI for community surveillance</h4>
-                                                    <p><strong>Fecha:</strong> 2024</p>
-                                                    <p><strong>Autores:</strong> Nelson Salgado, Jaime Meza, Monica Vaca-Cardenas, Leticia Vaca-Cardenas</p>
-                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/current-and-emerging-trends-in-the-use-of-ai-for-community-survei" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                    <h4><i class="pc-icon fas fa-tablet-alt"></i> Tecnología Blockchain, qué es y cómo funciona</h4>
+                                                    <p><strong>Fecha:</strong> 1 nov. 2022</p>
+                                                    <p><strong>Autores:</strong> Javier Guaña-Moya, Henry N. Roa, Fabricio Marcillo, Leonardo Ayavaca-Vallejo, Marco Chiluisa-Chiluisa, Byron Moya-Carrera</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/tecnolog%C3%ADa-blockchain-qu%C3%A9-es-y-c%C3%B3mo-funciona-2" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
                                                 </div>
                                             </div>
-                                    
-                                            <!-- Proyecto 2 -->
+                                            
                                             <div class="col-md-6 col-lg-4 mb-4">
                                                 <div class="pc-research-card">
-                                                    <h4><i class="pc-icon fas fa-brain"></i> Artificial Intelligence and Its Impact on Digital Transformation Processes</h4>
+                                                    <h4><i class="pc-icon fas fa-robot"></i> Modelo de Datos - Contexto Universitario: Premisa para Agilidad, Disponibilidad y Toma de Decisiones Apoyado en Información</h4>
+                                                    <p><strong>Fecha:</strong> 1 abr. 2022</p>
+                                                    <p><strong>Autores:</strong> Javier Condor, Nelson Salgado, Henry N. Roa, Juan Francisco Chafla</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/modelo-de-datos-contexto-universitario-premisa-para-agilidad-disp-2" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-cogs"></i> A Systematic Review of Ill-Defined Problems in the Intelligent Tutoring Systems in Virtual Learning Environments</h4>
+                                                    <p><strong>Fecha:</strong> 16 abr. 2023</p>
+                                                    <p><strong>Autores:</strong> Fredy Gavilanes-Sagnay, Edison Loza-Aguirre, Byron Ernesto Vaca Barahona, Henry N. Roa</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/a-systematic-review-of-ill-defined-problems-in-the-intelligent-tu-2" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-brain"></i> Unveiling Mortality Patterns in Ecuador: A K-Modes Clustering Approach to Categorical Data Analysis</h4>
+                                                    <p><strong>Fecha:</strong> 22/05/24 → 23/05/24</p>
+                                                    <p><strong>Autores:</strong> Adriana Jimenez-Torres, Henry N. Roa</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/unveiling-mortality-patterns-in-ecuador-a-k-modes-clustering-appr" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-tablet-alt"></i> Análisis de causas de accidentes de tránsito en el ecuador utilizando minería de datos</h4>
+                                                    <p><strong>Fecha:</strong> 19 feb. 2020</p>
+                                                    <p><strong>Autores:</strong> Edwin León-Pluas, Alvaro Pumares-Romero, Javier Guaña-Moya, Pablo Loayza-Valarezo, Darwin Naranjo-Villota, Nelson Salgado-Reyes</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/an%C3%A1lisis-de-causas-de-accidentes-de-tr%C3%A1nsito-en-el-ecuador-utiliz-2" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-tablet-alt"></i> La informática y la ciencia de datos utilizando Deep learning</h4>
+                                                    <p><strong>Fecha:</strong> 1 abr. 2022</p>
+                                                    <p><strong>Autores:</strong> Javier Guaña-Moya, Nelson Salgado-Reyes, Charles Escobar-Terán</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/la-inform%C3%A1tica-y-la-ciencia-de-datos-utilizando-deep-learning-2" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-tablet-alt"></i> Caso de estudio del método de asignación de Dirichlet latente (LDA) en los procesos de revisión literaria</h4>
+                                                    <p><strong>Fecha:</strong> 15 ene. 2022</p>
+                                                    <p><strong>Autores:</strong> Nelson Salgado Reyes, Emanuel Muñoz, Jaime Meza</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/caso-de-estudio-del-m%C3%A9todo-de-asignaci%C3%B3n-de-dirichlet-latente-lda-2" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-robot"></i> Inclusive Dictionary for People with Disabilities Through an Accessible Technological Platform</h4>
+                                                    <p><strong>Fecha:</strong> 24 feb. 2023</p>
+                                                    <p><strong>Autores:</strong> Elking Raymond Araujo Bilmonte, Nelson Esteban Salgado Reyes, Verónica Gabriela Maldonado Garcés</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/inclusive-dictionary-for-people-with-disabilities-through-an-acce" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-tablet-alt"></i> Digital Technological Innovation in the City of Santo Domingo - Ecuador</h4>
+                                                    <p><strong>Fecha:</strong> 13/12/23 → 15/12/23</p>
+                                                    <p><strong>Autores:</strong> Nelson Salgado-Reyes, Javier Guaña-Moya, Jaime Meza, Gustavo Javier Chafla Altamirano</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/digital-technological-innovation-in-the-city-of-santo-domingo-ecu" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-tablet-alt"></i> Data mining techniques for predicting teacher evaluation in higher education: A systematic literature review</h4>
+                                                    <p><strong>Fecha:</strong> mar. 2023</p>
+                                                    <p><strong>Autores:</strong> Ricardo Ordoñez-Avila, Nelson Salgado Reyes, Jaime Meza, Sebastián Ventura</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/data-mining-techniques-for-predicting-teacher-evaluation-in-highe-2" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-brain"></i> Augmented Reality as a Support for the Teaching-Learning Process in the Subject of Enterprise Architecture</h4>
+                                                    <p><strong>Fecha:</strong> 21/10/23 → 23/10/23</p>
+                                                    <p><strong>Autores:</strong> Nelson Salgado-Reyes, Suyana Arcos-Villagomez, Susana Masapanta-Carrión</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/augmented-reality-as-a-support-for-the-teaching-learning-process--2" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-robot"></i> Learn with Love Application to Support the Development of Reading Skills in People with Down Syndrome</h4>
+                                                    <p><strong>Fecha:</strong> 22/05/24 → 23/05/24</p>
+                                                    <p><strong>Autores:</strong> Nelson Salgado Reyes</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/learn-with-love-application-to-support-the-development-of-reading" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-tablet-alt"></i> Empowering Deaf Individuals: Ecuadorian Sign Language Dictionary Integration via Technology</h4>
+                                                    <p><strong>Fecha:</strong> 5/09/24 → 6/09/24</p>
+                                                    <p><strong>Autores:</strong> Nelson Salgado Reyes, Verónica Maldonado Garcés, Elking Araujo Bilmonte</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/empowering-deaf-individuals-ecuadorian-sign-language-dictionary-i" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-cogs"></i> Artificial Intelligence and Its Impact on Digital Transformation Processes</h4>
                                                     <p><strong>Fecha:</strong> 6/07/23 → 8/07/23</p>
                                                     <p><strong>Autores:</strong> Nelson Salgado-Reyes, Damián Nicolalde-Rodriguez, Jaime Meza, Mónica Vaca-Cardenas</p>
                                                     <a href="https://puceinvestiga.puce.edu.ec/es/publications/artificial-intelligence-and-its-impact-on-digital-transformation-" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
                                                 </div>
                                             </div>
-                                    
-                                            <!-- Proyecto 3 -->
+                                            
                                             <div class="col-md-6 col-lg-4 mb-4">
                                                 <div class="pc-research-card">
-                                                    <h4><i class="pc-icon fas fa-cogs"></i> The Role of Artificial Intelligence to Advance in Civil Engineering</h4>
+                                                    <h4><i class="pc-icon fas fa-tablet-alt"></i> The Role of Artificial Intelligence to Advance in Civil Engineering</h4>
                                                     <p><strong>Fecha:</strong> 11/07/24 → 13/07/24</p>
                                                     <p><strong>Autores:</strong> Nelson Salgado-Reyes, Javier Guaña-Moya, Fredi Paredes-Vasquez, Mario León Torres</p>
                                                     <a href="https://puceinvestiga.puce.edu.ec/es/publications/the-role-of-artificial-intelligence-to-advance-in-civil-engineeri" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
                                                 </div>
                                             </div>
-                                    
-                                            <!-- Proyecto 4 -->
+                                            
                                             <div class="col-md-6 col-lg-4 mb-4">
                                                 <div class="pc-research-card">
                                                     <h4><i class="pc-icon fas fa-tablet-alt"></i> Proposal of Indicators for the Design of an App for Teaching Learning in Children with Autism</h4>
@@ -460,9 +571,14 @@
                                                     <a href="https://puceinvestiga.puce.edu.ec/es/publications/proposal-of-indicators-for-the-design-of-an-app-for-teaching-lear" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
                                                 </div>
                                             </div>
+                                            
+                                            
+                                            
+                                            
                                     
                                         </div>
                                     </div>
+                                    <!-- Estilos de los Artículos Relacionados:-->
                                     <style>
                                         .pc-section-bg {
                                         padding: 60px 0;

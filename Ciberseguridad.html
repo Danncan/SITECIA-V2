@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- page name -->
-    <title>Ciberseguridad</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <title>Ciberseguridad - SITECIA</title>
 
 </head>
 
@@ -135,12 +137,12 @@
                             <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
                             <li><a href="NuestroEquipo.html">Equipo</a></li>
                             <li class="sitecia-dropdown">
-                                <a href="#">Producción Científica ▾</a>
+                                <a href="#"class="active">Producción Científica ▾</a>
                                 <ul class="sitecia-dropdown-menu">
                                     <li><a href="CienciaDeDatos.html">Ciencia de Datos</a></li>
                                     <li><a href="GestionyGobiernodeDatos.html">Gobierno de Datos</a></li>
                                     <li><a href="InteligenciaArtificial.html">IA</a></li>
-                                    <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+                                    <li><a href="Ciberseguridad.html"class="active">Ciberseguridad</a></li>
                                     <li><a href="InfraestructuraTI.html">Infraestructura TI</a></li>
                                     <li><a href="Redes.html">Redes</a></li>
                                 </ul>
@@ -230,7 +232,10 @@
                             background-color: #00AEEF;
                             color: black;
                         }
-
+                        .sitecia-nav-links li a.active {
+                            color: #00AEEF;
+                            font-weight: bold;
+                        }
                         /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
                         @media (max-width: 1200px) {
                             .sitecia-navbar {
@@ -333,25 +338,33 @@
                             <br>  
                             <div class="row justify-content-center">
                         
-                                <!-- Proyecto 1 -->
                                 <div class="col-md-6 col-lg-4 mb-4">
                                     <div class="pc-research-card">
-                                        <h4><i class="pc-icon fas fa-robot"></i> Current and emerging trends in the use of AI for community surveillance</h4>
-                                        <p><strong>Fecha:</strong> 2024</p>
-                                        <p><strong>Autores:</strong> Nelson Salgado, Jaime Meza, Monica Vaca-Cardenas, Leticia Vaca-Cardenas</p>
-                                        <a href="https://puceinvestiga.puce.edu.ec/es/publications/current-and-emerging-trends-in-the-use-of-ai-for-community-survei" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                        <h4><i class="pc-icon fas fa-shield-alt"></i> Security Analysis in Ecuador: Advanced Integration of Geo-Positioning and Named Entity Recognition (G-NER) in X Platform Publications</h4>
+                                        <p><strong>Fecha:</strong> 14/11/24 → 15/11/24</p>
+                                        <p><strong>Autores:</strong> Henry N. Roa, Diego Quisi-Peralta, Jordan Murillo-Valarezo, Daniel Pulla-Sánchez, Ruth Reategui-Rojas, Janneth Chicaiza</p>
+                                        <a href="https://puceinvestiga.puce.edu.ec/es/publications/security-analysis-in-ecuador-advanced-integration-of-geo-position" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
                                     </div>
                                 </div>
-                        
-                                <!-- Proyecto 2 -->
+                                
                                 <div class="col-md-6 col-lg-4 mb-4">
                                     <div class="pc-research-card">
-                                        <h4><i class="pc-icon fas fa-brain"></i> Artificial Intelligence and Its Impact on Digital Transformation Processes</h4>
-                                        <p><strong>Fecha:</strong> 6/07/23 → 8/07/23</p>
-                                        <p><strong>Autores:</strong> Nelson Salgado-Reyes, Damián Nicolalde-Rodriguez, Jaime Meza, Mónica Vaca-Cardenas</p>
-                                        <a href="https://puceinvestiga.puce.edu.ec/es/publications/artificial-intelligence-and-its-impact-on-digital-transformation-" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                        <h4><i class="pc-icon fas fa-lock"></i> Enhancing Information Security Management in Small and Medium Enterprises (SMEs) Through ISO 27001 Compliance</h4>
+                                        <p><strong>Fecha:</strong> 4/04/24 → 5/04/24</p>
+                                        <p><strong>Autores:</strong> Fabricio Mera-Amores, Henry N. Roa</p>
+                                        <a href="https://puceinvestiga.puce.edu.ec/es/publications/enhancing-information-security-management-in-small-and-medium-ent" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
                                     </div>
                                 </div>
+                                
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="pc-research-card">
+                                        <h4><i class="pc-icon fas fa-user-shield"></i> Importance of Cybersecurity Education to Reduce Risks in Academic Institutions</h4>
+                                        <p><strong>Fecha:</strong> 22/05/24 → 23/05/24</p>
+                                        <p><strong>Autores:</strong> Javier Guaña-Moya, Nelson Salgado-Reyes, Yamileth Arteaga-Alcívar, Alejandra Espinosa-Cevallos</p>
+                                        <a href="https://puceinvestiga.puce.edu.ec/es/publications/importance-of-cybersecurity-education-to-reduce-risks-in-academic" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                    </div>
+                                </div>
+                                
                         
                             </div>
                             <style>
