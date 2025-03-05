@@ -83,65 +83,7 @@
                             </nav>
 
                         </div>
-                        <div class="col-xl-7">
 
-                            <div class="mil-menu-right-frame">
-                                <div class="mil-animation-in">
-                                    <div class="mil-animation-frame">
-                                        <div class="mil-animation mil-position-1 mil-scale" data-value-1="2" data-value-2="2"></div>
-                                    </div>
-                                </div>
-                                <div class="mil-menu-right">
-                                    <div class="row">
-                                        <div class="col-lg-8 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Projects</h6>
-
-                                            <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="CienciaDeDatos.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
-                                            </ul>
-
-                                        </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Useful links</h6>
-
-                                            <ul class="mil-menu-list">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
-                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                    <div class="mil-divider mil-mb-60"></div>
-                                    <div class="row justify-content-between">
-
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Canada</h6>
-
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
-                                        </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Germany</h6>
-
-                                            <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -185,6 +127,119 @@
 
                 <!-- banner -->
                 <div class="mil-inner-banner">
+                    <div class="sitecia-navbar">
+                        <div class="sitecia-logo">
+                            <a href="home.html"></a>
+                        </div>
+                        <ul class="sitecia-nav-links">
+                            <li><a href="home.html">Inicio</a></li>
+                            <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
+                            <li><a href="NuestroEquipo.html">Equipo</a></li>
+                            <li class="sitecia-dropdown">
+                                <a href="#">Producción Científica ▾</a>
+                                <ul class="sitecia-dropdown-menu">
+                                    <li><a href="CienciaDeDatos.html">Ciencia de Datos</a></li>
+                                    <li><a href="GestionyGobiernodeDatos.html">Gobierno de Datos</a></li>
+                                    <li><a href="InteligenciaArtificial.html">IA</a></li>
+                                    <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+                                    <li><a href="InfraestructuraTI.html">Infraestructura TI</a></li>
+                                    <li><a href="Redes.html">Redes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Proyectos.html">Proyectos</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <style>
+                        .sitecia-navbar {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            background-color: rgba(0, 0, 0, 0.95);
+                            z-index: 1000;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px 40px;
+                            font-family: 'Arial', sans-serif;
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                        }
+
+                        .sitecia-logo a {
+                            color: #00AEEF;
+                            font-size: 24px;
+                            font-weight: bold;
+                            text-decoration: none;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                        }
+
+                        .sitecia-nav-links {
+                            list-style: none;
+                            display: flex;
+                            gap: 30px;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        .sitecia-nav-links li a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 16px;
+                            font-weight: 500;
+                            transition: color 0.3s ease;
+                        }
+
+                        .sitecia-nav-links li a:hover {
+                            color: #00AEEF;
+                        }
+
+                        /* Dropdown */
+                        .sitecia-dropdown {
+                            position: relative;
+                        }
+
+                        .sitecia-dropdown-menu {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: #111;
+                            list-style: none;
+                            padding: 10px 0;
+                            margin: 0;
+                            display: none;
+                            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+                        }
+
+                        .sitecia-dropdown:hover .sitecia-dropdown-menu {
+                            display: block;
+                        }
+
+                        .sitecia-dropdown-menu li {
+                            padding: 8px 20px;
+                        }
+
+                        .sitecia-dropdown-menu li a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 14px;
+                            transition: background-color 0.3s ease;
+                        }
+
+                        .sitecia-dropdown-menu li a:hover {
+                            background-color: #00AEEF;
+                            color: black;
+                        }
+
+                        /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
+                        @media (max-width: 1200px) {
+                            .sitecia-navbar {
+                                display: none;
+                            }
+                        }    
+
+                    </style>
                     <div class="mil-banner-content mil-up">
                         <div class="mil-animation-frame">
                             <!-- <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div> -->
@@ -213,7 +268,7 @@
                                     <img src="img/OurTeam/Henry Roa.jpg" alt="Team member">
                                     <div class="mil-description">
                                         <div class="mil-secrc-text">
-                                            <h5 class="mil-muted mil-mb-5">Phd Henry Roa</h5>
+                                            <h5 class="mil-muted mil-mb-5">Henry Roa</h5>
                                             <p class="mil-link mil-light-soft mil-mb-10">Director</p>
                                             <ul class="mil-social-icons mil-center">
                                                 <li>
@@ -379,16 +434,16 @@
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3" onclick="window.open('', '_blank')">
+                            <div class="col-sm-6 col-md-4 col-lg-3" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')">
                                 <div class="mil-team-card mil-up mil-mb-30">
-                                    <img src="img/OurTeam/GuidoOchoa.png" alt="Team member">
+                                    <img src="img/OurTeam/Amparo Alvarez.png" alt="Team member">
                                     <div class="mil-description">
                                         <div class="mil-secrc-text">
-                                            <h5 class="mil-muted mil-mb-5">Guido Ochoa</h5>
+                                            <h5 class="mil-muted mil-mb-5">Amparo  Álvarez </h5>
                                             <p class="mil-link mil-light-soft mil-mb-10">Docente Investigador</p>
                                             <ul class="mil-social-icons mil-center">
                                                 <li>
-                                                    <a href="#!" onclick="event.stopPropagation(); window.open('', '_blank')" class="social-icon">
+                                                    <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')" class="social-icon">
                                                         <i class="custom-icon-puce"></i>
                                                     </a>
                                                 </li>
@@ -398,7 +453,26 @@
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3" onclick="window.open('', '_blank')">
+                            <div class="col-sm-6 col-md-4 col-lg-3" >
+                                <div class="mil-team-card mil-up mil-mb-30">
+                                    <img src="img/OurTeam/GuidoOchoa.png" alt="Team member">
+                                    <div class="mil-description">
+                                        <div class="mil-secrc-text">
+                                            <h5 class="mil-muted mil-mb-5">Guido Ochoa</h5>
+                                            <p class="mil-link mil-light-soft mil-mb-10">Docente Investigador</p>
+                                            <ul class="mil-social-icons mil-center">
+                                                <li>
+                                                    <a href="#!" class="social-icon">
+                                                        <i class="custom-icon-puce"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3" >
                                 <div class="mil-team-card mil-up mil-mb-30">
                                     <img src="img/OurTeam/Danny Cano Y.jpg" alt="Team member">
                                     <div class="mil-description">
@@ -407,7 +481,7 @@
                                             <p class="mil-link mil-light-soft mil-mb-10">Estudiante Asociado</p>
                                             <ul class="mil-social-icons mil-center">
                                                 <li>
-                                                    <a href="#!" onclick="event.stopPropagation(); window.open('', '_blank')" class="social-icon">
+                                                    <a href="#!" class="social-icon">
                                                         <i class="custom-icon-usfq"></i>
                                                     </a>
                                                 </li>
@@ -468,14 +542,26 @@
                                 <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
                                     <h6 class="mil-muted mil-up mil-mb-15">Ubicación:</h6>
                                     <p class="mil-light-soft mil-up">Avenida 12 de Octubre, Quito, Ecuador</p>
-                                    <p class="mil-light-soft mil-up mil-mb-20">+593 99 371 0389</p>
+                                    <p class="mil-light-soft mil-up mil-mb-20">+593 2 2991 700</p>
                 
                                     <!-- Íconos de redes sociales -->
                                     <ul class="mil-social-icons mil-up">
-                                        <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li>
+                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.facebook.com/siteciapuce', '_blank')" class="social-icon">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
                                         <!-- <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li> -->
-                                        <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                                        <li>
+                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.linkedin.com/company/siteciapuce', '_blank')" class="social-icon">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.instagram.com/siteciapuce', '_blank')" class="social-icon">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

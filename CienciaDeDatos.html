@@ -83,65 +83,6 @@
                             </nav>
 
                         </div>
-                        <div class="col-xl-7">
-
-                            <div class="mil-menu-right-frame">
-                                <div class="mil-animation-in">
-                                    <div class="mil-animation-frame">
-                                        <div class="mil-animation mil-position-1 mil-scale" data-value-1="2" data-value-2="2"></div>
-                                    </div>
-                                </div>
-                                <div class="mil-menu-right">
-                                    <div class="row">
-                                        <div class="col-lg-8 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Projects</h6>
-
-                                            <ul class="mil-menu-list">
-                                                <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                                <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                                <li><a href="CienciaDeDatos.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                                <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                                <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                                <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
-                                            </ul>
-
-                                        </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Useful links</h6>
-
-                                            <ul class="mil-menu-list">
-                                                <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
-                                                <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                                <li><a href="#." class="mil-light-soft">Careers</a></li>
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                    <div class="mil-divider mil-mb-60"></div>
-                                    <div class="row justify-content-between">
-
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Canada</h6>
-
-                                            <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
-                                        </div>
-                                        <div class="col-lg-4 mil-mb-60">
-
-                                            <h6 class="mil-muted mil-mb-30">Germany</h6>
-
-                                            <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -184,6 +125,119 @@
 
                 <!-- banner -->
                 <div class="mil-inner-banner">
+                    <div class="sitecia-navbar">
+                        <div class="sitecia-logo">
+                            <a href="home.html"></a>
+                        </div>
+                        <ul class="sitecia-nav-links">
+                            <li><a href="home.html">Inicio</a></li>
+                            <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
+                            <li><a href="NuestroEquipo.html">Equipo</a></li>
+                            <li class="sitecia-dropdown">
+                                <a href="#">Producción Científica ▾</a>
+                                <ul class="sitecia-dropdown-menu">
+                                    <li><a href="CienciaDeDatos.html">Ciencia de Datos</a></li>
+                                    <li><a href="GestionyGobiernodeDatos.html">Gobierno de Datos</a></li>
+                                    <li><a href="InteligenciaArtificial.html">IA</a></li>
+                                    <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+                                    <li><a href="InfraestructuraTI.html">Infraestructura TI</a></li>
+                                    <li><a href="Redes.html">Redes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Proyectos.html">Proyectos</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <style>
+                        .sitecia-navbar {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            background-color: rgba(0, 0, 0, 0.95);
+                            z-index: 1000;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px 40px;
+                            font-family: 'Arial', sans-serif;
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                        }
+
+                        .sitecia-logo a {
+                            color: #00AEEF;
+                            font-size: 24px;
+                            font-weight: bold;
+                            text-decoration: none;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                        }
+
+                        .sitecia-nav-links {
+                            list-style: none;
+                            display: flex;
+                            gap: 30px;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        .sitecia-nav-links li a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 16px;
+                            font-weight: 500;
+                            transition: color 0.3s ease;
+                        }
+
+                        .sitecia-nav-links li a:hover {
+                            color: #00AEEF;
+                        }
+
+                        /* Dropdown */
+                        .sitecia-dropdown {
+                            position: relative;
+                        }
+
+                        .sitecia-dropdown-menu {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: #111;
+                            list-style: none;
+                            padding: 10px 0;
+                            margin: 0;
+                            display: none;
+                            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+                        }
+
+                        .sitecia-dropdown:hover .sitecia-dropdown-menu {
+                            display: block;
+                        }
+
+                        .sitecia-dropdown-menu li {
+                            padding: 8px 20px;
+                        }
+
+                        .sitecia-dropdown-menu li a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 14px;
+                            transition: background-color 0.3s ease;
+                        }
+
+                        .sitecia-dropdown-menu li a:hover {
+                            background-color: #00AEEF;
+                            color: black;
+                        }
+
+                        /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
+                        @media (max-width: 1200px) {
+                            .sitecia-navbar {
+                                display: none;
+                            }
+                        }    
+
+                    </style>
                     <div class="mil-banner-content mil-up">
                         <div class="mil-animation-frame">
                             <div class="mil-animation mil-position-4 mil-dark mil-scale" 
@@ -282,15 +336,13 @@
                             
                             <br>
                             <br>
+
                             <!-- Swiper JS -->
-                            <div class="mil-content">
+                            <!-- <div class="mil-content">
                                 <div class="mil-main-transition">
                     
-                                    <!-- portfolio -->
                                     <section class="mil-portfolio-slider-frame">
-                                        <div class="mil-animation-frame">
-                                            <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="1" data-value-2="2" style="top: -60px; right: -4px;"></div>
-                                        </div>
+
                                         <div class="container">
                                             <div class="row align-items-end">
                                                 <div class="col-lg-9">
@@ -299,12 +351,7 @@
                                                             <div class="swiper-slide">
                     
                                                                 <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                                    <!--    
-                                                                    <div class="mil-cover-frame mil-drag">
-                                                                        <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                                            <img src="img/works/1.jpg" alt="cover">
-                                                                        </div>
-                                                                    </div>-->
+
                                                                     <div class="research-item" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
                                                                         <h6 class="research-title">
                                                                             Modelo de Datos-Contexto Universitario: premisa para agilidad, disponibilidad y toma de decisiones apoyado en información.
@@ -328,12 +375,7 @@
                                                             <div class="swiper-slide">
 
                                                                 <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                                    <!--
-                                                                    <div class="mil-cover-frame mil-drag">
-                                                                        <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                                            <img src="img/works/2.jpg" alt="cover">
-                                                                        </div>
-                                                                    </div>-->
+
                                                                     <div class="research-item" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
                                                                         <h6 class="research-title">
                                                                             Modelo de Datos-Contexto Universitario: premisa para agilidad, disponibilidad y toma de decisiones apoyado en información.
@@ -372,14 +414,134 @@
                                         </div>
                                     </section>
                                 </div>
-                            </div>
+                            </div> -->
+                                <h2 style="color: #074073; text-align: center;">Artículos Relacionados</h2>
+                                <section>
+                                    <div class="container pc-section-bg">
+                                    
+                                        <div class="row justify-content-center">
+                                    
+                                            <!-- Proyecto 1 -->
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-robot"></i> Current and emerging trends in the use of AI for community surveillance</h4>
+                                                    <p><strong>Fecha:</strong> 2024</p>
+                                                    <p><strong>Autores:</strong> Nelson Salgado, Jaime Meza, Monica Vaca-Cardenas, Leticia Vaca-Cardenas</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/current-and-emerging-trends-in-the-use-of-ai-for-community-survei" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                    
+                                            <!-- Proyecto 2 -->
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-brain"></i> Artificial Intelligence and Its Impact on Digital Transformation Processes</h4>
+                                                    <p><strong>Fecha:</strong> 6/07/23 → 8/07/23</p>
+                                                    <p><strong>Autores:</strong> Nelson Salgado-Reyes, Damián Nicolalde-Rodriguez, Jaime Meza, Mónica Vaca-Cardenas</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/artificial-intelligence-and-its-impact-on-digital-transformation-" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                    
+                                            <!-- Proyecto 3 -->
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-cogs"></i> The Role of Artificial Intelligence to Advance in Civil Engineering</h4>
+                                                    <p><strong>Fecha:</strong> 11/07/24 → 13/07/24</p>
+                                                    <p><strong>Autores:</strong> Nelson Salgado-Reyes, Javier Guaña-Moya, Fredi Paredes-Vasquez, Mario León Torres</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/the-role-of-artificial-intelligence-to-advance-in-civil-engineeri" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                    
+                                            <!-- Proyecto 4 -->
+                                            <div class="col-md-6 col-lg-4 mb-4">
+                                                <div class="pc-research-card">
+                                                    <h4><i class="pc-icon fas fa-tablet-alt"></i> Proposal of Indicators for the Design of an App for Teaching Learning in Children with Autism</h4>
+                                                    <p><strong>Fecha:</strong> 9/05/24 → 10/05/24</p>
+                                                    <p><strong>Autores:</strong> Nelson Salgado Reyes</p>
+                                                    <a href="https://puceinvestiga.puce.edu.ec/es/publications/proposal-of-indicators-for-the-design-of-an-app-for-teaching-lear" class="pc-link" target="_blank">Ver publicación <span>➔</span></a>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                    </div>
+                                    <style>
+                                        .pc-section-bg {
+                                        padding: 60px 0;
+                                        }
 
+                                        .pc-title-container {
+                                        text-align: center;
+                                        color: #074073;
+                                        font-weight: bold;
+                                        margin-bottom: 30px;
+                                        font-size: 28px;
+                                        }
 
+                                        .pc-research-card {
+                                        background: #ffffff;
+                                        border-radius: 8px;
+                                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                                        padding: 20px;
+                                        border: 2px solid #D0E1F9;
+                                        height: 100%;
+                                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                        }
 
+                                        .pc-research-card:hover {
+                                        transform: translateY(-5px);
+                                        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                                        border-color: #62B6F9;
+                                        }
+
+                                        .pc-research-card h4 {
+                                        font-size: 18px;
+                                        color: #003F88;
+                                        margin-bottom: 15px;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 8px;
+                                        }
+
+                                        .pc-icon {
+                                        color: #074073;
+                                        font-size: 22px;
+                                        }
+
+                                        .pc-research-card p {
+                                        font-size: 14px;
+                                        color: #5A6473;
+                                        line-height: 1.6;
+                                        margin-bottom: 10px;
+                                        }
+
+                                        .pc-link {
+                                        display: inline-flex;
+                                        align-items: center;
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                        color: #074073;
+                                        text-transform: uppercase;
+                                        text-decoration: none;
+                                        transition: color 0.3s ease;
+                                        }
+
+                                        .pc-link:hover {
+                                        color: #012d5c;
+                                        }
+
+                                        .pc-link span {
+                                        margin-left: 8px;
+                                        transition: transform 0.3s;
+                                        }
+
+                                        .pc-link:hover span {
+                                        transform: translateX(5px);
+                                        }
+                                    </style>
+                                </section>
+                                
                             
                         </div>
                 </section>
-                <!-- project end -->
 
 
 
@@ -407,14 +569,26 @@
                                 <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
                                     <h6 class="mil-muted mil-up mil-mb-15">Ubicación:</h6>
                                     <p class="mil-light-soft mil-up">Avenida 12 de Octubre, Quito, Ecuador</p>
-                                    <p class="mil-light-soft mil-up mil-mb-20">+593 99 371 0389</p>
+                                    <p class="mil-light-soft mil-up mil-mb-20">+593 2 2991 700</p>
                 
                                     <!-- Íconos de redes sociales -->
                                     <ul class="mil-social-icons mil-up">
-                                        <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li>
+                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.facebook.com/siteciapuce', '_blank')" class="social-icon">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
                                         <!-- <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li> -->
-                                        <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                                        <li>
+                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.linkedin.com/company/siteciapuce', '_blank')" class="social-icon">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.instagram.com/siteciapuce', '_blank')" class="social-icon">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
