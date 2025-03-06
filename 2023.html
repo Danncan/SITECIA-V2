@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- page name -->
-    <title>SITECIA</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
 
+    <title>Proyectos 2023 - SITECIA</title>
 </head>
 
 <body>
@@ -84,65 +85,7 @@
                         </nav>
 
                     </div>
-                    <div class="col-xl-7">
 
-                        <div class="mil-menu-right-frame">
-                            <div class="mil-animation-in">
-                                <div class="mil-animation-frame">
-                                    <div class="mil-animation mil-position-1 mil-scale" data-value-1="2" data-value-2="2"></div>
-                                </div>
-                            </div>
-                            <div class="mil-menu-right">
-                                <div class="row">
-                                    <div class="col-lg-8 mil-mb-60">
-
-                                        <h6 class="mil-muted mil-mb-30">Projects</h6>
-
-                                        <ul class="mil-menu-list">
-                                            <li><a href="project-1.html" class="mil-light-soft">Interior design studio</a></li>
-                                            <li><a href="project-2.html" class="mil-light-soft">Home Security Camera</a></li>
-                                            <li><a href="CienciaDeDatos.html" class="mil-light-soft">Kemia Honest Skincare</a></li>
-                                            <li><a href="project-4.html" class="mil-light-soft">Cascade of Lava</a></li>
-                                            <li><a href="project-5.html" class="mil-light-soft">Air Pro by Molekule</a></li>
-                                            <li><a href="project-6.html" class="mil-light-soft">Tony's Chocolonely</a></li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="col-lg-4 mil-mb-60">
-
-                                        <h6 class="mil-muted mil-mb-30">Useful links</h6>
-
-                                        <ul class="mil-menu-list">
-                                            <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                            <li><a href="#." class="mil-light-soft">Terms and conditions</a></li>
-                                            <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                            <li><a href="#." class="mil-light-soft">Careers</a></li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                                <div class="mil-divider mil-mb-60"></div>
-                                <div class="row justify-content-between">
-
-                                    <div class="col-lg-4 mil-mb-60">
-
-                                        <h6 class="mil-muted mil-mb-30">Canada</h6>
-
-                                        <p class="mil-light-soft mil-up">71 South Los Carneros Road, California <span class="mil-no-wrap">+51 174 705 812</span></p>
-
-                                    </div>
-                                    <div class="col-lg-4 mil-mb-60">
-
-                                        <h6 class="mil-muted mil-mb-30">Germany</h6>
-
-                                        <p class="mil-light-soft">Leehove 40, 2678 MC De Lier, Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -184,7 +127,124 @@
         <div class="mil-content">
             <div id="swupMain" class="mil-main-transition">
                  <!-- banner -->
-                 <div class="mil-inner-banner mil-p-0-120">
+                 <div class="mil-inner-banner mil-p-0-40">
+                    <div class="sitecia-navbar">
+                        <div class="sitecia-logo">
+                            <a href="home.html"></a>
+                        </div>
+                        <ul class="sitecia-nav-links">
+                            <li><a href="home.html">Inicio</a></li>
+                            <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
+                            <li><a href="NuestroEquipo.html">Equipo</a></li>
+                            <li class="sitecia-dropdown">
+                                <a href="#">Producción Científica ▾</a>
+                                <ul class="sitecia-dropdown-menu">
+                                    <li><a href="CienciaDeDatos.html">Ciencia de Datos</a></li>
+                                    <li><a href="GestionyGobiernodeDatos.html">Gobierno de Datos</a></li>
+                                    <li><a href="InteligenciaArtificial.html">IA</a></li>
+                                    <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
+                                    <li><a href="InfraestructuraTI.html">Infraestructura TI</a></li>
+                                    <li><a href="Redes.html">Redes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Proyectos.html"class="active">Proyectos</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <style>
+                        .sitecia-navbar {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            background-color: rgba(0, 0, 0, 0.95);
+                            z-index: 1000;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px 40px;
+                            font-family: 'Arial', sans-serif;
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                        }
+                        .sitecia-nav-links li a.active {
+                            color: #00AEEF;
+                            font-weight: bold;
+                        }
+
+                        .sitecia-logo a {
+                            color: #00AEEF;
+                            font-size: 24px;
+                            font-weight: bold;
+                            text-decoration: none;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                        }
+
+                        .sitecia-nav-links {
+                            list-style: none;
+                            display: flex;
+                            gap: 30px;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        .sitecia-nav-links li a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 16px;
+                            font-weight: 500;
+                            transition: color 0.3s ease;
+                        }
+
+                        .sitecia-nav-links li a:hover {
+                            color: #00AEEF;
+                        }
+
+                        /* Dropdown */
+                        .sitecia-dropdown {
+                            position: relative;
+                        }
+
+                        .sitecia-dropdown-menu {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            background-color: #111;
+                            list-style: none;
+                            padding: 10px 0;
+                            margin: 0;
+                            display: none;
+                            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+                        }
+
+                        .sitecia-dropdown:hover .sitecia-dropdown-menu {
+                            display: block;
+                        }
+
+                        .sitecia-dropdown-menu li {
+                            padding: 8px 20px;
+                        }
+
+                        .sitecia-dropdown-menu li a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 14px;
+                            transition: background-color 0.3s ease;
+                        }
+
+                        .sitecia-dropdown-menu li a:hover {
+                            background-color: #00AEEF;
+                            color: black;
+                        }
+
+                        /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
+                        @media (max-width: 1200px) {
+                            .sitecia-navbar {
+                                display: none;
+                            }
+                        }    
+
+                    </style>
                     <div class="mil-banner-content mil-up">
                         <div class="mil-animation-frame">
                             <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div>
@@ -220,179 +280,103 @@
                     </div>
                 </div>
 
-                <!-- portfolio -->
-                <section class="mil-portfolio-slider-frame" id="Proyectos">
-                    
-                    <div class="mil-animation-frame">
-                        <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="1" data-value-2="2" style="top: -60px; right: -4px;"></div>
-                    </div>
-                    <div class="container">
-                        <div class="row align-items-end">
-                            <div class="col-lg-9">
-                                <div class="swiper-container mil-portfolio-slider mil-up">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="img/2019/Img 2.webp" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0" style="height: 280px;">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <!-- Área de Investigación -->
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">Inteligencia Artificial
-                                                            </div> <!-- Área de investigación -->
-                                                        </div>
-                                                        <!-- Título del Proyecto -->
-                                                        <h5 style="text-align: justify;font-size: 16px;">MONITOREO Y ANÁLISIS DE EVENTOS DE INTERÉS CIUDADANO MEDIANTE EL USO DE TÉCNICAS DE INTELIGENCIA ARTIFICIAL. CASOS APLICADOS EN EL CONTEXTO DE LA SEGURIDAD PÚBLICA E INVESTIGACIÓN DEL ECUADOR</h5>
-                                                        <br>
-                                                        <!-- Autores -->
-                                                        <p class="research-authors" style="font-size: 0.9rem; color: #444; margin-bottom: 10px;">
-                                                            <strong style="color: #074073;">Autor:</strong> H. Roa, J. Chicaiza, D. Pulla, R. Reátegui, J. Galán
-                                                        </p>
-                                                        
-                                                    </div>
-                                                    <!-- Botón de acción -->
-                                                    <div data-swiper-parallax-y="100" data-swiper-parallax-opacity="0">
-                                                        <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/projects/monitoreo-y-an%C3%A1lisis-de-eventos-de-inter%C3%A9s-ciudadano-mediante-el-', '_blank')" class="mil-button mil-arrow-place" style="margin-left: 45px;">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                        
-                                                    </div>
-                                                </div>
-                                                
-                                            </div>
-
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="img/2019/Img 3.webp" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0" style="height: 280px;">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <!-- Área de Investigación -->
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">Ciberseguridad</div> <!-- Área de investigación -->
-                                                        </div>
-                                                        <!-- Título del Proyecto -->
-                                                        <h5 style="text-align: justify;">ANÁLISIS DE VULNERABILIDAD EN LA COMUNIDAD UNIVERSITARIA MEDIANTE APLICACIONES DE INGENIERÍA SOCIAL</h5>
-                                                        <!-- Autores -->
-                                                        <p class="research-authors" style="font-size: 0.9rem; color: #444; margin-bottom: 10px;">
-                                                            <strong style="color: #074073;">Autores:</strong> E. Guaña, H. Roa, N. Salgado, Y. Arteaga, S. Villacís
-
-
-                                                        </p>
-                                                        
-                                                    </div>
-                                                    <!-- Botón de acción -->
-                                                    <div data-swiper-parallax-y="100" data-swiper-parallax-opacity="0" style="margin-left:45px ;">
-                                                        <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/projects/an%C3%A1lisis-de-vulnerabilidad-en-la-comunidad-universitaria-mediante', '_blank')" class="mil-button mil-arrow-place" style="margin-left: 45px;">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="img/2019/Img 4.webp" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0" style="height: 280px;">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <!-- Área de Investigación -->
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">Redes</div> <!-- Área de investigación -->
-                                                        </div>
-                                                        <!-- Título del Proyecto -->
-                                                        <h5 style="text-align: justify;font-size: 16px;">CARACTERIZACIÓN CINEMÁTICA DE DOS CUERPOS EN COLISIÓN ELÁSTICA EN UNA DIMENSIÓN, DURANTE EL TIEMO DE CONTACTO, A TRAVÉS DE ENSAYOS DE LABORATORIO EN UN AMBIENTE CONTROLADO</h5>
-                                                        <!-- Autores -->
-                                                        <p class="research-authors" style="font-size: 0.9rem; color: #444; margin-bottom: 10px;">
-                                                            <strong style="color: #074073;">Autores:</strong> S. Arcos, C. Michelena, W. Rivera, S. Álvaro
-
-
-                                                        </p>
-                                                        
-                                                    </div>
-                                                    <!-- Botón de acción -->
-                                                    <div data-swiper-parallax-y="100" data-swiper-parallax-opacity="0" style="margin-left:45px ;">
-                                                        <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/projects/caracterizaci%C3%B3n-cinem%C3%A1tica-de-dos-cuerpos-en-colisi%C3%B3n-el%C3%A1stica-en', '_blank')" class="mil-button mil-arrow-place" style="margin-left: 45px;">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="img/2019/Img 5.webp" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0" style="height: 280px;">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <!-- Área de Investigación -->
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">Ciberseguridad</div> <!-- Área de investigación -->
-                                                        </div>
-                                                        <!-- Título del Proyecto -->
-                                                        <h5>MODELO DISRUPTIVO DE VIGILANCIA COMUNITARIA CIUDADANA</h5>
-                                                        <!-- Autores -->
-                                                        <p class="research-authors" style="font-size: 0.9rem; color: #444; margin-bottom: 10px;">
-                                                            <strong style="color: #074073;">Autores:</strong> N. Salgado, E. Guaña, H. Roa, J. Meza
-
-
-
-
-                                                        </p>
-                                                        
-                                                    </div>
-                                                    <!-- Botón de acción -->
-                                                    <div data-swiper-parallax-y="100" data-swiper-parallax-opacity="0" style="margin-left:45px ;">
-                                                        <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/projects/modelo-disruptivo-de-vigilancia-comunitaria-ciudadana', '_blank')" class="mil-button mil-arrow-place" style="margin-left: 45px;">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        
-                                        
-                                    </div>
+                <!-- Sección de proyectos  -->
+                <div class="container my-5"id="Proyectos">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="research-card-premium">
+                                <div class="research-card-header">
+                                    <span class="research-area">🔎 Seguridad Pública e Inteligencia Artificial</span>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 mil-relative">
-                                <div class="mil-portfolio-nav">
-                                    <div class="mil-portfolio-btns-frame">
-                                        <div class="swiper-portfolio-pagination"></div>
-                                        <div class="mil-slider-nav">
-                                            <div class="mil-slider-arrow mil-prev mil-portfolio-prev mil-arrow-place"></div>
-                                            <div class="mil-slider-arrow mil-portfolio-next mil-arrow-place"></div>
-                                        </div>
-                                    </div>
+                                <div class="research-card-body">
+                                    <h5 class="research-title">
+                                        Monitoreo y Análisis de Eventos de Interés Ciudadano Mediante el Uso de Técnicas de Inteligencia Artificial. Casos Aplicados en el Contexto de la Seguridad Pública e Investigación del Ecuador
+                                    </h5>
+                                    <p class="research-authors">
+                                        <strong>Autores:</strong> Henry Roa, Janneth Chicaiza, Daniel Pulla, Ruth Reátegui, Jorge Galán
+                                    </p>
+                                </div>
+                                <div class="research-card-footer">
+                                    <a href="#!" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/projects/monitoreo-y-an%C3%A1lisis-de-eventos-de-inter%C3%A9s-ciudadano-mediante-el-', '_blank'); return false;" 
+                                        class="research-btn">
+                                        Ver Proyecto <i class="fas fa-external-link-alt"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="research-card-premium">
+                                <div class="research-card-header">
+                                    <span class="research-area">📊 Ciencia de Datos</span>
+                                </div>
+                                <div class="research-card-body">
+                                    <h5 class="research-title">
+                                        Análisis de Vulnerabilidad en la Comunidad Universitaria Mediante Aplicaciones de Ingeniería Social
+                                    </h5>
+                                    <p class="research-authors">
+                                        <strong>Autores:</strong> Edison Guaña, Henry Roa, Nelson Salgado, Yamileth Arteaga, Sofía Villacís
+                                    </p>
+                                </div>
+                                <div class="research-card-footer">
+                                    <a href="#!" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/projects/an%C3%A1lisis-de-vulnerabilidad-en-la-comunidad-universitaria-mediante', '_blank'); return false;" 
+                                        class="research-btn">
+                                        Ver Proyecto <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="research-card-premium">
+                                <div class="research-card-header">
+                                    <span class="research-area">🧪 Redes y Física Aplicada</span>
+                                </div>
+                                <div class="research-card-body">
+                                    <h5 class="research-title">
+                                        Caracterización Cinemática de Dos Cuerpos en Colisión Elástica en una Dimensión, Durante el Tiempo de Contacto, a Través de Ensayos de Laboratorio en un Ambiente Controlado
+                                    </h5>
+                                    <p class="research-authors">
+                                        <strong>Autores:</strong> Suyana Arcos, César Michelena, Wilson Rivera, Santiago Álvaro
+                                    </p>
+                                </div>
+                                <div class="research-card-footer">
+                                    <a href="#!" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/projects/caracterizaci%C3%B3n-cinem%C3%A1tica-de-dos-cuerpos-en-colisi%C3%B3n-el%C3%A1stica-en', '_blank'); return false;" 
+                                        class="research-btn">
+                                        Ver Proyecto <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="research-card-premium">
+                                <div class="research-card-header">
+                                    <span class="research-area">🔐 Ciberseguridad</span>
+                                </div>
+                                <div class="research-card-body">
+                                    <h5 class="research-title">
+                                        Modelo Disruptivo de Vigilancia Comunitaria Ciudadana
+                                    </h5>
+                                    <p class="research-authors">
+                                        <strong>Autores:</strong> Nelson Salgado, Edison Guaña, Henry Roa, Jaime Meza
+                                    </p>
+                                </div>
+                                <div class="research-card-footer">
+                                    <a href="#!" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/projects/modelo-disruptivo-de-vigilancia-comunitaria-ciudadana', '_blank'); return false;" 
+                                        class="research-btn">
+                                        Ver Proyecto <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+          
                     </div>
-                </section>
-                <!-- portfolio end -->
+                    
+                </div>
+                <!-- Seccion de proyectos end -->
                 <br>
                 <br><br>
                 <br><br>

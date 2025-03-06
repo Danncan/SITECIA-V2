@@ -5049,3 +5049,89 @@ html.is-animating .mil-menu-frame {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
+/*** Proyectos de AÑO ***/
+.research-card-premium {
+  background: white;
+  border: 2px solid #074073;
+  border-left: 8px solid #074073;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.research-card-premium:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color: #0056b3;
+  border-left-color: #0056b3;
+}
+
+.research-card-header {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+  background: #074073;
+  padding: 5px 12px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.research-title {
+  font-size: 1rem;
+  color: #003F88;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  text-align: justify;
+}
+
+.research-authors {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0;
+  text-align: justify;
+}
+
+.research-authors strong {
+  color: #074073;
+}
+
+.research-card-footer {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.research-btn {
+  background: #074073;
+  color: white;
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.research-btn:hover {
+  background: #0056b3;
+  color: white;
+}
+
+.research-btn i {
+  font-size: 0.85rem;
+}
+
+/*** Fin Proyectos de AÑO ***/

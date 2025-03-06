@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="css/plugins/fancybox.min.css">
     <!-- ashley scss -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- page name -->
-    <title>SITECIA</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+    <title>Proyectos 2019 - SITECIA</title>
 
 </head>
 
@@ -125,7 +127,7 @@
         <div class="mil-content">
             <div id="swupMain" class="mil-main-transition">
                  <!-- banner -->
-                 <div class="mil-inner-banner mil-p-0-120">
+                 <div class="mil-inner-banner mil-p-0-40">
                     <div class="sitecia-navbar">
                         <div class="sitecia-logo">
                             <a href="home.html"></a>
@@ -145,7 +147,7 @@
                                     <li><a href="Redes.html">Redes</a></li>
                                 </ul>
                             </li>
-                            <li><a href="Proyectos.html">Proyectos</a></li>
+                            <li><a href="Proyectos.html" class="active">Proyectos</a></li>
                             <li><a href="contact.html">Contacto</a></li>
                         </ul>
                     </div>
@@ -230,7 +232,10 @@
                             background-color: #00AEEF;
                             color: black;
                         }
-
+                        .sitecia-nav-links li a.active {
+                            color: #00AEEF;
+                            font-weight: bold;
+                        }
                         /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
                         @media (max-width: 1200px) {
                             .sitecia-navbar {
@@ -275,8 +280,8 @@
                     </div>
                 </div>
 
-                <!-- portfolio -->
-                <section class="mil-portfolio-slider-frame" id="Proyectos">
+                <!-- Formato de Carrusel  -->
+                <!-- <section class="mil-portfolio-slider-frame" id="Proyectos">
                     
                     <div class="mil-animation-frame">
                         <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="1" data-value-2="2" style="top: -60px; right: -4px;"></div>
@@ -296,21 +301,17 @@
                                                 </div>
                                                 <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0" style="height: 280px;">
                                                     <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <!-- Área de Investigación -->
                                                         <div class="mil-labels mil-mb-15">
                                                             <div class="mil-label mil-upper mil-accent">Gestión y Gobierno de Datos
-                                                            </div> <!-- Área de investigación -->
+                                                            </div> 
                                                         </div>
-                                                        <!-- Título del Proyecto -->
                                                         <h5 style="text-align: justify;">ESTUDIO EXPLORATORIO DE LA ADOPCIÓN DE OPEN DATA EN ENTIDADES GUBERNAMENTALES ECUATORIANAS: PASADO, PRESENTE Y FUTURO</h5>
                                                         <br>
-                                                        <!-- Autores -->
                                                         <p class="research-authors" style="font-size: 0.9rem; color: #444; margin-bottom: 10px;">
                                                             <strong style="color: #074073;">Autores:</strong> J. Condor, N. Salgado, H.N. Roa, J.F. Chafla
                                                         </p>
                                                         
                                                     </div>
-                                                    <!-- Botón de acción -->
                                                     <div data-swiper-parallax-y="100" data-swiper-parallax-opacity="0">
                                                         <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/projects/estudio-exploratorio-de-la-adopci%C3%B3n-de-open-data-en-entidades-gub', '_blank')" class="mil-button mil-arrow-place" style="margin-left: 45px;">
                                                             <span>View Project</span>
@@ -321,43 +322,7 @@
                                                 
                                             </div>
 
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-slider-item" data-swiper-parallax="-30">
-                                                <div class="mil-cover-frame mil-drag">
-                                                    <div class="mil-cover" data-swiper-parallax-scale="1.3">
-                                                        <img src="img/2019/Img1.webp" alt="cover">
-                                                    </div>
-                                                </div>
-                                                <div class="mil-descr" data-swiper-parallax-x="104%" data-swiper-parallax-opacity="0" style="height: 280px;">
-                                                    <div class="mil-descr-text" data-swiper-parallax-y="100%" data-swiper-parallax-opacity="0">
-                                                        <!-- Área de Investigación -->
-                                                        <div class="mil-labels mil-mb-15">
-                                                            <div class="mil-label mil-upper mil-accent">Ciencia de Datos</div> <!-- Área de investigación -->
-                                                        </div>
-                                                        <!-- Título del Proyecto -->
-                                                        <h5>Modelo de Datos-Contexto Universitario: toma de decisiones</h5>
-                                                        <!-- Autores -->
-                                                        <p class="research-authors" style="font-size: 0.9rem; color: #444; margin-bottom: 10px;">
-                                                            <strong style="color: #074073;">Autores:</strong> J. Condor, N. Salgado, H.N. Roa, J.F. Chafla
-
-
-                                                        </p>
-                                                        
-                                                    </div>
-                                                    <!-- Botón de acción -->
-                                                    <div data-swiper-parallax-y="100" data-swiper-parallax-opacity="0" style="margin-left:45px ;">
-                                                        <a href="project-2.html" class="mil-button mil-arrow-place">
-                                                            <span>View Project</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        
-                                        
+                                        </div>                                      
                                     </div>
                                 </div>
                             </div>
@@ -374,12 +339,148 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <!-- portfolio end -->
-                <br>
-                <br><br>
-                <br><br>
-                 <!-- footer -->
+                </section> -->
+
+                <!--Sección donde Se muestran los Proyectos -->
+                <div class="container my-5">
+                    <div class="row justify-content-center">
+                        <!-- Tarjeta 1 -->
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="research-card-premium">
+                                <div class="research-card-header">
+                                    <span class="research-area">🔗 Gestión y Gobierno de Datos</span>
+                                </div>
+                                <div class="research-card-body">
+                                    <h5 class="research-title">
+                                        Estudio Exploratorio de la Adopción de Open Data en Entidades Gubernamentales Ecuatorianas: Pasado, Presente y Futuro
+                                    </h5>
+                                    <p class="research-authors">
+                                        <strong>Autores:</strong> J. Condor, N. Salgado, H.N. Roa, J.F. Chafla
+                                    </p>
+                                </div>
+                                <div class="research-card-footer">
+                                    <a href="#!" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/projects/estudio-exploratorio-de-la-adopci%C3%B3n-de-open-data-en-entidades-gub', '_blank'); return false;" class="research-btn">
+                                        Ver Proyecto <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Tarjeta 2 Ejmplo: -->
+                        <!-- 
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="research-card-premium">
+                                <div class="research-card-header">
+                                    <span class="research-area">🔗 Gestión y Gobierno de Datos</span>
+                                </div>
+                                <div class="research-card-body">
+                                    <h5 class="research-title">
+                                        Estudio Exploratorio de la Adopción de Open Data en Entidades Gubernamentales Ecuatorianas: Pasado, Presente y Futuro
+                                    </h5>
+                                    <p class="research-authors">
+                                        <strong>Autores:</strong> J. Condor, N. Salgado, H.N. Roa, J.F. Chafla
+                                    </p>
+                                </div>
+                                <div class="research-card-footer">
+                                    <a href="#!" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/projects/estudio-exploratorio-de-la-adopci%C3%B3n-de-open-data-en-entidades-gub', '_blank'); return false;" class="research-btn">
+                                        Ver Proyecto <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <style>
+
+                    .research-card-premium {
+                        background: white;
+                        border: 2px solid #074073;
+                        border-left: 8px solid #074073;
+                        border-radius: 12px;
+                        padding: 20px;
+                        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+                        transition: all 0.3s ease;
+                        position: relative;
+                        overflow: hidden;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+
+                    .research-card-premium:hover {
+                        transform: translateY(-8px);
+                        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+                        border-color: #0056b3;
+                        border-left-color: #0056b3;
+                    }
+
+                    .research-card-header {
+                        font-size: 0.85rem;
+                        font-weight: bold;
+                        color: white;
+                        background: #074073;
+                        padding: 5px 12px;
+                        display: inline-block;
+                        border-radius: 4px;
+                        margin-bottom: 12px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                    }
+
+                    .research-title {
+                        font-size: 1rem;
+                        color: #003F88;
+                        font-weight: bold;
+                        line-height: 1.4;
+                        margin: 0 0 8px 0;
+                        text-align: justify;
+                    }
+
+                    .research-authors {
+                        font-size: 0.85rem;
+                        color: #555;
+                        margin: 0;
+                        text-align: justify;
+                    }
+
+                    .research-authors strong {
+                        color: #074073;
+                    }
+
+                    .research-card-footer {
+                        margin-top: 15px;
+                        text-align: right;
+                    }
+
+                    .research-btn {
+                        background: #074073;
+                        color: white;
+                        font-size: 0.85rem;
+                        padding: 8px 16px;
+                        border-radius: 6px;
+                        text-decoration: none;
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 6px;
+                        font-weight: bold;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    .research-btn:hover {
+                        background: #0056b3;
+                        color: white;
+                    }
+
+                    .research-btn i {
+                        font-size: 0.85rem;
+                    }
+
+                </style>                
+                
+
+
                  <!-- footer -->
                 <footer class="mil-dark-bg">
                     <div class="mi-invert-fix">
