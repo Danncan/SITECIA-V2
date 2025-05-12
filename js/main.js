@@ -913,3 +913,115 @@ document.addEventListener("swup:contentReplaced", function () {
     ScrollTrigger.refresh();
     $('html, body').animate({ scrollTop: 0 }, 0);
 });
+
+const swup = new Swup({
+    containers: ["#swupMain"],
+    animateHistoryBrowsing: true,
+    linkSelector: 'a[href^="' + window.location.origin + '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]), a[href*="#"]:not([data-no-swup])'
+});
+
+// Función robusta de scroll con espera hasta que el elemento exista
+function scrollToAnchor(hash) {
+    const attemptScroll = (retries = 10) => {
+        const target = document.querySelector(hash);
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        } else if (retries > 0) {
+            setTimeout(() => attemptScroll(retries - 1), 100);
+        }
+    };
+    attemptScroll();
+}
+
+// Manejar enlaces con # lineas de investigación
+document.addEventListener('click', event => {
+    const link = event.target.closest('a[href*="#"]');
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+    const [url, hash] = href.split("#");
+
+    if (!hash) return;
+
+    event.preventDefault();
+
+    // Navegación dentro de misma página
+    if (window.location.pathname === new URL(link.href).pathname) {
+        scrollToAnchor("#" + hash);
+    } else {
+        swup.loadPage({
+            url: url + "#" + hash,
+            scrollTo: false
+        });
+    }
+});
+
+// Al terminar transición, hacer scroll si hay hash
+swup.on('contentReplaced', () => {
+    if (window.location.hash) {
+        scrollToAnchor(window.location.hash);
+    }
+});
+function scrollToAnchor(hash) {
+    const target = document.querySelector(hash);
+    if (target) {
+        window.scrollTo({
+            top: target.getBoundingClientRect().top + window.scrollY - 150,
+            behavior: 'smooth'
+        });
+    }
+}
+
+// Agrega este listener solo para los clicks del menú
+document.querySelector('.sitecia-navbar')?.addEventListener('click', event => {
+    const link = event.target.closest('a[href*="#"]');
+    if (!link) return;
+
+    const hash = link.getAttribute('href').split("#")[1];
+    if (!hash) return;
+
+    event.preventDefault();
+
+    const isSamePage = window.location.pathname === new URL(link.href).pathname;
+    const targetHash = `#${hash}`;
+
+    if (isSamePage) {
+        scrollToAnchor(targetHash, true); // viene del navbar
+    } else {
+        swup.loadPage({
+            url: link.href,
+            scrollTo: false
+        });
+    }
+});
+
+function scrollToAnchor(hash, isFromNavbar = false) {
+    const target = document.querySelector(hash);
+    if (!target) return;
+
+    const headerHeight = 160; // Ajusta según tu navbar real
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+    // Hacer scroll inicial
+    window.scrollTo({
+        top: targetTop,
+        behavior: 'smooth'
+    });
+
+    // Reforzar el scroll luego de 300ms (por si algo animado mueve el DOM)
+    setTimeout(() => {
+        const retryTarget = document.querySelector(hash);
+        if (retryTarget) {
+            const retryTop = retryTarget.getBoundingClientRect().top + window.scrollY - headerHeight;
+            window.scrollTo({
+                top: retryTop,
+                behavior: 'auto'
+            });
+        }
+    }, 300);
+}
+
+// final lineas de investigación clicks 
