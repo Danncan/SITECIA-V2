@@ -1,616 +1,921 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- bootstrap grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
     <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
     <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
     <!-- fancybox css -->
-    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
     <!-- scss -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- favicon -->
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
 
     <title>Inicio - SITECIA</title>
-    
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
+      <!-- scrollbar progress -->
+      <div class="mil-progress-track">
+        <div class="mil-progress"></div>
+      </div>
+      <!-- scrollbar progress end -->
 
-        <!-- scrollbar progress -->
-        <div class="mil-progress-track">
-            <div class="mil-progress"></div>
+      <!-- menu -->
+      <div class="mil-menu-frame">
+        <!-- frame clone -->
+        <div class="mil-frame-top">
+          <a href="home.html" class="mil-logo">
+            <img
+              src="img/Logo_Escala_Grises.png"
+              alt="Logo SITECIA"
+              class="logo-sitecia-img"
+            />
+          </a>
+          <div class="mil-menu-btn">
+            <span></span>
+          </div>
         </div>
-        <!-- scrollbar progress end -->
 
-        <!-- menu -->
-        <div class="mil-menu-frame">
-            <!-- frame clone -->
-            <div class="mil-frame-top">
-                <a href="home.html" class="mil-logo">
-                    <img src="img/Logo_Escala_Grises.png" alt="Logo SITECIA" class="logo-sitecia-img">
-                </a>
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
+        <!-- frame clone end -->
+        <div class="container">
+          <div class="mil-menu-content">
+            <div class="row">
+              <div class="col-xl-5">
+                <nav class="mil-main-menu" id="swupMenu">
+                  <ul>
+                    <li class="mil-has-children mil-active">
+                      <a href="home.html">Página de Inicio</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="NuestroEquipo.html">Nuestro Equipo</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="LineasDeInvestigacion.html"
+                        >Líneas de Investigación</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="CienciaDeDatos.html">Ciencias de Datos</a>
+                        </li>
+                        <li>
+                          <a href="GestionyGobiernodeDatos.html"
+                            >Gestión y Gobierno de Datos</a
+                          >
+                        </li>
+                        <li>
+                          <a href="InteligenciaArtificial.html"
+                            >Inteligencia Artificial</a
+                          >
+                        </li>
+                        <li>
+                          <a href="Ciberseguridad.html">Ciberseguridad</a>
+                        </li>
+                        <li>
+                          <a href="InfraestructuraTI.html"
+                            >Infraestructura de TI</a
+                          >
+                        </li>
+                        <li><a href="Redes.html">Redes</a></li>
+                      </ul>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="ProducciónCientíficaList.html"
+                        >Producción Científica</a
+                      >
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="Proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="contact.html">Contacto</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-            
-            <!-- frame clone end -->
-            <div class="container">
-                <div class="mil-menu-content">
-                    <div class="row">
-                        <div class="col-xl-5">
+          </div>
+        </div>
+      </div>
+      <!-- menu -->
 
-                            <nav class="mil-main-menu" id="swupMenu">
-                                <ul>
-                                    <li class="mil-has-children mil-active">
-                                        <a href="home.html">Página de Inicio</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="NuestroEquipo.html">Nuestro Equipo</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="LineasDeInvestigacion.html">Líneas de Investigación </a>
-                                        <ul>
-                                            <li><a href="CienciaDeDatos.html">Ciencias de Datos</a></li>
-                                            <li><a href="GestionyGobiernodeDatos.html">Gestión y Gobierno de Datos</a></li>
-                                            <li><a href="InteligenciaArtificial.html">Inteligencia Artificial</a></li>
-                                            <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
-                                            <li><a href="InfraestructuraTI.html">Infraestructura de TI</a></li>
-                                            <li><a href="Redes.html">Redes</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="Proyectos.html">Proyectos</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="contact.html">Contacto</a>
-                                    </li>
-                                </ul>
-                            </nav>
+      <!-- curtain -->
+      <div class="mil-curtain"></div>
+      <!-- curtain end -->
 
-                        </div>
-                        
+      <!-- frame -->
+      <div class="mil-frame">
+        <div class="mil-frame-top">
+          <a href="home.html" class="mil-logo">
+            <picture>
+              <source
+                srcset="img/Logo_Escala_Grises.png"
+                media="(max-width: 1200px)"
+              />
+              <img
+                src="img/Logo Sitecia Negro.png"
+                alt="Logo SITECIA"
+                class="logo-sitecia-img"
+              />
+            </picture>
+          </a>
+
+          <div class="mil-menu-btn">
+            <span></span>
+          </div>
+        </div>
+        <div class="mil-frame-bottom">
+          <div class="mil-current-page"></div>
+          <div class="mil-back-to-top">
+            <a href="#top" class="mil-link mil-dark mil-arrow-place">
+              <span>Volver Arriba</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- frame end -->
+
+      <!-- content -->
+      <div class="mil-content">
+        <div id="swupMain" class="mil-main-transition">
+          <!-- banner -->
+          <section class="mil-banner mil-dark-bg">
+            <!-- Barra de Navegación Superior-->
+            <div class="sitecia-navbar">
+              <div class="sitecia-logo">
+                <a href="home.html"></a>
+              </div>
+              <ul class="sitecia-nav-links">
+                <li><a href="home.html" class="active">Inicio</a></li>
+                <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
+                <li><a href="NuestroEquipo.html">Equipo</a></li>
+                <li class="sitecia-dropdown">
+                  <a href="LineasDeInvestigacion.html"
+                    >Línea de Investigación ▾</a
+                  >
+                  <ul class="sitecia-dropdown-menu">
+                    <li>
+                      <a href="LineasDeInvestigacion.html#CienciaDeDatos"
+                        >Ciencia de Datos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="LineasDeInvestigacion.html#GestionyGobiernodeDatos"
+                        >Gobierno de Datos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="LineasDeInvestigacion.html#InteligenciaArtificial"
+                        >Inteligencia Artificial</a
+                      >
+                    </li>
+                    <li>
+                      <a href="LineasDeInvestigacion.html#Ciberseguridad"
+                        >Ciberseguridad</a
+                      >
+                    </li>
+                    <li>
+                      <a href="LineasDeInvestigacion.html#InfraestructuraTI"
+                        >Infraestructura TI</a
+                      >
+                    </li>
+                    <li>
+                      <a href="LineasDeInvestigacion.html#Redes">Redes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="ProducciónCientíficaList.html"
+                    >Producción Científica</a
+                  >
+                </li>
+                <li><a href="Proyectos.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+              </ul>
+            </div>
+            <!-- Estilos de la barra de navegación -->
+            <style>
+              .sitecia-navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.95);
+                z-index: 1000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 40px;
+                font-family: "Arial", sans-serif;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+              }
+
+              .sitecia-logo a {
+                color: #00aeef;
+                font-size: 24px;
+                font-weight: bold;
+                text-decoration: none;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+              }
+
+              .sitecia-nav-links {
+                list-style: none;
+                display: flex;
+                gap: 30px;
+                margin: 0;
+                padding: 0;
+              }
+
+              .sitecia-nav-links li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                transition: color 0.3s ease;
+              }
+
+              .sitecia-nav-links li a:hover {
+                color: #00aeef;
+              }
+
+              /* Dropdown */
+              .sitecia-dropdown {
+                position: relative;
+              }
+
+              .sitecia-dropdown-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #111;
+                list-style: none;
+                padding: 10px 0;
+                margin: 0;
+                display: none;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+              }
+
+              .sitecia-dropdown:hover .sitecia-dropdown-menu {
+                display: block;
+              }
+
+              .sitecia-dropdown-menu li {
+                padding: 8px 20px;
+              }
+
+              .sitecia-dropdown-menu li a {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                transition: background-color 0.3s ease;
+              }
+
+              .sitecia-dropdown-menu li a:hover {
+                background-color: #00aeef;
+                color: black;
+              }
+
+              .sitecia-nav-links li a.active {
+                color: #00aeef;
+                font-weight: bold;
+              }
+
+              /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
+              @media (max-width: 1200px) {
+                .sitecia-navbar {
+                  display: none;
+                }
+              }
+            </style>
+
+            <!--Sección de Innovando para un futuro Mejor-->
+            <div class="mi-invert-fix">
+              <!--Figuras de polígonos -->
+              <div class="mil-animation-frame">
+                <div
+                  class="mil-animation mil-position-1 mil-scale"
+                  data-value-1="7"
+                  data-value-2="1.6"
+                ></div>
+                <div
+                  class="mil-animation mil-position-2 mil-scale"
+                  data-value-1="4"
+                  data-value-2="1"
+                ></div>
+                <div
+                  class="mil-animation mil-position-3 mil-scale"
+                  data-value-1="1.2"
+                  data-value-2=".1"
+                ></div>
+              </div>
+
+              <div class="mil-gradient"></div>
+
+              <div class="container">
+                <div class="mil-banner-content mil-up">
+                  <h1 class="mil-muted mil-mb-60">
+                    Innovando <span class="mil-thin">un Futuro</span><br />
+                    Mejor <span class="mil-thin">Hoy</span>
+                  </h1>
+                  <div class="row">
+                    <div class="col-md-7 col-lg-5">
+                      <p class="mil-light-soft mil-mb-60">
+                        Bienvenido a SITECIA, donde la tecnología y la
+                        investigación aplicada se unen para transformar el
+                        mundo. Descubre cómo nuestros proyectos impulsan
+                        soluciones innovadoras para los desafíos tecnológicos de
+                        hoy.
+                      </p>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- menu -->
-        
-        <!-- curtain -->
-        <div class="mil-curtain"></div>
-        <!-- curtain end -->
+                  </div>
 
-        <!-- frame -->
-        <div class="mil-frame">
-            <div class="mil-frame-top">
-                <a href="home.html" class="mil-logo">
-                    <picture>
-                        <source srcset="img/Logo_Escala_Grises.png" media="(max-width: 1200px)">
-                        <img src="img/Logo Sitecia Negro.png" alt="Logo SITECIA" class="logo-sitecia-img">
-                    </picture>
-                </a>
-                
-                  
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
-            </div>
-            <div class="mil-frame-bottom">
-                <div class="mil-current-page"></div>
-                <div class="mil-back-to-top">
-                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Volver Arriba</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- frame end -->
+                  <a
+                    href="ProducciónCientífica.html"
+                    class="mil-button mil-arrow-place mil-btn-space"
+                  >
+                    <span>Producción Científica</span>
+                  </a>
 
-        <!-- content -->
-        <div class="mil-content">
-            <div id="swupMain" class="mil-main-transition">
-
-                <!-- banner -->
-                <section class="mil-banner mil-dark-bg">
-                    <!-- Barra de Navegación Superior-->
-                    <div class="sitecia-navbar">
-                        <div class="sitecia-logo">
-                            <a href="home.html"></a>
-                        </div>
-                        <ul class="sitecia-nav-links">
-                            <li><a href="home.html" class="active">Inicio</a></li>
-                            <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
-                            <li><a href="NuestroEquipo.html">Equipo</a></li>
-                            <li class="sitecia-dropdown">
-                                <a href="LineasDeInvestigacion.html">Línea de Investigación ▾</a>
-                                <ul class="sitecia-dropdown-menu">
-                                    <li><a href="LineasDeInvestigacion.html#CienciaDeDatos">Ciencia de Datos</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#GestionyGobiernodeDatos">Gobierno de Datos</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#InteligenciaArtificial">Inteligencia Artificial</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#Ciberseguridad">Ciberseguridad</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#InfraestructuraTI">Infraestructura TI</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#Redes">Redes</a></li>                               
-                                </ul>
-                            </li>
-                            <li><a href="ProducciónCientíficaList.html">Producción Científica</a></li>
-                            <li><a href="Proyectos.html">Proyectos</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                    <!-- Estilos de la barra de navegación -->
-                    <style>
-                        .sitecia-navbar {
-                            position: fixed;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            background-color: rgba(0, 0, 0, 0.95);
-                            z-index: 1000;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            padding: 10px 40px;
-                            font-family: 'Arial', sans-serif;
-                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-                        }
-
-                        .sitecia-logo a {
-                            color: #00AEEF;
-                            font-size: 24px;
-                            font-weight: bold;
-                            text-decoration: none;
-                            letter-spacing: 1px;
-                            text-transform: uppercase;
-                        }
-
-                        .sitecia-nav-links {
-                            list-style: none;
-                            display: flex;
-                            gap: 30px;
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        .sitecia-nav-links li a {
-                            color: white;
-                            text-decoration: none;
-                            font-size: 16px;
-                            font-weight: 500;
-                            transition: color 0.3s ease;
-                        }
-
-                        .sitecia-nav-links li a:hover {
-                            color: #00AEEF;
-                        }
-
-                        /* Dropdown */
-                        .sitecia-dropdown {
-                            position: relative;
-                        }
-
-                        .sitecia-dropdown-menu {
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            background-color: #111;
-                            list-style: none;
-                            padding: 10px 0;
-                            margin: 0;
-                            display: none;
-                            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-                        }
-
-                        .sitecia-dropdown:hover .sitecia-dropdown-menu {
-                            display: block;
-                        }
-
-                        .sitecia-dropdown-menu li {
-                            padding: 8px 20px;
-                        }
-
-                        .sitecia-dropdown-menu li a {
-                            color: white;
-                            text-decoration: none;
-                            font-size: 14px;
-                            transition: background-color 0.3s ease;
-                        }
-
-                        .sitecia-dropdown-menu li a:hover {
-                            background-color: #00AEEF;
-                            color: black;
-                        }
-
-                        .sitecia-nav-links li a.active {
-                            color: #00AEEF;
-                            font-weight: bold;
-                        }
-
-
-                        /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
-                        @media (max-width: 1200px) {
-                            .sitecia-navbar {
-                                display: none;
-                            }
-                        }        
-                    </style>
-                    
-                    <!--Sección de Innovando para un futuro Mejor-->
-                    <div class="mi-invert-fix">
-                        <!--Figuras de polígonos -->
-                        <div class="mil-animation-frame">
-                            <div class="mil-animation mil-position-1 mil-scale" data-value-1="7" data-value-2="1.6"></div>
-                            <div class="mil-animation mil-position-2 mil-scale" data-value-1="4" data-value-2="1"></div>
-                            <div class="mil-animation mil-position-3 mil-scale" data-value-1="1.2" data-value-2=".1"></div>
-                        </div>
-
-                        <div class="mil-gradient"></div>
-
-                        <div class="container">
-                            <div class="mil-banner-content mil-up">
-                                <h1 class="mil-muted mil-mb-60">Innovando <span class="mil-thin">un Futuro</span><br> Mejor <span class="mil-thin">Hoy</span></h1>
-                                <div class="row">
-                                    <div class="col-md-7 col-lg-5">
-                                        <p class="mil-light-soft mil-mb-60">Bienvenido a SITECIA, donde la tecnología y la investigación aplicada se unen para transformar el mundo. Descubre cómo nuestros proyectos impulsan soluciones innovadoras para los desafíos tecnológicos de hoy.</p>
-                                    </div>
-                                </div>
-                        
-                                <a href="ProducciónCientífica.html" class="mil-button mil-arrow-place mil-btn-space">
-                                    <span>Producción Científica</span>
-                                </a>
-                        
-                                <!-- <a href="Proyectos.html" class="mil-link mil-muted mil-arrow-place">
+                  <!-- <a href="Proyectos.html" class="mil-link mil-muted mil-arrow-place">
                                     <span>Ver Proyectos</span>
                                 </a> -->
-                        <!-- Botón circular Para desplazarse hacía abajo  -->
-                                <div class="mil-circle-text">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
-                                        <defs>
-                                            <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
-                                        </defs>
-                                        <circle cx="150" cy="100" r="75" fill="none" />
-                                        <g>
-                                            <use xlink:href="#circlePath" fill="none" />
-                                            <text style="letter-spacing: 6.5px">
-                                                <textPath xlink:href="#circlePath">Desplázate hacia abajo - Desplázate hacia abajo - </textPath>
-                                            </text>
-                                        </g>
-                                    </svg>
-                                    <a href="#ConoceSitecia" class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </section>
-                <!-- Fin de la sección de Innovando para un futuro Mejor -->
-
-                <!-- Conoce SITECIA (Acrónimo) -->
-                <section id="ConoceSitecia">
-                    <div class="container mil-p-120-10">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-lg-6">
-                                <div class="mil-mb-90">
-                                    <h2 class="mil-up mil-mb-60 acronimo-sitecia">
-                                        <div><span class="highlight">Si</span>stemas y</div>
-                                        <div><span class="highlight">Tec</span>cnologías de la</div>
-                                        <div><span class="highlight">I</span>nformación</div>
-                                        <div><span class="highlight">A</span>plicados (<span class="highlight">SITECIA</span>)</div>
-                                    </h2>
-                                                                    
-                                                                        <p class="mil-up mil-mb-30">
-                                        SITECIA es un grupo de investigación en sistemas y tecnologías de la información, comprometido con desarrollar soluciones innovadoras en ciencia de datos, inteligencia artificial, ciberseguridad y más.
-                                    </p>
-                                    <p class="mil-up mil-mb-60">
-                                        Nuestro equipo multidisciplinario colabora con empresas e instituciones para enfrentar desafíos tecnológicos y contribuir al desarrollo sostenible del Ecuador.
-                                    </p>
-                                    <div class="mil-up">
-                                        <a href="NuestroEquipo.html" class="mil-button mil-arrow-place mil-mb-60">
-                                            <span>Conoce Nuestro Equipo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="mil-about-photo mil-mb-90">
-                                    <div class="mil-lines-place"></div>
-                                    <div class="mil-up mil-img-frame" style="padding-bottom: 160%;">
-                                        <img src="img/Home/NuestraeXPERIENCIA.webp" alt="Imagen representativa de SITECIA" class="mil-scale" data-value-1="1" data-value-2="1.2" style="top: 75px; height: 74%;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Botón circular Para desplazarse hacía abajo  -->
-                        <div class="mil-circle-text" style="right: 200px; bottom: 45px;">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
-                                <defs>
-                                    <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
-                                </defs>
-                                <circle cx="150" cy="100" r="75" fill="none" />
-                                <g>
-                                    <use xlink:href="#circlePath" fill="none" />
-                                    <text style="letter-spacing: 6.5px; fill: black; font-weight: bold;">
-                                        <textPath xlink:href="#circlePath">Desplázate hacia abajo - Desplázate hacia abajo - </textPath>
-                                    </text>
-                                    
-                                </g>
-                            </svg>
-                            <a href="#Projects" class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
-                        </div>
-                    </div>
-                </section>
-            
-                <!-- banner end -->
-                <script src="js/Animation.js"></script>
-
-            
-                <!-- Sección de Nuestra Experiencia  -->
-                <section class="mil-dark-bg" id="Projects">
-                    <div class="mi-invert-fix">
-                        <!--Sección de Polígonos Animados-->
-                        <div class="mil-animation-frame">
-                            <div class="mil-animation mil-position-1 mil-scale" data-value-1="2.4" data-value-2="1.4" style="top: 300px; right: -100px"></div>
-                            <div class="mil-animation mil-position-2 mil-scale" data-value-1="2" data-value-2="1" style="left: 150px"></div>
-                        </div>
-                        <div class="container mil-p-120-10">
-                            <div class="row justify-content-between align-items-center">
-                                <div class="col-lg-6 col-xl-5">
-                                    <div class="mil-mb-90">
-                                        <h2 class="mil-up mil-mb-60 mil-muted">Nuestra <span class="mil-thin">Experiencia</span></h2>
-                                        <p class="mil-light-soft">SITECIA es un grupo de investigación en Sistemas y Tecnologías de la Información Aplicados que fue establecido en octubre de 2022 en la Pontificia Universidad Católica del Ecuador (PUCE), como parte de la Facultad de Ingeniería. El equipo de SITECIA está conformado por docentes investigadores de la PUCE e investigadores asociados de otras universidades.</p>
-                                        <!-- Sección donde se limita el contado de los proyectos/Años de Experiencia y Publicaciones científicas-->
-                                        <div class="mil-stats">
-                                            <div class="mil-stat">
-                                                <!--Modificar el Data Target para definir el valor máximo del contador-->
-                                                <span class="mil-counter" data-target="50">0</span>
-                                                <p class="mil-light-soft">Proyectos Completados</p>
-                                            </div>
-                                            <div class="mil-stat">
-                                                <span class="mil-counter" data-target="10">0</span>
-                                                <p class="mil-light-soft">Años de Experiencia</p>
-                                            </div>
-                                            <div class="mil-stat">
-                                                <span class="mil-counter" data-target="30">0</span>
-                                                <p class="mil-light-soft">Publicaciones Científicas</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="mil-about-photo mil-mb-90">
-                                        <div class="mil-lines-place"></div>
-                                        <div class="mil-up mil-img-frame" style="padding-bottom: 160%;">
-                                            <img src="img/Home/NuestraeXPERIENCIA.webp" alt="Imagen representativa de SITECIA" class="mil-scale" data-value-1="1" data-value-2="1.2" style="top: 75px; height: 74%;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Botón circular Para desplazarse hacía abajo  -->
-                            <div class="mil-circle-text"style="right: 205px; bottom: 45px;">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
-                                    <defs>
-                                        <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
-                                    </defs>
-                                    <circle cx="150" cy="100" r="75" fill="none" />
-                                    <g>
-                                        <use xlink:href="#circlePath" fill="none" />
-                                        <text style="letter-spacing: 6.5px">
-                                            <textPath xlink:href="#circlePath">Desplázate hacia abajo - Desplázate hacia abajo - </textPath>
-                                        </text>
-                                    </g>
-                                </svg>
-                                <a href="#about" class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Fin de la sección de Nuestra Experiencia -->
-
-
-                <!-- Proyectos Transformadores: -->
-                <section id="about">
-                    <div class="mil-animation-frame">
-                        <!-- Figuras animadas con solo bordes de colores -->
-                        <div class="mil-animation mil-position-1 mil-scale" data-value-1="2.4" data-value-2="1.4" style="top: 300px; right: -100px; background-color: transparent; border: 4px solid #2196F3;"></div> <!-- Verde -->
-                        <div class="mil-animation mil-position-2 mil-scale" data-value-1="2" data-value-2="1" style="left: 150px; background-color: transparent; border: 4px solid #2196F3;"></div> <!-- Azul -->
-                    </div>
-                    <div class="container mil-p-120-0">
-                        <div class="mil-mb-120">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10">
-                                    <!-- Texto en negro -->
-                                    <div class="mil-complex-text justify-content-center mil-up mil-mb-15" style="color: black;">
-                                        <span class="mil-text-image"><img src="img/Home/2.jpg" alt="team"></span>
-                                        <h2 class="mil-h1 mil-center" style="color: black;">Proyectos <span class="mil-thin">Transformadores</span></h2>
-                                    </div>
-                                    <div class="mil-complex-text justify-content-center mil-up" style="color: black;">
-                                        <h2 class="mil-h1 mil-center" style="color: black;">Enfrentando <span class="mil-thin">Desafíos Tecnológicos</span></h2>
-                                        <a href="Proyectos.html" class="mil-services-button mil-button mil-arrow-place"><span>Nuestros Proyectos</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Fin de Proyectos Innovadores -->
-
-                <!-- footer -->
-                <footer class="mil-dark-bg">
-                    <div class="mi-invert-fix">
-                        <div class="container mil-p-40-30 mil-pt-70"> <!-- Añadí mil-pt-50 para más espacio arriba -->
-                            <div class="row">
-                                <!-- Columna 1: Logo y derechos -->
-                                <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-                                    <div class="mil-muted mil-logo mil-up mil-mb-15">Sitecia.</div>
-                                    <p class="mil-light-soft mil-up mil-mb-10">© Copyright <span id="currentYear"></span> - SITECIA. All Rights Reserved.</p>
-                                    <script>
-                                        document.getElementById('currentYear').textContent = new Date().getFullYear();
-                                    </script>
-                                    <p class="mil-light-soft mil-up">© Desarrollado por: Danny Cano Y.</p>
-                                </div>
-                
-                                <!-- Columna 2: Enlaces -->
-                                <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-
-                                </div>
-                
-                                <!-- Columna 3: Dirección, contacto y redes sociales -->
-                                <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-                                    <h6 class="mil-muted mil-up mil-mb-15">Ubicación:</h6>
-                                    <p class="mil-light-soft mil-up">Avenida 12 de Octubre, Quito, Ecuador</p>
-                                    <p class="mil-light-soft mil-up mil-mb-20">+593 2 2991 700</p>
-                
-                                    <!-- Íconos de redes sociales -->
-                                    <ul class="mil-social-icons mil-up">
-                                        <li>
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.facebook.com/siteciapuce', '_blank')" class="social-icon">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <!-- <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li> -->
-                                        <li>
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.linkedin.com/company/siteciapuce', '_blank')" class="social-icon">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.instagram.com/siteciapuce', '_blank')" class="social-icon">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- footer end -->
-
-                <!-- hidden elements -->
-                <div class="mil-hidden-elements">
-                    <div class="mil-dodecahedron">
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                        <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z" />
+                  <!-- Botón circular Para desplazarse hacía abajo  -->
+                  <div class="mil-circle-text">
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 300 300"
+                      enable-background="new 0 0 300 300"
+                      xml:space="preserve"
+                      class="mil-ct-svg mil-rotate"
+                      data-value="360"
+                    >
+                      <defs>
+                        <path
+                          id="circlePath"
+                          d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                        />
+                      </defs>
+                      <circle cx="150" cy="100" r="75" fill="none" />
+                      <g>
+                        <use xlink:href="#circlePath" fill="none" />
+                        <text style="letter-spacing: 6.5px">
+                          <textPath xlink:href="#circlePath">
+                            Desplázate hacia abajo - Desplázate hacia abajo -
+                          </textPath>
+                        </text>
+                      </g>
                     </svg>
-
-                    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move" />
-                    </svg>
+                    <a
+                      href="#ConoceSitecia"
+                      class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"
+                    ></a>
+                  </div>
                 </div>
-                <!-- hidden elements end -->
-
+              </div>
             </div>
+          </section>
+          <!-- Fin de la sección de Innovando para un futuro Mejor -->
+
+          <!-- Conoce SITECIA (Acrónimo) -->
+          <section id="ConoceSitecia">
+            <div class="container mil-p-120-10">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6">
+                  <div class="mil-mb-90">
+                    <h2 class="mil-up mil-mb-60 acronimo-sitecia">
+                      <div><span class="highlight">Si</span>stemas y</div>
+                      <div>
+                        <span class="highlight">Tec</span>cnologías de la
+                      </div>
+                      <div><span class="highlight">I</span>nformación</div>
+                      <div>
+                        <span class="highlight">A</span>plicados (<span
+                          class="highlight"
+                          >SITECIA</span
+                        >)
+                      </div>
+                    </h2>
+
+                    <p class="mil-up mil-mb-30">
+                      SITECIA es un grupo de investigación en sistemas y
+                      tecnologías de la información, comprometido con
+                      desarrollar soluciones innovadoras en ciencia de datos,
+                      inteligencia artificial, ciberseguridad y más.
+                    </p>
+                    <p class="mil-up mil-mb-60">
+                      Nuestro equipo multidisciplinario colabora con empresas e
+                      instituciones para enfrentar desafíos tecnológicos y
+                      contribuir al desarrollo sostenible del Ecuador.
+                    </p>
+                    <div class="mil-up">
+                      <a
+                        href="NuestroEquipo.html"
+                        class="mil-button mil-arrow-place mil-mb-60"
+                      >
+                        <span>Conoce Nuestro Equipo</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="mil-about-photo mil-mb-90">
+                    <div class="mil-lines-place"></div>
+                    <div
+                      class="mil-up mil-img-frame"
+                      style="padding-bottom: 160%"
+                    >
+                      <img
+                        src="img/Home/NuestraeXPERIENCIA.webp"
+                        alt="Imagen representativa de SITECIA"
+                        class="mil-scale"
+                        data-value-1="1"
+                        data-value-2="1.2"
+                        style="top: 75px; height: 74%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Botón circular Para desplazarse hacía abajo  -->
+              <div class="mil-circle-text" style="right: 200px; bottom: 45px">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 300 300"
+                  enable-background="new 0 0 300 300"
+                  xml:space="preserve"
+                  class="mil-ct-svg mil-rotate"
+                  data-value="360"
+                >
+                  <defs>
+                    <path
+                      id="circlePath"
+                      d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                    />
+                  </defs>
+                  <circle cx="150" cy="100" r="75" fill="none" />
+                  <g>
+                    <use xlink:href="#circlePath" fill="none" />
+                    <text
+                      style="
+                        letter-spacing: 6.5px;
+                        fill: black;
+                        font-weight: bold;
+                      "
+                    >
+                      <textPath xlink:href="#circlePath">
+                        Desplázate hacia abajo - Desplázate hacia abajo -
+                      </textPath>
+                    </text>
+                  </g>
+                </svg>
+                <a
+                  href="#Projects"
+                  class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"
+                ></a>
+              </div>
+            </div>
+          </section>
+
+          <!-- banner end -->
+          <script src="js/Animation.js"></script>
+
+          <!-- Sección de Nuestra Experiencia  -->
+          <section class="mil-dark-bg" id="Projects">
+            <div class="mi-invert-fix">
+              <!--Sección de Polígonos Animados-->
+              <div class="mil-animation-frame">
+                <div
+                  class="mil-animation mil-position-1 mil-scale"
+                  data-value-1="2.4"
+                  data-value-2="1.4"
+                  style="top: 300px; right: -100px"
+                ></div>
+                <div
+                  class="mil-animation mil-position-2 mil-scale"
+                  data-value-1="2"
+                  data-value-2="1"
+                  style="left: 150px"
+                ></div>
+              </div>
+              <div class="container mil-p-120-10">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col-lg-6 col-xl-5">
+                    <div class="mil-mb-90">
+                      <h2 class="mil-up mil-mb-60 mil-muted">
+                        Nuestra <span class="mil-thin">Experiencia</span>
+                      </h2>
+                      <p class="mil-light-soft">
+                        SITECIA es un grupo de investigación en Sistemas y
+                        Tecnologías de la Información Aplicados que fue
+                        establecido en octubre de 2022 en la Pontificia
+                        Universidad Católica del Ecuador (PUCE), como parte de
+                        la Facultad de Ingeniería. El equipo de SITECIA está
+                        conformado por docentes investigadores de la PUCE e
+                        investigadores asociados de otras universidades.
+                      </p>
+                      <!-- Sección donde se limita el contado de los proyectos/Años de Experiencia y Publicaciones científicas-->
+                      <div class="mil-stats">
+                        <div class="mil-stat">
+                          <!--Modificar el Data Target para definir el valor máximo del contador-->
+                          <span class="mil-counter" data-target="50">0</span>
+                          <p class="mil-light-soft">Proyectos Completados</p>
+                        </div>
+                        <div class="mil-stat">
+                          <span class="mil-counter" data-target="10">0</span>
+                          <p class="mil-light-soft">Años de Experiencia</p>
+                        </div>
+                        <div class="mil-stat">
+                          <span class="mil-counter" data-target="30">0</span>
+                          <p class="mil-light-soft">
+                            Publicaciones Científicas
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="mil-about-photo mil-mb-90">
+                      <div class="mil-lines-place"></div>
+                      <div
+                        class="mil-up mil-img-frame"
+                        style="padding-bottom: 160%"
+                      >
+                        <img
+                          src="img/Home/NuestraeXPERIENCIA.webp"
+                          alt="Imagen representativa de SITECIA"
+                          class="mil-scale"
+                          data-value-1="1"
+                          data-value-2="1.2"
+                          style="top: 75px; height: 74%"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Botón circular Para desplazarse hacía abajo  -->
+                <div class="mil-circle-text" style="right: 205px; bottom: 45px">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 300 300"
+                    enable-background="new 0 0 300 300"
+                    xml:space="preserve"
+                    class="mil-ct-svg mil-rotate"
+                    data-value="360"
+                  >
+                    <defs>
+                      <path
+                        id="circlePath"
+                        d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                      />
+                    </defs>
+                    <circle cx="150" cy="100" r="75" fill="none" />
+                    <g>
+                      <use xlink:href="#circlePath" fill="none" />
+                      <text style="letter-spacing: 6.5px">
+                        <textPath xlink:href="#circlePath">
+                          Desplázate hacia abajo - Desplázate hacia abajo -
+                        </textPath>
+                      </text>
+                    </g>
+                  </svg>
+                  <a
+                    href="#about"
+                    class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Fin de la sección de Nuestra Experiencia -->
+
+          <!-- Proyectos Transformadores: -->
+          <section id="about">
+            <div class="mil-animation-frame">
+              <!-- Figuras animadas con solo bordes de colores -->
+              <div
+                class="mil-animation mil-position-1 mil-scale"
+                data-value-1="2.4"
+                data-value-2="1.4"
+                style="
+                  top: 300px;
+                  right: -100px;
+                  background-color: transparent;
+                  border: 4px solid #2196f3;
+                "
+              ></div>
+              <!-- Verde -->
+              <div
+                class="mil-animation mil-position-2 mil-scale"
+                data-value-1="2"
+                data-value-2="1"
+                style="
+                  left: 150px;
+                  background-color: transparent;
+                  border: 4px solid #2196f3;
+                "
+              ></div>
+              <!-- Azul -->
+            </div>
+            <div class="container mil-p-120-0">
+              <div class="mil-mb-120">
+                <div class="row justify-content-center">
+                  <div class="col-lg-10">
+                    <!-- Texto en negro -->
+                    <div
+                      class="mil-complex-text justify-content-center mil-up mil-mb-15"
+                      style="color: black"
+                    >
+                      <span class="mil-text-image"
+                        ><img src="img/Home/2.jpg" alt="team"
+                      /></span>
+                      <h2 class="mil-h1 mil-center" style="color: black">
+                        Proyectos <span class="mil-thin">Transformadores</span>
+                      </h2>
+                    </div>
+                    <div
+                      class="mil-complex-text justify-content-center mil-up"
+                      style="color: black"
+                    >
+                      <h2 class="mil-h1 mil-center" style="color: black">
+                        Enfrentando
+                        <span class="mil-thin">Desafíos Tecnológicos</span>
+                      </h2>
+                      <a
+                        href="Proyectos.html"
+                        class="mil-services-button mil-button mil-arrow-place"
+                        ><span>Nuestros Proyectos</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Fin de Proyectos Innovadores -->
+
+          <!-- footer -->
+          <footer class="mil-dark-bg">
+            <div class="mi-invert-fix">
+              <div class="container mil-p-40-30 mil-pt-70">
+                <!-- Añadí mil-pt-50 para más espacio arriba -->
+                <div class="row">
+                  <!-- Columna 1: Logo y derechos -->
+                  <div class="col-md-4 mil-mb-30" style="margin-top: 15px">
+                    <div class="mil-muted mil-logo mil-up mil-mb-15">
+                      Sitecia.
+                    </div>
+                    <p class="mil-light-soft mil-up mil-mb-10">
+                      © Copyright <span id="currentYear"></span> - SITECIA. All
+                      Rights Reserved.
+                    </p>
+                    <script>
+                      document.getElementById("currentYear").textContent =
+                        new Date().getFullYear();
+                    </script>
+                    <p class="mil-light-soft mil-up">
+                      © Desarrollado por: Danny Cano Y.
+                    </p>
+                  </div>
+
+                  <!-- Columna 2: Enlaces -->
+                  <div
+                    class="col-md-4 mil-mb-30"
+                    style="margin-top: 15px"
+                  ></div>
+
+                  <!-- Columna 3: Dirección, contacto y redes sociales -->
+                  <div class="col-md-4 mil-mb-30" style="margin-top: 15px">
+                    <h6 class="mil-muted mil-up mil-mb-15">Ubicación:</h6>
+                    <p class="mil-light-soft mil-up">
+                      Avenida 12 de Octubre, Quito, Ecuador
+                    </p>
+                    <p class="mil-light-soft mil-up mil-mb-20">
+                      +593 2 2991 700
+                    </p>
+
+                    <!-- Íconos de redes sociales -->
+                    <ul class="mil-social-icons mil-up">
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://www.facebook.com/siteciapuce', '_blank')"
+                          class="social-icon"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <!-- <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li> -->
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://www.linkedin.com/company/siteciapuce', '_blank')"
+                          class="social-icon"
+                        >
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://www.instagram.com/siteciapuce', '_blank')"
+                          class="social-icon"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- footer end -->
+
+          <!-- hidden elements -->
+          <div class="mil-hidden-elements">
+            <div class="mil-dodecahedron">
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="mil-arrow"
+            >
+              <path
+                d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"
+              />
+            </svg>
+
+            <svg
+              width="250"
+              viewBox="0 0 300 1404"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mil-lines"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M300 1175H0V1174H300V1175Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z"
+                class="mil-move"
+              />
+            </svg>
+          </div>
+          <!-- hidden elements end -->
         </div>
-        <!-- content -->
+      </div>
+      <!-- content -->
     </div>
     <!-- wrapper end -->
 
@@ -632,7 +937,5 @@
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- js -->
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

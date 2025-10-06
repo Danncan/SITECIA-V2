@@ -1,305 +1,376 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- bootstrap grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
     <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
     <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
     <!-- fancybox css -->
-    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
     <!-- ashley scss -->
-    <link rel="stylesheet" href="css/style.css">
- 
+    <link rel="stylesheet" href="css/style.css" />
+
     <!-- favicon -->
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
 
     <title>Producción Científica - SITECIA</title>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <script src="js/Proyectos.js"></script>
-<!-- Swiper.js Library -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
+    <!-- Swiper.js Library -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
+      <!-- scrollbar progress -->
+      <div class="mil-progress-track">
+        <div class="mil-progress"></div>
+      </div>
+      <!-- scrollbar progress end -->
 
-       
-
-        <!-- scrollbar progress -->
-        <div class="mil-progress-track">
-            <div class="mil-progress"></div>
+      <!-- menu -->
+      <div class="mil-menu-frame">
+        <!-- frame clone -->
+        <div class="mil-frame-top">
+          <a href="home.html" class="mil-logo">
+            <img
+              src="img/Logo_Escala_Grises.png"
+              alt="Logo SITECIA"
+              class="logo-sitecia-img"
+            />
+          </a>
+          <div class="mil-menu-btn">
+            <span></span>
+          </div>
         </div>
-        <!-- scrollbar progress end -->
 
-         <!-- menu -->
-         <div class="mil-menu-frame">
-            <!-- frame clone -->
-            <div class="mil-frame-top">
-                <a href="home.html" class="mil-logo">
-                    <img src="img/Logo_Escala_Grises.png" alt="Logo SITECIA" class="logo-sitecia-img">
+        <!-- frame clone end -->
+        <div class="container">
+          <div class="mil-menu-content">
+            <div class="row">
+              <div class="col-xl-5">
+                <nav class="mil-main-menu" id="swupMenu">
+                  <ul>
+                    <li class="mil-has-children">
+                      <a href="home.html">Página de Inicio</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="NuestroEquipo.html">Nuestro Equipo</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="LineasDeInvestigacion.html">Líneas de Investigación</a>
+                      <ul>
+                        <li>
+                          <a href="CienciaDeDatos.html">Ciencias de Datos</a>
+                        </li>
+                        <li>
+                          <a href="GestionyGobiernodeDatos.html"
+                            >Gestión y Gobierno de Datos</a
+                          >
+                        </li>
+                        <li>
+                          <a href="InteligenciaArtificial.html"
+                            >Inteligencia Artificial</a
+                          >
+                        </li>
+                        <li>
+                          <a href="Ciberseguridad.html">Ciberseguridad</a>
+                        </li>
+                        <li>
+                          <a href="InfraestructuraTI.html"
+                            >Infraestructura de TI</a
+                          >
+                        </li>
+                        <li><a href="Redes.html">Redes</a></li>
+                      </ul>
+                    </li>
+                    <li class="mil-has-children mil-active">
+                      <a href="ProducciónCientíficaList.html">Producción Científica</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="Proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="contact.html">Contacto</a>
+                    </li>
+                  </ul>
+                </nav>
+                      <a href="contact.html">Contacto</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu -->
+
+      <!-- curtain -->
+      <div class="mil-curtain"></div>
+      <!-- curtain end -->
+
+      <!-- frame -->
+      <div class="mil-frame">
+        <div class="mil-frame-top">
+          <a href="home.html" class="mil-logo">
+            <picture>
+              <source
+                srcset="img/Logo_Escala_Grises.png"
+                media="(max-width: 1200px)"
+              />
+              <img
+                src="img/Logo Sitecia Negro.png"
+                alt="Logo SITECIA"
+                class="logo-sitecia-img"
+              />
+            </picture>
+          </a>
+
+          <div class="mil-menu-btn">
+            <span></span>
+          </div>
+        </div>
+        <div class="mil-frame-bottom">
+          <div class="mil-current-page"></div>
+          <div class="mil-back-to-top">
+            <a href="#top" class="mil-link mil-dark mil-arrow-place">
+              <span>Volver Arriba</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- frame end -->
+
+      <!-- content -->
+      <div class="mil-content">
+        <div id="swupMain" class="mil-main-transition">
+          <!-- banner -->
+          <div class="mil-inner-banner mil-p-0-120">
+            <div class="sitecia-navbar">
+              <div class="sitecia-logo">
+                <a href="home.html"></a>
+              </div>
+              <ul class="sitecia-nav-links">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
+                <li><a href="NuestroEquipo.html">Equipo</a></li>
+                <li class="sitecia-dropdown">
+                  <a href="LineasDeInvestigacion.html"
+                    >Línea de Investigación ▾</a
+                  >
+                  <ul class="sitecia-dropdown-menu">
+                    <li>
+                      <a href="LineasDeInvestigacion.html#CienciaDeDatos"
+                        >Ciencia de Datos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="LineasDeInvestigacion.html#GestionyGobiernodeDatos"
+                        >Gobierno de Datos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="LineasDeInvestigacion.html#InteligenciaArtificial"
+                        >Inteligencia Artificial</a
+                      >
+                    </li>
+                    <li>
+                      <a href="LineasDeInvestigacion.html#Ciberseguridad"
+                        >Ciberseguridad</a
+                      >
+                    </li>
+                    <li>
+                      <a href="LineasDeInvestigacion.html#InfraestructuraTI"
+                        >Infraestructura TI</a
+                      >
+                    </li>
+                    <li>
+                      <a href="LineasDeInvestigacion.html#Redes">Redes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="ProducciónCientíficaList.html" class="active"
+                    >Producción Científica</a
+                  >
+                </li>
+                <li><a href="Proyectos.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+              </ul>
+            </div>
+            <style>
+              .sitecia-navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.95);
+                z-index: 1000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 40px;
+                font-family: "Arial", sans-serif;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+              }
+              .sitecia-nav-links li a.active {
+                color: #00aeef;
+                font-weight: bold;
+              }
+
+              .sitecia-logo a {
+                color: #00aeef;
+                font-size: 24px;
+                font-weight: bold;
+                text-decoration: none;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+              }
+
+              .sitecia-nav-links {
+                list-style: none;
+                display: flex;
+                gap: 30px;
+                margin: 0;
+                padding: 0;
+              }
+
+              .sitecia-nav-links li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                transition: color 0.3s ease;
+              }
+
+              .sitecia-nav-links li a:hover {
+                color: #00aeef;
+              }
+
+              /* Dropdown */
+              .sitecia-dropdown {
+                position: relative;
+              }
+
+              .sitecia-dropdown-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #111;
+                list-style: none;
+                padding: 10px 0;
+                margin: 0;
+                display: none;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+              }
+
+              .sitecia-dropdown:hover .sitecia-dropdown-menu {
+                display: block;
+              }
+
+              .sitecia-dropdown-menu li {
+                padding: 8px 20px;
+              }
+
+              .sitecia-dropdown-menu li a {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                transition: background-color 0.3s ease;
+              }
+
+              .sitecia-dropdown-menu li a:hover {
+                background-color: #00aeef;
+                color: black;
+              }
+
+              /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
+              @media (max-width: 1200px) {
+                .sitecia-navbar {
+                  display: none;
+                }
+              }
+            </style>
+            <div class="mil-banner-content mil-up">
+              <div class="mil-animation-frame">
+                <div
+                  class="mil-animation mil-position-4 mil-dark mil-scale"
+                  data-value-1="6"
+                  data-value-2="1.4"
+                ></div>
+              </div>
+              <div class="container">
+                <ul class="mil-breadcrumbs mil-mb-60">
+                  <li><a href="home.html">PÁGINA DE INICIO</a></li>
+                  <li><a href="blog.html">Producción Científica</a></li>
+                </ul>
+                <h1 class="mil-mb-60" style="color: #074073">
+                  Producción <br />
+                  <span class="mil-thin" style="color: #6c757d"
+                    >Científica</span
+                  >
+                </h1>
+                <br />
+                <p>
+                  Aquí encontrarás en orden cronológico toda la producción
+                  científica de SITECIA. Cada proyecto refleja nuestro
+                  compromiso con la innovación y la excelencia en el campo de la
+                  tecnología. Desde investigaciones en inteligencia artificial
+                  hasta avances en ciberseguridad, exploramos diversas áreas
+                  para ofrecer soluciones creativas y efectivas. Descubre cómo
+                  transformamos ideas en realidades tangibles a través de
+                  nuestra producción científica.
+                </p>
+                <br />
+                <a
+                  href="#publicaciones"
+                  class="mil-link mil-dark mil-arrow-place mil-down-arrow"
+                >
+                  <span>Proyectos</span>
                 </a>
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
+              </div>
+              <br />
+              <br />
+              <hr
+                class="mil-divider mil-mb-60"
+                style="border: 1px solid #074073; width: 100%"
+              />
             </div>
-            
-            <!-- frame clone end -->
-            <div class="container">
-                <div class="mil-menu-content">
-                    <div class="row">
-                        <div class="col-xl-5">
+          </div>
+          <!-- banner end -->
+          <!-- Divider -->
 
-                            <nav class="mil-main-menu" id="swupMenu">
-                                <ul>
-                                    <li class="mil-has-children ">
-                                        <a href="home.html">Página de Inicio</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="NuestroEquipo.html">Nuestro Equipo</a>
-                                    </li>
-                                    <li class="mil-has-children mil-active">
-                                        <a href="">Producción Científica</a>
-                                        <ul>
-                                            <li><a href="CienciaDeDatos.html">Ciencias de Datos</a></li>
-                                            <li><a href="GestionyGobiernodeDatos.html">Gestión y Gobierno de Datos</a></li>
-                                            <li><a href="InteligenciaArtificial.html">Inteligencia Artificial</a></li>
-                                            <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
-                                            <li><a href="InfraestructuraTI.html">Infraestructura de TI</a></li>
-                                            <li><a href="Redes.html">Redes</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mil-has-children ">
-                                        <a href="Proyectos.html">Proyectos</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="contact.html">Contacto</a>
-                                    </li>
-                                </ul>
-                            </nav>
+          <!-- Sección de Publicaciones por Año -->
+          <!-- <section class="mil-p-120-90 mil-light-bg" id="blog">
+            <div class="container"> -->
+          <!-- <h2 class="mil-center mil-mb-90" style="color: #074073">
+                Publicaciones Científicas
+              </h2> -->
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- menu -->
-        
-        <!-- curtain -->
-        <div class="mil-curtain"></div>
-        <!-- curtain end -->
-
-        <!-- frame -->
-        <div class="mil-frame">
-            <div class="mil-frame-top">
-                <a href="home.html" class="mil-logo">
-                    <picture>
-                        <source srcset="img/Logo_Escala_Grises.png" media="(max-width: 1200px)">
-                        <img src="img/Logo Sitecia Negro.png" alt="Logo SITECIA" class="logo-sitecia-img">
-                    </picture>
-                </a>
-            
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
-            </div>
-            <div class="mil-frame-bottom">
-                <div class="mil-current-page"></div>
-                <div class="mil-back-to-top">
-                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Volver Arriba</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- frame end -->
-
-        <!-- content -->
-        <div class="mil-content">
-            <div id="swupMain" class="mil-main-transition">
-
-                <!-- banner -->
-                <div class="mil-inner-banner mil-p-0-120">
-                    <div class="sitecia-navbar">
-                        <div class="sitecia-logo">
-                            <a href="home.html"></a>
-                        </div>
-                        <ul class="sitecia-nav-links">
-                            <li><a href="home.html">Inicio</a></li>
-                            <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
-                            <li><a href="NuestroEquipo.html">Equipo</a></li>
-                            <li class="sitecia-dropdown">
-                                <a href="LineasDeInvestigacion.html">Línea de Investigación ▾</a>
-                                <ul class="sitecia-dropdown-menu">
-                                    <li><a href="LineasDeInvestigacion.html#CienciaDeDatos">Ciencia de Datos</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#GestionyGobiernodeDatos">Gobierno de Datos</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#InteligenciaArtificial">Inteligencia Artificial</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#Ciberseguridad">Ciberseguridad</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#InfraestructuraTI">Infraestructura TI</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#Redes">Redes</a></li>                               
-                                </ul>
-                            </li>
-                            <li><a href="ProducciónCientíficaList.html"class="active">Producción Científica</a></li>
-                            <li><a href="Proyectos.html">Proyectos</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                    <style>
-                        .sitecia-navbar {
-                            position: fixed;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            background-color: rgba(0, 0, 0, 0.95);
-                            z-index: 1000;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            padding: 10px 40px;
-                            font-family: 'Arial', sans-serif;
-                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-                        }
-                        .sitecia-nav-links li a.active {
-                            color: #00AEEF;
-                            font-weight: bold;
-                        }
-
-                        .sitecia-logo a {
-                            color: #00AEEF;
-                            font-size: 24px;
-                            font-weight: bold;
-                            text-decoration: none;
-                            letter-spacing: 1px;
-                            text-transform: uppercase;
-                        }
-
-                        .sitecia-nav-links {
-                            list-style: none;
-                            display: flex;
-                            gap: 30px;
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        .sitecia-nav-links li a {
-                            color: white;
-                            text-decoration: none;
-                            font-size: 16px;
-                            font-weight: 500;
-                            transition: color 0.3s ease;
-                        }
-
-                        .sitecia-nav-links li a:hover {
-                            color: #00AEEF;
-                        }
-
-                        /* Dropdown */
-                        .sitecia-dropdown {
-                            position: relative;
-                        }
-
-                        .sitecia-dropdown-menu {
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            background-color: #111;
-                            list-style: none;
-                            padding: 10px 0;
-                            margin: 0;
-                            display: none;
-                            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-                        }
-
-                        .sitecia-dropdown:hover .sitecia-dropdown-menu {
-                            display: block;
-                        }
-
-                        .sitecia-dropdown-menu li {
-                            padding: 8px 20px;
-                        }
-
-                        .sitecia-dropdown-menu li a {
-                            color: white;
-                            text-decoration: none;
-                            font-size: 14px;
-                            transition: background-color 0.3s ease;
-                        }
-
-                        .sitecia-dropdown-menu li a:hover {
-                            background-color: #00AEEF;
-                            color: black;
-                        }
-
-                        /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
-                        @media (max-width: 1200px) {
-                            .sitecia-navbar {
-                                display: none;
-                            }
-                        }    
-
-                    </style>
-                    <div class="mil-banner-content mil-up">
-                        
-                        <div class="mil-animation-frame">
-                            <div class="mil-animation mil-position-4 mil-dark mil-scale" data-value-1="6" data-value-2="1.4"></div>
-                        </div>
-                        <div class="container">
-                            <ul class="mil-breadcrumbs mil-mb-60">
-                                <li><a href="home.html">PÁGINA DE INICIO</a></li>
-                                <li><a href="blog.html">Producción Científica</a></li>
-                            </ul>
-                            <h1 class="mil-mb-60" style="color: #074073;">Producción  <br>
-                                <span class="mil-thin"style="color: #6c757d;" >Científica</span></h1>                            <br>
-                            <p>Aquí encontrarás en orden cronológico toda la producción científica de SITECIA. Cada proyecto refleja nuestro compromiso con la innovación y la excelencia en el campo de la tecnología. Desde investigaciones en inteligencia artificial hasta avances en ciberseguridad, exploramos diversas áreas para ofrecer soluciones creativas y efectivas. Descubre cómo transformamos ideas en realidades tangibles a través de nuestra producción científica.</p>
-                            <br>
-                            <a href="#blog" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
-                                <span>Proyectos</span>
-                            </a>
-                            
-                        </div>
-                        <br>
-                        <br>
-                        <hr class="mil-divider mil-mb-60" style="border: 1px solid #074073; width: 100%;">
-
-                    </div>
-                </div>
-                <!-- banner end -->
-                <!-- Divider -->
-
-            
-  
-                <!-- Sección de Publicaciones por Año -->
-                <section class="mil-p-120-90 mil-light-bg" id="blog">
-                    <div class="container">
-                        <h2 class="mil-center mil-mb-90" style="color: #074073;">Publicaciones Científicas</h2>
-                        
-                        <!-- Pestañas de Años -->
-                        <div class="mil-tabs-nav mil-mb-60">
+          <!-- Pestañas de Años -->
+          <!-- <div class="mil-tabs-nav mil-mb-60">
                             <div class="mil-tab-btn active" data-tab="2025">2025</div>
                             <div class="mil-tab-btn" data-tab="2024">2024</div>
                             <div class="mil-tab-btn" data-tab="2023">2023</div>
                             <div class="mil-tab-btn" data-tab="2022">2022</div>
-                        </div>
-                        
-                        <!-- Contenido por Año -->
-                        <div class="mil-tab-content active" id="2025">
+                        </div> -->
+
+          <!-- Contenido por Año -->
+          <!-- <div class="mil-tab-content active" id="2025">
                             <div class="mil-pub-list">
-                                <!-- Artículo 2025 -->
                                 <a href="https://puceinvestiga.puce.edu.ec/es/publications/empowering-deaf-individuals-ecuadorian-sign-language-dictionary-i" 
                                 class="mil-pub-item" target="_blank">
                                     <div class="mil-pub-icon">
@@ -311,410 +382,484 @@
                                     </div>
                                 </a>
                                 
-                                <!-- Más artículos 2025... -->
                             </div>
-                        </div>
-                        
-                        <div class="mil-tab-content" id="2024">
-                            <div class="mil-pub-list">
-                                <!-- Artículo 2024 -->
-                                <a href="https://puceinvestiga.puce.edu.ec/es/publications/unveiling-mortality-patterns-in-ecuador-a-k-modes-clustering-appr" 
-                                class="mil-pub-item" target="_blank">
-                                    <div class="mil-pub-icon">
-                                        <i class="fas fa-brain"></i>
-                                    </div>
-                                    <div class="mil-pub-text">
-                                        <h5>Unveiling Mortality Patterns in Ecuador: A K-Modes Clustering Approach</h5>
-                                        <span class="mil-pub-authors">Adriana Jimenez-Torres, Henry N. Roa</span>
-                                    </div>
-                                </a>
-                                
-                                <!-- Más artículos 2024... -->
-                            </div>
-                        </div>
-                        
-                        <div class="mil-tab-content" id="2023">
-                            <div class="mil-pub-list">
-                                <!-- Artículo 2023 -->
-                                <a href="https://puceinvestiga.puce.edu.ec/es/publications/augmented-reality-as-a-support-for-the-teaching-learning-process--2" 
-                                class="mil-pub-item" target="_blank">
-                                    <div class="mil-pub-icon">
-                                        <i class="fas fa-brain"></i>
-                                    </div>
-                                    <div class="mil-pub-text">
-                                        <h5>Augmented Reality as a Support for the Teaching-Learning Process</h5>
-                                        <span class="mil-pub-authors">Nelson Salgado-Reyes, Suyana Arcos-Villagomez, Susana Masapanta-Carrión</span>
-                                    </div>
-                                </a>
-                                
-                                <!-- Más artículos 2023... -->
-                            </div>
-                        </div>
-                        
-                        <div class="mil-tab-content" id="2022">
-                            <div class="mil-pub-list">
-                                <!-- Artículo 2022 -->
-                                <a href="https://puceinvestiga.puce.edu.ec/es/publications/tecnolog%C3%ADa-blockchain-qu%C3%A9-es-y-c%C3%B3mo-funciona-2" 
-                                class="mil-pub-item" target="_blank">
-                                    <div class="mil-pub-icon">
-                                        <i class="fas fa-tablet-alt"></i>
-                                    </div>
-                                    <div class="mil-pub-text">
-                                        <h5>Tecnología Blockchain, qué es y cómo funciona</h5>
-                                        <span class="mil-pub-authors">Javier Guaña-Moya, Henry N. Roa, Fabricio Marcillo, Leonardo Ayavaca-Vallejo, Marco Chiluisa-Chiluisa, Byron Moya-Carrera</span>
-                                    </div>
-                                </a>
-                                
-                                <!-- Más artículos 2022... -->
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                        </div> -->
 
-                <section class="mil-p-120-90 mil-light-bg" id="publicaciones">
-                    <div class="container">
-                        <h2 class="mil-center mil-mb-90" style="color: #074073;">Publicaciones Científicas</h2>
-                
-                        <!-- Año 2025 -->
-                        <h3 class="mil-mb-30" style="color: #074073;">2025</h3>
-                        <div class="mil-pub-list mil-mb-60">
-                            <a href="https://puceinvestiga.puce.edu.ec/es/publications/empowering-deaf-individuals-ecuadorian-sign-language-dictionary-i" 
-                               class="mil-pub-item" target="_blank">
-                                <div class="mil-pub-icon"><i class="fas fa-tablet-alt"></i></div>
-                                <div class="mil-pub-text">
-                                    <h5>Empowering Deaf Individuals: Ecuadorian Sign Language Dictionary Integration via Technology</h5>
-                                    <span class="mil-pub-authors">Nelson Salgado Reyes, Verónica Maldonado Garcés, Elking Araujo Bilmonte</span>
-                                </div>
-                            </a>
-                        </div>
-                
-                        <!-- Año 2024 -->
-                        <h3 class="mil-mb-30" style="color: #074073;">2024</h3>
-                        <div class="mil-pub-list mil-mb-60">
-                            <a href="https://puceinvestiga.puce.edu.ec/es/publications/unveiling-mortality-patterns-in-ecuador-a-k-modes-clustering-appr"
-                               class="mil-pub-item" target="_blank">
-                                <div class="mil-pub-icon"><i class="fas fa-brain"></i></div>
-                                <div class="mil-pub-text">
-                                    <h5>Unveiling Mortality Patterns in Ecuador: A K-Modes Clustering Approach</h5>
-                                    <span class="mil-pub-authors">Adriana Jimenez-Torres, Henry N. Roa</span>
-                                </div>
-                            </a>
-                        </div>
-                
-                        <!-- Añade más años igual -->
-                    </div>
-                </section>
-                <!-- Sección de publicaciones end -->
-                 
-                
-
-                <style>
-                /* Estilos para la sección de publicaciones */
-                .mil-light-bg {
-                    background-color: #f8f9fa;
-                }
-
-                .mil-tabs-nav {
-                    display: flex;
-                    justify-content: center;
-                    gap: 15px;
-                    margin-bottom: 40px;
-                }
-
-                .mil-tab-btn {
-                    padding: 12px 25px;
-                    background-color: #fff;
-                    color: #074073;
-                    border: 2px solid #D0E1F9;
-                    border-radius: 30px;
-                    cursor: pointer;
-                    font-weight: 600;
-                    transition: all 0.3s ease;
-                }
-
-                .mil-tab-btn:hover {
-                    background-color: #074073;
-                    color: #fff;
-                    border-color: #074073;
-                }
-
-                .mil-tab-btn.active {
-                    background-color: #074073;
-                    color: #fff;
-                    border-color: #074073;
-                }
-
-                .mil-tab-content {
-                    display: none;
-                }
-
-                .mil-tab-content.active {
-                    display: block;
-                }
-
-                .mil-pub-list {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    gap: 15px;
-                }
-
-                .mil-pub-item {
-                    display: flex;
-                    align-items: center;
-                    background: #fff;
-                    padding: 20px;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-                    transition: all 0.3s ease;
-                    text-decoration: none;
-                    border: 1px solid #e9ecef;
-                }
-
-                .mil-pub-item:hover {
-                    transform: translateY(-5px);
-                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-                    border-color: #62B6F9;
-                }
-
-                .mil-pub-icon {
-                    width: 50px;
-                    height: 50px;
-                    background-color: #f0f7ff;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-right: 20px;
-                    color: #074073;
-                    font-size: 20px;
-                    flex-shrink: 0;
-                }
-
-                .mil-pub-text {
-                    flex-grow: 1;
-                }
-
-                .mil-pub-text h5 {
-                    color: #003F88;
-                    margin-bottom: 5px;
-                    font-size: 16px;
-                    font-weight: 600;
-                }
-
-                .mil-pub-authors {
-                    color: #6c757d;
-                    font-size: 14px;
-                    display: block;
-                }
-
-                /* Responsive */
-                @media (max-width: 768px) {
-                    .mil-tabs-nav {
-                        flex-wrap: wrap;
-                    }
-                    
-                    .mil-pub-item {
-                        flex-direction: column;
-                        text-align: center;
-                    }
-                    
-                    .mil-pub-icon {
-                        margin-right: 0;
-                        margin-bottom: 15px;
-                    }
-                }
-                </style>
-
-                <script>
-                // Script para manejar las pestañas
-                document.addEventListener('DOMContentLoaded', function() {
-                    const tabBtns = document.querySelectorAll('.mil-tab-btn');
-                    
-                    tabBtns.forEach(btn => {
-                        btn.addEventListener('click', function() {
-                            // Remover clase active de todos los botones y contenidos
-                            document.querySelectorAll('.mil-tab-btn').forEach(b => b.classList.remove('active'));
-                            document.querySelectorAll('.mil-tab-content').forEach(c => c.classList.remove('active'));
-                            
-                            // Agregar clase active al botón clickeado
-                            this.classList.add('active');
-                            
-                            // Mostrar el contenido correspondiente
-                            const tabId = this.getAttribute('data-tab');
-                            document.getElementById(tabId).classList.add('active');
-                        });
-                    });
-                });
-                </script>
-
-
-              
-                <!-- footer -->
-                <footer class="mil-dark-bg">
-                    <div class="mi-invert-fix">
-                        <div class="container mil-p-40-30 mil-pt-70"> <!-- Añadí mil-pt-50 para más espacio arriba -->
-                            <div class="row">
-                                <!-- Columna 1: Logo y derechos -->
-                                <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-                                    <div class="mil-muted mil-logo mil-up mil-mb-15">Sitecia.</div>
-                                    <p class="mil-light-soft mil-up mil-mb-10">© Copyright <span id="currentYear"></span> - SITECIA. All Rights Reserved.</p>
-                                    <script>
-                                        document.getElementById('currentYear').textContent = new Date().getFullYear();
-                                    </script>
-                                    <p class="mil-light-soft mil-up">© Desarrollado por: Danny Cano Y.</p>
-                                </div>
-                
-                                <!-- Columna 2: Enlaces -->
-                                <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-
-                                </div>
-                
-                                <!-- Columna 3: Dirección, contacto y redes sociales -->
-                                <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-                                    <h6 class="mil-muted mil-up mil-mb-15">Ubicación:</h6>
-                                    <p class="mil-light-soft mil-up">Avenida 12 de Octubre, Quito, Ecuador</p>
-                                    <p class="mil-light-soft mil-up mil-mb-20">+593 2 2991 700</p>
-                
-                                    <!-- Íconos de redes sociales -->
-                                    <ul class="mil-social-icons mil-up">
-                                        <li>
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.facebook.com/siteciapuce', '_blank')" class="social-icon">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <!-- <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li> -->
-                                        <li>
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.linkedin.com/company/siteciapuce', '_blank')" class="social-icon">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.instagram.com/siteciapuce', '_blank')" class="social-icon">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- footer end -->
-
-                <!-- hidden elements -->
-                <div class="mil-hidden-elements">
-                    <div class="mil-dodecahedron">
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                        <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z" />
-                    </svg>
-
-                    <svg width="200" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines" style="padding-left: 30px;">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move" />
-                    </svg>
-                </div>
-                <!-- hidden elements end -->
-
+          <!-- </div>
             </div>
+          </section> -->
+
+          <section class="mil-p-120-90 mil-light-bg" id="publicaciones">
+            <div class="container">
+              <h2 class="mil-center mil-mb-90" style="color: #074073">
+                Publicaciones Científicas
+              </h2>
+
+              <!-- Año 2024 -->
+              <h3 class="mil-mb-30" style="color: #074073">2024</h3>
+              <div class="mil-pub-list mil-mb-60">
+                <!-- Publicación 1 -->
+                <div
+                  class="mil-pub-item sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/publications/unemployment-rate-prediction-using-a-hybrid-model-of-recurrent-ne', '_blank')"
+                  style="cursor: pointer"
+                >
+                  <div class="mil-pub-icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <div class="mil-pub-text">
+                    <h5>
+                      Unemployment Rate Prediction Using a Hybrid Model of
+                      Recurrent Neural Networks and Genetic Algorithms
+                    </h5>
+                    <span class="mil-pub-authors"
+                      >Kevin Mero, Nelson Salgado, Jaime Meza, Janeth
+                      Pacheco-Delgado, Sebastián Ventura</span
+                    ><br />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Año 2023 -->
+              <h3 class="mil-mb-30" style="color: #074073">2023</h3>
+              <div class="mil-pub-list mil-mb-60">
+                <!-- Publicación 2 -->
+                <div
+                  class="mil-pub-item sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/publications/simulation-model-for-a-bent-pipe-satellite-network-using-dvb-s2rc', '_blank')"
+                  style="cursor: pointer"
+                >
+                  <div class="mil-pub-icon">
+                    <i class="fas fa-satellite-dish"></i>
+                  </div>
+                  <div class="mil-pub-text">
+                    <h5>
+                      Simulation Model for a Bent Pipe Satellite Network Using
+                      DVB-S2/RCS2 Standards
+                    </h5>
+                    <span class="mil-pub-authors"
+                      >Gustavo Chafla, Juan Fco Chafla, Nelson Esteban Salgado
+                      Reyes</span
+                    ><br />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Año 2022 -->
+              <h3 class="mil-mb-30" style="color: #074073">2022</h3>
+              <div class="mil-pub-list mil-mb-60">
+                <!-- Publicación 3 -->
+                <div
+                  class="mil-pub-item sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/publications/evaluaci%C3%B3n-de-sitios-tur%C3%ADsticos-mediante-an%C3%A1lisis-de-sentimientos', '_blank')"
+                  style="cursor: pointer"
+                >
+                  <div class="mil-pub-icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="mil-pub-text">
+                    <h5>
+                      Evaluación de Sitios Turísticos Mediante Análisis de
+                      Sentimientos de Comentarios Emitidos por Usuarios en Redes
+                      Sociales
+                    </h5>
+                    <span class="mil-pub-authors"
+                      >Nelson Esteban Salgado Reyes</span
+                    ><br />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Añade más años igual -->
+            </div>
+          </section>
+          <!-- Sección de publicaciones end -->
+
+          <style>
+            /* Estilos para la sección de publicaciones */
+            .mil-light-bg {
+              background-color: #f8f9fa;
+            }
+
+            .mil-tabs-nav {
+              display: flex;
+              justify-content: center;
+              gap: 15px;
+              margin-bottom: 40px;
+            }
+
+            .mil-tab-btn {
+              padding: 12px 25px;
+              background-color: #fff;
+              color: #074073;
+              border: 2px solid #d0e1f9;
+              border-radius: 30px;
+              cursor: pointer;
+              font-weight: 600;
+              transition: all 0.3s ease;
+            }
+
+            .mil-tab-btn:hover {
+              background-color: #074073;
+              color: #fff;
+              border-color: #074073;
+            }
+
+            .mil-tab-btn.active {
+              background-color: #074073;
+              color: #fff;
+              border-color: #074073;
+            }
+
+            .mil-tab-content {
+              display: none;
+            }
+
+            .mil-tab-content.active {
+              display: block;
+            }
+
+            .mil-pub-list {
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 15px;
+            }
+
+            .mil-pub-item {
+              display: flex;
+              align-items: center;
+              background: #fff;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+              transition: all 0.3s ease;
+              text-decoration: none;
+              border: 1px solid #e9ecef;
+            }
+
+            .mil-pub-item:hover {
+              transform: translateY(-5px);
+              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+              border-color: #62b6f9;
+            }
+
+            .mil-pub-icon {
+              width: 50px;
+              height: 50px;
+              background-color: #f0f7ff;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 20px;
+              color: #074073;
+              font-size: 20px;
+              flex-shrink: 0;
+            }
+
+            .mil-pub-text {
+              flex-grow: 1;
+            }
+
+            .mil-pub-text h5 {
+              color: #003f88;
+              margin-bottom: 5px;
+              font-size: 16px;
+              font-weight: 600;
+            }
+
+            .mil-pub-authors {
+              color: #6c757d;
+              font-size: 14px;
+              display: block;
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+              .mil-tabs-nav {
+                flex-wrap: wrap;
+              }
+
+              .mil-pub-item {
+                flex-direction: column;
+                text-align: center;
+              }
+
+              .mil-pub-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+              }
+            }
+          </style>
+
+          <script>
+            // Script para manejar las pestañas
+            document.addEventListener("DOMContentLoaded", function () {
+              const tabBtns = document.querySelectorAll(".mil-tab-btn");
+
+              tabBtns.forEach((btn) => {
+                btn.addEventListener("click", function () {
+                  // Remover clase active de todos los botones y contenidos
+                  document
+                    .querySelectorAll(".mil-tab-btn")
+                    .forEach((b) => b.classList.remove("active"));
+                  document
+                    .querySelectorAll(".mil-tab-content")
+                    .forEach((c) => c.classList.remove("active"));
+
+                  // Agregar clase active al botón clickeado
+                  this.classList.add("active");
+
+                  // Mostrar el contenido correspondiente
+                  const tabId = this.getAttribute("data-tab");
+                  document.getElementById(tabId).classList.add("active");
+                });
+              });
+            });
+          </script>
+
+          <!-- footer -->
+          <footer class="mil-dark-bg">
+            <div class="mi-invert-fix">
+              <div class="container mil-p-40-30 mil-pt-70">
+                <!-- Añadí mil-pt-50 para más espacio arriba -->
+                <div class="row">
+                  <!-- Columna 1: Logo y derechos -->
+                  <div class="col-md-4 mil-mb-30" style="margin-top: 15px">
+                    <div class="mil-muted mil-logo mil-up mil-mb-15">
+                      Sitecia.
+                    </div>
+                    <p class="mil-light-soft mil-up mil-mb-10">
+                      © Copyright <span id="currentYear"></span> - SITECIA. All
+                      Rights Reserved.
+                    </p>
+                    <script>
+                      document.getElementById("currentYear").textContent =
+                        new Date().getFullYear();
+                    </script>
+                    <p class="mil-light-soft mil-up">
+                      © Desarrollado por: Danny Cano Y.
+                    </p>
+                  </div>
+
+                  <!-- Columna 2: Enlaces -->
+                  <div
+                    class="col-md-4 mil-mb-30"
+                    style="margin-top: 15px"
+                  ></div>
+
+                  <!-- Columna 3: Dirección, contacto y redes sociales -->
+                  <div class="col-md-4 mil-mb-30" style="margin-top: 15px">
+                    <h6 class="mil-muted mil-up mil-mb-15">Ubicación:</h6>
+                    <p class="mil-light-soft mil-up">
+                      Avenida 12 de Octubre, Quito, Ecuador
+                    </p>
+                    <p class="mil-light-soft mil-up mil-mb-20">
+                      +593 2 2991 700
+                    </p>
+
+                    <!-- Íconos de redes sociales -->
+                    <ul class="mil-social-icons mil-up">
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://www.facebook.com/siteciapuce', '_blank')"
+                          class="social-icon"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <!-- <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li> -->
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://www.linkedin.com/company/siteciapuce', '_blank')"
+                          class="social-icon"
+                        >
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://www.instagram.com/siteciapuce', '_blank')"
+                          class="social-icon"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- footer end -->
+
+          <!-- hidden elements -->
+          <div class="mil-hidden-elements">
+            <div class="mil-dodecahedron">
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="mil-arrow"
+            >
+              <path
+                d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"
+              />
+            </svg>
+
+            <svg
+              width="200"
+              viewBox="0 0 300 1404"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mil-lines"
+              style="padding-left: 30px"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M300 1175H0V1174H300V1175Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z"
+                class="mil-move"
+              />
+            </svg>
+          </div>
+          <!-- hidden elements end -->
         </div>
-        <!-- content -->
+      </div>
+      <!-- content -->
     </div>
     <!-- wrapper end -->
 
     <!-- jQuery js -->
-     <script src="js/Proyectos.js"></script>
+    <script src="js/Proyectos.js"></script>
     <script src="js/plugins/jquery.min.js"></script>
     <!-- swup js -->
     <script src="js/plugins/swup.min.js"></script>
@@ -732,14 +877,8 @@
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
 <!-- Agrega la librería de Swiper si no está incluida -->
 <!-- Swiper.js Library -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-
-

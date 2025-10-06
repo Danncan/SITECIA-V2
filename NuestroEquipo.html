@@ -1,493 +1,666 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- bootstrap grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
     <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
     <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
     <!-- fancybox css -->
-    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
     <!--  scss -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- favicon -->
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
 
     <title>Nuestro Equipo - SITECIA</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
+      <!-- scrollbar progress -->
+      <div class="mil-progress-track">
+        <div class="mil-progress"></div>
+      </div>
+      <!-- scrollbar progress end -->
 
-        <!-- scrollbar progress -->
-        <div class="mil-progress-track">
-            <div class="mil-progress"></div>
+      <!-- menu -->
+      <div class="mil-menu-frame">
+        <!-- frame clone -->
+        <div class="mil-frame-top">
+          <a href="home.html" class="mil-logo">
+            <img
+              src="img/Logo_Escala_Grises.png"
+              alt="Logo SITECIA"
+              class="logo-sitecia-img"
+            />
+          </a>
+          <div class="mil-menu-btn">
+            <span></span>
+          </div>
         </div>
-        <!-- scrollbar progress end -->
 
-         <!-- menu -->
-         <div class="mil-menu-frame">
-            <!-- frame clone -->
-            <div class="mil-frame-top">
-                <a href="home.html" class="mil-logo">
-                    <img src="img/Logo_Escala_Grises.png" alt="Logo SITECIA" class="logo-sitecia-img">
+        <!-- frame clone end -->
+        <div class="container">
+          <div class="mil-menu-content">
+            <div class="row">
+              <div class="col-xl-5">
+                <nav class="mil-main-menu" id="swupMenu">
+                  <ul>
+                    <li class="mil-has-children">
+                      <a href="home.html">Página de Inicio</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
+                    </li>
+                    <li class="mil-has-children mil-active">
+                      <a href="NuestroEquipo.html">Nuestro Equipo</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="LineasDeInvestigacion.html"
+                        >Líneas de Investigación</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="CienciaDeDatos.html">Ciencias de Datos</a>
+                        </li>
+                        <li>
+                          <a href="GestionyGobiernodeDatos.html"
+                            >Gestión y Gobierno de Datos</a
+                          >
+                        </li>
+                        <li>
+                          <a href="InteligenciaArtificial.html"
+                            >Inteligencia Artificial</a
+                          >
+                        </li>
+                        <li>
+                          <a href="Ciberseguridad.html">Ciberseguridad</a>
+                        </li>
+                        <li>
+                          <a href="InfraestructuraTI.html"
+                            >Infraestructura de TI</a
+                          >
+                        </li>
+                        <li><a href="Redes.html">Redes</a></li>
+                      </ul>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="ProducciónCientíficaList.html"
+                        >Producción Científica</a
+                      >
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="Proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="contact.html">Contacto</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu -->
+
+      <!-- curtain -->
+      <div class="mil-curtain"></div>
+      <!-- curtain end -->
+
+      <!-- frame -->
+      <div class="mil-frame">
+        <div class="mil-frame-top">
+          <a href="home.html" class="mil-logo">
+            <picture>
+              <source
+                srcset="img/Logo_Escala_Grises.png"
+                media="(max-width: 1200px)"
+              />
+              <img
+                src="img/Logo Sitecia Negro.png"
+                alt="Logo SITECIA"
+                class="logo-sitecia-img"
+              />
+            </picture>
+          </a>
+
+          <div class="mil-menu-btn">
+            <span></span>
+          </div>
+        </div>
+        <div class="mil-frame-bottom">
+          <div class="mil-current-page"></div>
+          <div class="mil-back-to-top">
+            <a href="#top" class="mil-link mil-dark mil-arrow-place">
+              <span>Volver Arriba</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- frame end -->
+
+      <!-- content -->
+      <div class="mil-content">
+        <div id="swupMain" class="mil-main-transition">
+          <!-- banner -->
+          <div class="mil-inner-banner">
+            <!--Barra de Navegación SUperior-->
+
+            <div class="sitecia-navbar">
+              <div class="sitecia-logo">
+                <a href="home.html"></a>
+              </div>
+              <ul class="sitecia-nav-links">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
+                <li><a href="NuestroEquipo.html" class="active">Equipo</a></li>
+                <li class="sitecia-dropdown">
+                  <a href="LineasDeInvestigacion.html"
+                    >Línea de Investigación ▾</a
+                  >
+                  <ul class="sitecia-dropdown-menu">
+                    <li>
+                      <a href="LineasDeInvestigacion.html#CienciaDeDatos"
+                        >Ciencia de Datos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="LineasDeInvestigacion.html#GestionyGobiernodeDatos"
+                        >Gobierno de Datos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="LineasDeInvestigacion.html#InteligenciaArtificial"
+                        >Inteligencia Artificial</a
+                      >
+                    </li>
+                    <li>
+                      <a href="LineasDeInvestigacion.html#Ciberseguridad"
+                        >Ciberseguridad</a
+                      >
+                    </li>
+                    <li>
+                      <a href="LineasDeInvestigacion.html#InfraestructuraTI"
+                        >Infraestructura TI</a
+                      >
+                    </li>
+                    <li>
+                      <a href="LineasDeInvestigacion.html#Redes">Redes</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="ProducciónCientíficaList.html"
+                    >Producción Científica</a
+                  >
+                </li>
+                <li><a href="Proyectos.html">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+              </ul>
+            </div>
+            <style>
+              .sitecia-navbar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.95);
+                z-index: 1000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 40px;
+                font-family: "Arial", sans-serif;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+              }
+
+              .sitecia-logo a {
+                color: #00aeef;
+                font-size: 24px;
+                font-weight: bold;
+                text-decoration: none;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+              }
+
+              .sitecia-nav-links {
+                list-style: none;
+                display: flex;
+                gap: 30px;
+                margin: 0;
+                padding: 0;
+              }
+
+              .sitecia-nav-links li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                transition: color 0.3s ease;
+              }
+
+              .sitecia-nav-links li a:hover {
+                color: #00aeef;
+              }
+
+              /* Dropdown */
+              .sitecia-dropdown {
+                position: relative;
+              }
+
+              .sitecia-dropdown-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #111;
+                list-style: none;
+                padding: 10px 0;
+                margin: 0;
+                display: none;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+              }
+
+              .sitecia-dropdown:hover .sitecia-dropdown-menu {
+                display: block;
+              }
+
+              .sitecia-dropdown-menu li {
+                padding: 8px 20px;
+              }
+
+              .sitecia-dropdown-menu li a {
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                transition: background-color 0.3s ease;
+              }
+
+              .sitecia-dropdown-menu li a:hover {
+                background-color: #00aeef;
+                color: black;
+              }
+              .sitecia-nav-links li a.active {
+                color: #00aeef;
+                font-weight: bold;
+              }
+
+              /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
+              @media (max-width: 1200px) {
+                .sitecia-navbar {
+                  display: none;
+                }
+              }
+            </style>
+            <div class="mil-banner-content mil-up">
+              <div class="mil-animation-frame"></div>
+              <div class="container">
+                <ul class="mil-breadcrumbs mil-mb-60">
+                  <li><a href="home.html">Página de Inicio</a></li>
+                  <li><a href="NuestroEquipo.html">Nuestro Equipo</a></li>
+                </ul>
+                <h1 class="mil-mb-60">
+                  <span style="color: #074073">Conoce a</span>
+                  <span class="mil-thin">Nuestro</span><br />
+                  <span style="color: #074073">Equipo de</span>
+                  <span class="mil-thin">Investigación</span>
+                </h1>
+                <a
+                  href="#team"
+                  class="mil-link mil-dark mil-arrow-place mil-down-arrow"
+                >
+                  <span>Nuestro Equipo</span>
                 </a>
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
+              </div>
             </div>
-            
-            <!-- frame clone end -->
-            <div class="container">
-                <div class="mil-menu-content">
-                    <div class="row">
-                        <div class="col-xl-5">
+          </div>
 
-                            <nav class="mil-main-menu" id="swupMenu">
-                                <ul>
-                                    <li class="mil-has-children ">
-                                        <a href="home.html">Página de Inicio</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
-                                    </li>
-                                    <li class="mil-has-children mil-active">
-                                        <a href="NuestroEquipo.html">Nuestro Equipo</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="">Producción Científica</a>
-                                        <ul>
-                                            <li><a href="CienciaDeDatos.html">Ciencias de Datos</a></li>
-                                            <li><a href="GestionyGobiernodeDatos.html">Gestión y Gobierno de Datos</a></li>
-                                            <li><a href="InteligenciaArtificial.html">Inteligencia Artificial</a></li>
-                                            <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
-                                            <li><a href="InfraestructuraTI.html">Infraestructura de TI</a></li>
-                                            <li><a href="Redes.html">Redes</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="Proyectos.html">Proyectos</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="contact.html">Contacto</a>
-                                    </li>
-                                </ul>
-                            </nav>
-
-                        </div>
-
+          <!-- Sección de integrantes de SITECIA -->
+          <section id="team">
+            <div class="container mil-p-120-90">
+              <div class="row">
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/henry-nelson-roa-mar%C3%ADn', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/Henry Roa.jpg"
+                        alt="Henry Roa"
+                        class="sit-team-member-img"
+                      />
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- menu -->
-        
-        <!-- curtain -->
-        <div class="mil-curtain"></div>
-        <!-- curtain end -->
-
-        <!-- frame -->
-        <div class="mil-frame">
-            <div class="mil-frame-top">
-                <a href="home.html" class="mil-logo">
-                    <picture>
-                        <source srcset="img/Logo_Escala_Grises.png" media="(max-width: 1200px)">
-                        <img src="img/Logo Sitecia Negro.png" alt="Logo SITECIA" class="logo-sitecia-img">
-                    </picture>
-                </a>
-                
-                  
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
-            </div>
-            <div class="mil-frame-bottom">
-                <div class="mil-current-page"></div>
-                <div class="mil-back-to-top">
-                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Volver Arriba</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- frame end -->
-
-        <!-- content -->
-        <div class="mil-content">
-            <div id="swupMain" class="mil-main-transition">
-
-                <!-- banner -->
-                <div class="mil-inner-banner">
-                    <!--Barra de Navegación SUperior-->
-
-                    <div class="sitecia-navbar">
-                        <div class="sitecia-logo">
-                            <a href="home.html"></a>
-                        </div>
-                        <ul class="sitecia-nav-links">
-                            <li><a href="home.html">Inicio</a></li>
-                            <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
-                            <li><a href="NuestroEquipo.html"class="active">Equipo</a></li>
-                            <li class="sitecia-dropdown">
-                                <a href="LineasDeInvestigacion.html">Línea de Investigación ▾</a>
-                                <ul class="sitecia-dropdown-menu">
-                                    <li><a href="LineasDeInvestigacion.html#CienciaDeDatos">Ciencia de Datos</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#GestionyGobiernodeDatos">Gobierno de Datos</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#InteligenciaArtificial">Inteligencia Artificial</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#Ciberseguridad">Ciberseguridad</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#InfraestructuraTI">Infraestructura TI</a></li>
-                                    <li><a href="LineasDeInvestigacion.html#Redes">Redes</a></li>                               
-                                </ul>
-                            </li>
-                            <li><a href="ProducciónCientíficaList.html">Producción Científica</a></li>
-                            <li><a href="Proyectos.html">Proyectos</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
-                        </ul>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Henry Roa</h5>
+                      <p class="sit-member-title">DIRECTOR</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/henry-nelson-roa-mar%C3%ADn', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-puce"></i>
+                        </a>
+                      </div>
                     </div>
-                    <style>
-                        .sitecia-navbar {
-                            position: fixed;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            background-color: rgba(0, 0, 0, 0.95);
-                            z-index: 1000;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            padding: 10px 40px;
-                            font-family: 'Arial', sans-serif;
-                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-                        }
-
-                        .sitecia-logo a {
-                            color: #00AEEF;
-                            font-size: 24px;
-                            font-weight: bold;
-                            text-decoration: none;
-                            letter-spacing: 1px;
-                            text-transform: uppercase;
-                        }
-
-                        .sitecia-nav-links {
-                            list-style: none;
-                            display: flex;
-                            gap: 30px;
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        .sitecia-nav-links li a {
-                            color: white;
-                            text-decoration: none;
-                            font-size: 16px;
-                            font-weight: 500;
-                            transition: color 0.3s ease;
-                        }
-
-                        .sitecia-nav-links li a:hover {
-                            color: #00AEEF;
-                        }
-
-                        /* Dropdown */
-                        .sitecia-dropdown {
-                            position: relative;
-                        }
-
-                        .sitecia-dropdown-menu {
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            background-color: #111;
-                            list-style: none;
-                            padding: 10px 0;
-                            margin: 0;
-                            display: none;
-                            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-                        }
-
-                        .sitecia-dropdown:hover .sitecia-dropdown-menu {
-                            display: block;
-                        }
-
-                        .sitecia-dropdown-menu li {
-                            padding: 8px 20px;
-                        }
-
-                        .sitecia-dropdown-menu li a {
-                            color: white;
-                            text-decoration: none;
-                            font-size: 14px;
-                            transition: background-color 0.3s ease;
-                        }
-
-                        .sitecia-dropdown-menu li a:hover {
-                            background-color: #00AEEF;
-                            color: black;
-                        }
-                        .sitecia-nav-links li a.active {
-                            color: #00AEEF;
-                            font-weight: bold;
-                        }
-
-                        /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
-                        @media (max-width: 1200px) {
-                            .sitecia-navbar {
-                                display: none;
-                            }
-                        }    
-
-                    </style>
-                    <div class="mil-banner-content mil-up">
-                        <div class="mil-animation-frame">
-                        </div>
-                        <div class="container">
-                            <ul class="mil-breadcrumbs mil-mb-60">
-                                <li><a href="home.html">Página de Inicio</a></li>
-                                <li><a href="NuestroEquipo.html">Nuestro Equipo</a></li>
-                            </ul>
-                            <h1 class="mil-mb-60"><span style="color: #074073;">Conoce a</span> <span class="mil-thin">Nuestro</span><br> <span style="color: #074073;">Equipo de</span> <span class="mil-thin">Investigación</span></h1>
-                            <a href="#team" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
-                                <span>Nuestro Equipo</span>
-                            </a>
-                        </div>
-                    </div>
+                  </div>
                 </div>
 
-                <!-- Sección de integrantes de SITECIA -->
-                <section id="team">
-                    <div class="container mil-p-120-90">
-                        <div class="row">
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/susana-masapanta', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/SusanaMasapanta.jpg"
+                        alt="Susana Masapanta"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Susana Masapanta</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/susana-masapanta', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-puce"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/henry-nelson-roa-mar%C3%ADn', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/Henry Roa.jpg" alt="Henry Roa" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Henry Roa</h5>
-                                        <p class="sit-member-title">DIRECTOR</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/henry-nelson-roa-mar%C3%ADn', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-puce"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/edison-javier-gua%C3%B1a-moya', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/Edison Guaña.png"
+                        alt="Edison Guaña"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Edison Guaña</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/edison-javier-gua%C3%B1a-moya', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-puce"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/susana-masapanta', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/SusanaMasapanta.jpg" alt="Susana Masapanta" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Susana Masapanta</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/susana-masapanta', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-puce"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/edison-javier-gua%C3%B1a-moya', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/Edison Guaña.png" alt="Edison Guaña" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Edison Guaña</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/edison-javier-gua%C3%B1a-moya', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-puce"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/suyana-fabiola-arcos-villag%C3%B3mez', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/Suyana Arcos.jpg"
+                        alt="Suyana Arcos"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Suyana Arcos</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/suyana-fabiola-arcos-villag%C3%B3mez', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-puce"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/suyana-fabiola-arcos-villag%C3%B3mez', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/Suyana Arcos.jpg" alt="Suyana Arcos" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Suyana Arcos</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/suyana-fabiola-arcos-villag%C3%B3mez', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-puce"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://investigacion.utpl.edu.ec/rmreategui', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/RuthReategui.jpg"
+                        alt="Ruth Reategui"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Ruth Reategui</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://investigacion.utpl.edu.ec/rmreategui', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-utpl"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://investigacion.utpl.edu.ec/rmreategui', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/RuthReategui.jpg" alt="Ruth Reategui" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Ruth Reategui</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://investigacion.utpl.edu.ec/rmreategui', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-utpl"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/nelson-esteban-salgado-reyes', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/NelsonSalgado.jpeg"
+                        alt="Nelson Salgado"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Nelson Salgado</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/nelson-esteban-salgado-reyes', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-puce"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/nelson-esteban-salgado-reyes', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/NelsonSalgado.jpeg" alt="Nelson Salgado" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Nelson Salgado</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/nelson-esteban-salgado-reyes', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-puce"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://investigacion.utpl.edu.ec/jachicaiza', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/Janeth Chicaiza.jpg"
+                        alt="Janeth Chicaiza"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Janeth Chicaiza</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://investigacion.utpl.edu.ec/jachicaiza', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-utpl"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://investigacion.utpl.edu.ec/jachicaiza', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/Janeth Chicaiza.jpg" alt="Janeth Chicaiza" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Janeth Chicaiza</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://investigacion.utpl.edu.ec/jachicaiza', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-utpl"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/charles-edison-escobar-ter%C3%A1n', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/Charles Escobar.jpg"
+                        alt="Charles Escobar"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Charles Escobar</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/charles-edison-escobar-ter%C3%A1n', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-puce"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/charles-edison-escobar-ter%C3%A1n', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/Charles Escobar.jpg" alt="Charles Escobar" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Charles Escobar</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/charles-edison-escobar-ter%C3%A1n', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-puce"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/gustavo-javier-chafla-altamirano', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/GustavoChafla.jpg"
+                        alt="Gustavo Chafla"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Gustavo Chafla</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/gustavo-javier-chafla-altamirano', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-puce"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/gustavo-javier-chafla-altamirano', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/GustavoChafla.jpg" alt="Gustavo Chafla" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Gustavo Chafla</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/gustavo-javier-chafla-altamirano', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-puce"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div
+                  class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing"
+                  onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')"
+                >
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/Amparo Alvarez.png"
+                        alt="Amparo Álvarez"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Amparo Álvarez</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-puce"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/Amparo Alvarez.png" alt="Amparo Álvarez" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Amparo Álvarez</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADORA</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')" class="sit-puce-link">
-                                                <i class="custom-icon-puce"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing">
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/GuidoOchoa.png"
+                        alt="Guido Ochoa"
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Guido Ochoa</h5>
+                      <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation();"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-puce"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/GuidoOchoa.png" alt="Guido Ochoa" class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Guido Ochoa</h5>
-                                        <p class="sit-member-title">DOCENTE INVESTIGADOR</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation();" class="sit-puce-link">
-                                                <i class="custom-icon-puce"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing">
+                  <div class="sit-team-card sit-mb-30">
+                    <div class="sit-team-img-wrapper">
+                      <img
+                        src="img/OurTeam/Danny Cano Y.jpg"
+                        alt="Danny Cano Y."
+                        class="sit-team-member-img"
+                      />
+                    </div>
+                    <div class="sit-team-details">
+                      <h5 class="sit-member-name">Danny Cano Y.</h5>
+                      <p class="sit-member-title">ESTUDIANTE ASOCIADO</p>
+                      <div class="sit-profile-link">
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation();"
+                          class="sit-puce-link"
+                        >
+                          <i class="custom-icon-usfq"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="col-sm-6 col-md-4 col-lg-3 sit-col-spacing">
-                                <div class="sit-team-card sit-mb-30">
-                                    <div class="sit-team-img-wrapper">
-                                        <img src="img/OurTeam/Danny Cano Y.jpg" alt="Danny Cano Y." class="sit-team-member-img">
-                                    </div>
-                                    <div class="sit-team-details">
-                                        <h5 class="sit-member-name">Danny Cano Y.</h5>
-                                        <p class="sit-member-title">ESTUDIANTE ASOCIADO</p>
-                                        <div class="sit-profile-link">
-                                            <a href="#!" onclick="event.stopPropagation();" class="sit-puce-link">
-                                                <i class="custom-icon-usfq"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                <!--Ejemplo de agregar personas:-->
 
-                            <!--Ejemplo de agregar personas:-->
-
-                            <!-- <div class="col-sm-6 col-md-4 col-lg-3" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')">
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3" onclick="window.open('https://puceinvestiga.puce.edu.ec/es/persons/amparo-de-las-mercedes-%C3%A1lvarez-meythaler', '_blank')">
                                 <div class="mil-team-card mil-up mil-mb-30">
                                     <img src="img/OurTeam/Amparo Alvarez.png" alt="Team member">
                                     <div class="mil-description">
@@ -506,297 +679,370 @@
                                 </div>
                             </div> -->
 
-                            <style>
-                                /* ESTILOS NUEVOS CON NOMBRES ÚNICOS */
-                                .sit-col-spacing {
-                                    margin-bottom: 30px;
-                                }
-                                .sit-team-card {
-                                    background: #fff;
-                                    border-radius: 10px;
-                                    overflow: hidden;
-                                    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-                                    transition: all 0.3s ease-out;
-                                    height: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    cursor: pointer;
-                                }
-                                
-                                .sit-team-card:hover {
-                                    transform: translateY(-7px);
-                                    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-                                }
-                                
-                                .sit-team-img-wrapper {
-                                    width: 100%;
-                                    height: 240px;
-                                    overflow: hidden;
-                                }
-                                
-                                .sit-team-member-img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                    transition: transform 0.4s cubic-bezier(0.25,0.1,0.25,1);
-                                }
-                                
-                                .sit-team-card:hover .sit-team-member-img {
-                                    transform: scale(1.08);
-                                }
-                                
-                                .sit-team-details {
-                                    padding: 22px 20px;
-                                    text-align: center;
-                                    flex-grow: 1;
-                                    display: flex;
-                                    flex-direction: column;
-                                    background: #fff;
-                                }
-                                
-                                .sit-member-name {
-                                    color: #074073;
-                                    font-size: 1.1rem;
-                                    font-weight: 700;
-                                    margin-bottom: 6px;
-                                    line-height: 1.3;
-                                }
-                                
-                                .sit-member-title {
-                                    color: #6c757d;
-                                    font-size: 0.85rem;
-                                    margin-bottom: 18px;
-                                    flex-grow: 1;
-                                    letter-spacing: 0.5px;
-                                }
-                                
-                                .sit-profile-link {
-                                    display: flex;
-                                    justify-content: center;
-                                }
-                                
-                                .sit-puce-link {
-                                    width: 38px;
-                                    height: 38px;
-                                    border-radius: 50%;
-                                    background-color: #f0f9ff;
-                                    display: inline-flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    color: #074073;
-                                    transition: all 0.3s ease;
-                                    margin: 0 3px;
-                                    text-decoration: none;
-                                }
-                                
-                                .sit-puce-link:hover {
-                                    background-color: #074073;
-                                    color: #fff;
-                                    transform: scale(1.1);
-                                }
-                                
-                                .sit-icon-puce {
-                                    background-image: url('img/puce-icon.png');
-                                    background-size: contain;
-                                    background-repeat: no-repeat;
-                                    width: 18px;
-                                    height: 18px;
-                                    display: inline-block;
-                                }
-                                
-                                /* RESPONSIVE */
-                                @media (max-width: 1200px) {
-                                    .sit-team-img-wrapper {
-                                        height: 210px;
-                                    }
-                                }
-                                
-                                @media (max-width: 992px) {
-                                    .sit-team-img-wrapper {
-                                        height: 190px;
-                                    }
-                                    .sit-team-details {
-                                        padding: 18px 15px;
-                                    }
-                                }
-                                
-                                @media (max-width: 768px) {
-                                    .sit-team-img-wrapper {
-                                        height: 220px;
-                                    }
-                                    .sit-member-name {
-                                        font-size: 1rem;
-                                    }
-                                }
-                                </style>
+                <style>
+                  /* ESTILOS NUEVOS CON NOMBRES ÚNICOS */
+                  .sit-col-spacing {
+                    margin-bottom: 30px;
+                  }
+                  .sit-team-card {
+                    background: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                    transition: all 0.3s ease-out;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                  }
 
-                        </div>
-                    </div>
-                </section>
-                <!-- fin de nuestro equipo  -->
+                  .sit-team-card:hover {
+                    transform: translateY(-7px);
+                    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+                  }
 
+                  .sit-team-img-wrapper {
+                    width: 100%;
+                    height: 240px;
+                    overflow: hidden;
+                  }
 
-                <!-- footer -->
-                <footer class="mil-dark-bg">
-                    <div class="mi-invert-fix">
-                        <div class="container mil-p-40-30 mil-pt-70"> <!-- Añadí mil-pt-50 para más espacio arriba -->
-                            <div class="row">
-                                <!-- Columna 1: Logo y derechos -->
-                                <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-                                    <div class="mil-muted mil-logo mil-up mil-mb-15">Sitecia.</div>
-                                    <p class="mil-light-soft mil-up mil-mb-10">© Copyright <span id="currentYear"></span> - SITECIA. All Rights Reserved.</p>
-                                    <script>
-                                        document.getElementById('currentYear').textContent = new Date().getFullYear();
-                                    </script>
-                                    <p class="mil-light-soft mil-up">© Desarrollado por: Danny Cano Y.</p>
-                                </div>
-                
-                                <!-- Columna 2: Enlaces -->
-                                <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
+                  .sit-team-member-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+                  }
 
-                                </div>
-                
-                                <!-- Columna 3: Dirección, contacto y redes sociales -->
-                                <div class="col-md-4 mil-mb-30" style="margin-top: 15px;">
-                                    <h6 class="mil-muted mil-up mil-mb-15">Ubicación:</h6>
-                                    <p class="mil-light-soft mil-up">Avenida 12 de Octubre, Quito, Ecuador</p>
-                                    <p class="mil-light-soft mil-up mil-mb-20">+593 2 2991 700</p>
-                
-                                    <!-- Íconos de redes sociales -->
-                                    <ul class="mil-social-icons mil-up">
-                                        <li>
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.facebook.com/siteciapuce', '_blank')" class="social-icon">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <!-- <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li> -->
-                                        <li>
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.linkedin.com/company/siteciapuce', '_blank')" class="social-icon">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#!" onclick="event.stopPropagation(); window.open('https://www.instagram.com/siteciapuce', '_blank')" class="social-icon">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- footer end -->
+                  .sit-team-card:hover .sit-team-member-img {
+                    transform: scale(1.08);
+                  }
 
-                <!-- hidden elements -->
-                <div class="mil-hidden-elements">
-                    <div class="mil-dodecahedron">
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mil-pentagon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
+                  .sit-team-details {
+                    padding: 22px 20px;
+                    text-align: center;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    background: #fff;
+                  }
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                        <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z" />
-                    </svg>
+                  .sit-member-name {
+                    color: #074073;
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    margin-bottom: 6px;
+                    line-height: 1.3;
+                  }
 
-                    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move" />
-                    </svg>
-                </div>
-                <!-- hidden elements end -->
+                  .sit-member-title {
+                    color: #6c757d;
+                    font-size: 0.85rem;
+                    margin-bottom: 18px;
+                    flex-grow: 1;
+                    letter-spacing: 0.5px;
+                  }
 
+                  .sit-profile-link {
+                    display: flex;
+                    justify-content: center;
+                  }
+
+                  .sit-puce-link {
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 50%;
+                    background-color: #f0f9ff;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #074073;
+                    transition: all 0.3s ease;
+                    margin: 0 3px;
+                    text-decoration: none;
+                  }
+
+                  .sit-puce-link:hover {
+                    background-color: #074073;
+                    color: #fff;
+                    transform: scale(1.1);
+                  }
+
+                  .sit-icon-puce {
+                    background-image: url("img/puce-icon.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 18px;
+                    height: 18px;
+                    display: inline-block;
+                  }
+
+                  /* RESPONSIVE */
+                  @media (max-width: 1200px) {
+                    .sit-team-img-wrapper {
+                      height: 210px;
+                    }
+                  }
+
+                  @media (max-width: 992px) {
+                    .sit-team-img-wrapper {
+                      height: 190px;
+                    }
+                    .sit-team-details {
+                      padding: 18px 15px;
+                    }
+                  }
+
+                  @media (max-width: 768px) {
+                    .sit-team-img-wrapper {
+                      height: 220px;
+                    }
+                    .sit-member-name {
+                      font-size: 1rem;
+                    }
+                  }
+                </style>
+              </div>
             </div>
+          </section>
+          <!-- fin de nuestro equipo  -->
+
+          <!-- footer -->
+          <footer class="mil-dark-bg">
+            <div class="mi-invert-fix">
+              <div class="container mil-p-40-30 mil-pt-70">
+                <!-- Añadí mil-pt-50 para más espacio arriba -->
+                <div class="row">
+                  <!-- Columna 1: Logo y derechos -->
+                  <div class="col-md-4 mil-mb-30" style="margin-top: 15px">
+                    <div class="mil-muted mil-logo mil-up mil-mb-15">
+                      Sitecia.
+                    </div>
+                    <p class="mil-light-soft mil-up mil-mb-10">
+                      © Copyright <span id="currentYear"></span> - SITECIA. All
+                      Rights Reserved.
+                    </p>
+                    <script>
+                      document.getElementById("currentYear").textContent =
+                        new Date().getFullYear();
+                    </script>
+                    <p class="mil-light-soft mil-up">
+                      © Desarrollado por: Danny Cano Y.
+                    </p>
+                  </div>
+
+                  <!-- Columna 2: Enlaces -->
+                  <div
+                    class="col-md-4 mil-mb-30"
+                    style="margin-top: 15px"
+                  ></div>
+
+                  <!-- Columna 3: Dirección, contacto y redes sociales -->
+                  <div class="col-md-4 mil-mb-30" style="margin-top: 15px">
+                    <h6 class="mil-muted mil-up mil-mb-15">Ubicación:</h6>
+                    <p class="mil-light-soft mil-up">
+                      Avenida 12 de Octubre, Quito, Ecuador
+                    </p>
+                    <p class="mil-light-soft mil-up mil-mb-20">
+                      +593 2 2991 700
+                    </p>
+
+                    <!-- Íconos de redes sociales -->
+                    <ul class="mil-social-icons mil-up">
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://www.facebook.com/siteciapuce', '_blank')"
+                          class="social-icon"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <!-- <li><a href="#." target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li> -->
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://www.linkedin.com/company/siteciapuce', '_blank')"
+                          class="social-icon"
+                        >
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#!"
+                          onclick="event.stopPropagation(); window.open('https://www.instagram.com/siteciapuce', '_blank')"
+                          class="social-icon"
+                        >
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- footer end -->
+
+          <!-- hidden elements -->
+          <div class="mil-hidden-elements">
+            <div class="mil-dodecahedron">
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="mil-pentagon">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="mil-arrow"
+            >
+              <path
+                d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"
+              />
+            </svg>
+
+            <svg
+              width="250"
+              viewBox="0 0 300 1404"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mil-lines"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M300 1175H0V1174H300V1175Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z"
+                class="mil-move"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z"
+                class="mil-move"
+              />
+            </svg>
+          </div>
+          <!-- hidden elements end -->
         </div>
-        <!-- content -->
+      </div>
+      <!-- content -->
     </div>
     <!-- wrapper end -->
 
@@ -818,7 +1064,5 @@
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

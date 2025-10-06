@@ -1,430 +1,505 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- bootstrap grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
     <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
     <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
     <!-- fancybox css -->
-    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
     <!-- ashley scss -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- favicon -->
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
 
     <title>Contacto - SITECIA</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
+      <!-- scrollbar progress -->
+      <div class="mil-progress-track">
+        <div class="mil-progress"></div>
+      </div>
+      <!-- scrollbar progress end -->
 
-
-        <!-- scrollbar progress -->
-        <div class="mil-progress-track">
-            <div class="mil-progress"></div>
+      <!-- menu -->
+      <div class="mil-menu-frame">
+        <!-- frame clone -->
+        <div class="mil-frame-top">
+          <a href="home.html" class="mil-logo">
+            <img
+              src="img/Logo_Escala_Grises.png"
+              alt="Logo SITECIA"
+              class="logo-sitecia-img"
+            />
+          </a>
+          <div class="mil-menu-btn">
+            <span></span>
+          </div>
         </div>
-        <!-- scrollbar progress end -->
 
-        <!-- menu -->
-        <div class="mil-menu-frame">
-            <!-- frame clone -->
-            <div class="mil-frame-top">
-                <a href="home.html" class="mil-logo">
-                    <img src="img/Logo_Escala_Grises.png" alt="Logo SITECIA" class="logo-sitecia-img">
-                </a>
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
-            </div>
-            
-            <!-- frame clone end -->
-            <div class="container">
-                <div class="mil-menu-content">
-                    <div class="row">
-                        <div class="col-xl-5">
-
-                            <nav class="mil-main-menu" id="swupMenu">
-                                <ul>
-                                    <li class="mil-has-children">
-                                        <a href="home.html">Página de Inicio</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="NuestroEquipo.html">Nuestro Equipo</a>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="">Producción Científica</a>
-                                        <ul>
-                                            <li><a href="CienciaDeDatos.html">Ciencias de Datos</a></li>
-                                            <li><a href="GestionyGobiernodeDatos.html">Gestión y Gobierno de Datos</a></li>
-                                            <li><a href="InteligenciaArtificial.html">Inteligencia Artificial</a></li>
-                                            <li><a href="Ciberseguridad.html">Ciberseguridad</a></li>
-                                            <li><a href="InfraestructuraTI.html">Infraestructura de TI</a></li>
-                                            <li><a href="Redes.html">Redes</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mil-has-children">
-                                        <a href="Proyectos.html">Proyectos</a>
-                                    </li>
-                                    <li class="mil-has-children mil-active">
-                                        <a href="contact.html">Contacto</a>
-                                    </li>
-                                </ul>
-                            </nav>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- menu -->
-        
-        <!-- curtain -->
-        <div class="mil-curtain"></div>
-        <!-- curtain end -->
-
-        <!-- frame -->
-        <div class="mil-frame">
-            <div class="mil-frame-top">
-                <a href="home.html" class="mil-logo">
-                    <picture>
-                        <source srcset="img/Logo_Escala_Grises.png" media="(max-width: 1200px)">
-                        <img src="img/Logo Sitecia Negro.png" alt="Logo SITECIA" class="logo-sitecia-img">
-                    </picture>
-                </a>
-
-                <div class="mil-menu-btn">
-                    <span></span>
-                </div>
-            </div>
-            <div class="mil-frame-bottom">
-                <div class="mil-current-page"></div>
-                <div class="mil-back-to-top">
-                    <a href="#top" class="mil-link mil-dark mil-arrow-place">
-                        <span>Volver Arriba</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- frame end -->
-        
-        <div class="mil-content">
-            <div id="swupMain" class="mil-main-transition">
-                <!-- Banner -->
-                <div class="sitecia-navbar">
-                    <div class="sitecia-logo">
-                        <a href="home.html"></a>
-                    </div>
-                    <ul class="sitecia-nav-links">
-                        <li><a href="home.html">Inicio</a></li>
-                        <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
-                        <li><a href="NuestroEquipo.html">Equipo</a></li>
-                        <li class="sitecia-dropdown">
-                            <a href="LineasDeInvestigacion.html">Línea de Investigación ▾</a>
-                            <ul class="sitecia-dropdown-menu">
-                                <li><a href="LineasDeInvestigacion.html#CienciaDeDatos">Ciencia de Datos</a></li>
-                                <li><a href="LineasDeInvestigacion.html#GestionyGobiernodeDatos">Gobierno de Datos</a></li>
-                                <li><a href="LineasDeInvestigacion.html#InteligenciaArtificial">Inteligencia Artificial</a></li>
-                                <li><a href="LineasDeInvestigacion.html#Ciberseguridad">Ciberseguridad</a></li>
-                                <li><a href="LineasDeInvestigacion.html#InfraestructuraTI">Infraestructura TI</a></li>
-                                <li><a href="LineasDeInvestigacion.html#Redes">Redes</a></li>                               
-                            </ul>
+        <!-- frame clone end -->
+        <div class="container">
+          <div class="mil-menu-content">
+            <div class="row">
+              <div class="col-xl-5">
+                <nav class="mil-main-menu" id="swupMenu">
+                  <ul>
+                    <li class="mil-has-children">
+                      <a href="home.html">Página de Inicio</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="AcercaDeNosotros.html">Acerca de Sitecia</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="NuestroEquipo.html">Nuestro Equipo</a>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="LineasDeInvestigacion.html"
+                        >Líneas de Investigación</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="CienciaDeDatos.html">Ciencias de Datos</a>
                         </li>
-                        <li><a href="ProducciónCientíficaList.html">Producción Científica</a></li>
-                        <li><a href="Proyectos.html">Proyectos</a></li>
-                        <li><a href="contact.html"class="active">Contacto</a></li>
-                    </ul>
-                </div>
-                <style>
-                    .sitecia-navbar {
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        background-color: rgba(0, 0, 0, 0.95);
-                        z-index: 1000;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 10px 40px;
-                        font-family: 'Arial', sans-serif;
-                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-                    }
-                    .sitecia-nav-links li a.active {
-                        color: #00AEEF;
-                        font-weight: bold;
-                    }
-
-                    .sitecia-logo a {
-                        color: #00AEEF;
-                        font-size: 24px;
-                        font-weight: bold;
-                        text-decoration: none;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                    }
-
-                    .sitecia-nav-links {
-                        list-style: none;
-                        display: flex;
-                        gap: 30px;
-                        margin: 0;
-                        padding: 0;
-                    }
-
-                    .sitecia-nav-links li a {
-                        color: white;
-                        text-decoration: none;
-                        font-size: 16px;
-                        font-weight: 500;
-                        transition: color 0.3s ease;
-                    }
-
-                    .sitecia-nav-links li a:hover {
-                        color: #00AEEF;
-                    }
-
-                    /* Dropdown */
-                    .sitecia-dropdown {
-                        position: relative;
-                    }
-
-                    .sitecia-dropdown-menu {
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        background-color: #111;
-                        list-style: none;
-                        padding: 10px 0;
-                        margin: 0;
-                        display: none;
-                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-                    }
-
-                    .sitecia-dropdown:hover .sitecia-dropdown-menu {
-                        display: block;
-                    }
-
-                    .sitecia-dropdown-menu li {
-                        padding: 8px 20px;
-                    }
-
-                    .sitecia-dropdown-menu li a {
-                        color: white;
-                        text-decoration: none;
-                        font-size: 14px;
-                        transition: background-color 0.3s ease;
-                    }
-
-                    .sitecia-dropdown-menu li a:hover {
-                        background-color: #00AEEF;
-                        color: black;
-                    }
-
-                    /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
-                    @media (max-width: 1200px) {
-                        .sitecia-navbar {
-                            display: none;
-                        }
-                    }    
-
-                </style>
-                <div class="mil-inner-banner mil-p-0-120">
-                    <div class="mil-banner-content mil-center mil-up">
-                        <div class="container">
-                            <ul class="mil-breadcrumbs mil-center mil-mb-60">
-                                <li><a href="home.html">PÁGINA PRINCIPAL</a></li>
-                                <li><a href="contact.html">CONTACTO</a></li>
-                            </ul>
-                            <h1 class="mil-mb-60">¡Hablemos!</h1>
-                            <a href="#contacto" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
-                                <span>Enviar Mensaje</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fin Banner -->
-        
-                <!-- Formulario de Contacto -->
-                <section id="contacto">
-                    <div class="container mil-p-120-90">
-                        <h3 class="mil-center mil-up mil-mb-60">Contáctanos <span class="mil-thin">Ahora</span></h3>
-                        <form class="row">
-                            <div class="col-lg-6 mil-up mil-mb-30">
-                                <div class="mil-input-frame">
-                                    <input type="text" placeholder="Tu Nombre" class="mil-input" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 mil-up mil-mb-30">
-                                <div class="mil-input-frame">
-                                    <input type="email" placeholder="Tu Correo Electrónico" class="mil-input" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 mil-up mil-mb-30">
-                                <div class="mil-input-frame">
-                                    <textarea placeholder="Cuéntanos sobre tu proyecto" class="mil-textarea" required></textarea>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 mil-up mil-mb-30">
-                                <p class="mil-disclaimer">
-                                    <span class="mil-accent">*</span> 
-                                    Tus datos estarán protegidos según nuestra <a href="#" class="mil-link">Política de Protección de Datos</a>.
-                                    No compartiremos tu información con terceros y solo la usaremos para responder a tu consulta.
-                                </p>
-                            </div>
-                            <div class="col-lg-12 mil-up mil-text-center">
-                                <button type="submit" class="mil-button mil-button-primary mil-arrow-place">
-                                    <span>Enviar Mensaje</span>
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-                <!-- Fin Formulario de Contacto -->
-        
-                <!-- Ubicación -->
-                <div class="container mil-text-center mil-up mil-mt-60 mil-mb-60">
-                    <h2 class="mil-up mil-mb-30">
-                        <a href="#mapa" class="mil-link mil-dark mil-arrow-place">
-                            <span>¿Dónde nos ubicamos?</span>
-                        </a>
-                    </h2>
-                </div>
-        
-                <!-- Mapa -->
-                <div class="mil-map-frame mil-up mil-map-small">
-                    <div class="mil-map">
-                        <iframe src="https://www.google.com/maps/embed?..."
-                                style="border:0;" allowfullscreen loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <!-- Fin Mapa -->
+                        <li>
+                          <a href="GestionyGobiernodeDatos.html"
+                            >Gestión y Gobierno de Datos</a
+                          >
+                        </li>
+                        <li>
+                          <a href="InteligenciaArtificial.html"
+                            >Inteligencia Artificial</a
+                          >
+                        </li>
+                        <li>
+                          <a href="Ciberseguridad.html">Ciberseguridad</a>
+                        </li>
+                        <li>
+                          <a href="InfraestructuraTI.html"
+                            >Infraestructura de TI</a
+                          >
+                        </li>
+                        <li><a href="Redes.html">Redes</a></li>
+                      </ul>
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="ProducciónCientíficaList.html"
+                        >Producción Científica</a
+                      >
+                    </li>
+                    <li class="mil-has-children">
+                      <a href="Proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="mil-has-children mil-active">
+                      <a href="contact.html">Contacto</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
+          </div>
         </div>
-        
+      </div>
+      <!-- menu -->
 
-        <style>
+      <!-- curtain -->
+      <div class="mil-curtain"></div>
+      <!-- curtain end -->
 
+      <!-- frame -->
+      <div class="mil-frame">
+        <div class="mil-frame-top">
+          <a href="home.html" class="mil-logo">
+            <picture>
+              <source
+                srcset="img/Logo_Escala_Grises.png"
+                media="(max-width: 1200px)"
+              />
+              <img
+                src="img/Logo Sitecia Negro.png"
+                alt="Logo SITECIA"
+                class="logo-sitecia-img"
+              />
+            </picture>
+          </a>
 
-            /* Formulario */
-            form {
-                background: #FFFFFF;
-                padding: 40px;
-                border-radius: 12px;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          <div class="mil-menu-btn">
+            <span></span>
+          </div>
+        </div>
+        <div class="mil-frame-bottom">
+          <div class="mil-current-page"></div>
+          <div class="mil-back-to-top">
+            <a href="#top" class="mil-link mil-dark mil-arrow-place">
+              <span>Volver Arriba</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- frame end -->
+
+      <div class="mil-content">
+        <div id="swupMain" class="mil-main-transition">
+          <!-- Banner -->
+          <div class="sitecia-navbar">
+            <div class="sitecia-logo">
+              <a href="home.html"></a>
+            </div>
+            <ul class="sitecia-nav-links">
+              <li><a href="home.html">Inicio</a></li>
+              <li><a href="AcercaDeNosotros.html">Nosotros</a></li>
+              <li><a href="NuestroEquipo.html">Equipo</a></li>
+              <li class="sitecia-dropdown">
+                <a href="LineasDeInvestigacion.html"
+                  >Línea de Investigación ▾</a
+                >
+                <ul class="sitecia-dropdown-menu">
+                  <li>
+                    <a href="LineasDeInvestigacion.html#CienciaDeDatos"
+                      >Ciencia de Datos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="LineasDeInvestigacion.html#GestionyGobiernodeDatos"
+                      >Gobierno de Datos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="LineasDeInvestigacion.html#InteligenciaArtificial"
+                      >Inteligencia Artificial</a
+                    >
+                  </li>
+                  <li>
+                    <a href="LineasDeInvestigacion.html#Ciberseguridad"
+                      >Ciberseguridad</a
+                    >
+                  </li>
+                  <li>
+                    <a href="LineasDeInvestigacion.html#InfraestructuraTI"
+                      >Infraestructura TI</a
+                    >
+                  </li>
+                  <li><a href="LineasDeInvestigacion.html#Redes">Redes</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="ProducciónCientíficaList.html"
+                  >Producción Científica</a
+                >
+              </li>
+              <li><a href="Proyectos.html">Proyectos</a></li>
+              <li><a href="contact.html" class="active">Contacto</a></li>
+            </ul>
+          </div>
+          <style>
+            .sitecia-navbar {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              background-color: rgba(0, 0, 0, 0.95);
+              z-index: 1000;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 10px 40px;
+              font-family: "Arial", sans-serif;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            }
+            .sitecia-nav-links li a.active {
+              color: #00aeef;
+              font-weight: bold;
             }
 
-            .mil-input-frame {
-                position: relative;
-                margin-bottom: 20px;
+            .sitecia-logo a {
+              color: #00aeef;
+              font-size: 24px;
+              font-weight: bold;
+              text-decoration: none;
+              letter-spacing: 1px;
+              text-transform: uppercase;
             }
 
-            .mil-input, .mil-textarea {
-                width: 100%;
-                padding: 14px 18px;
-                border: 2px solid #D7D7D7;
-                border-radius: 10px;
-                font-size: 16px;
-                transition: border-color 0.3s ease, box-shadow 0.3s ease;
-                background-color: #FFFFFF;
+            .sitecia-nav-links {
+              list-style: none;
+              display: flex;
+              gap: 30px;
+              margin: 0;
+              padding: 0;
             }
 
-            .mil-input:focus, .mil-textarea:focus {
-                border-color: #0A8CBF;
-                box-shadow: 0px 0px 8px rgba(10, 140, 191, 0.3);
-                outline: none;
+            .sitecia-nav-links li a {
+              color: white;
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: 500;
+              transition: color 0.3s ease;
             }
 
-            .mil-textarea {
-                resize: vertical;
-                min-height: 180px;
+            .sitecia-nav-links li a:hover {
+              color: #00aeef;
             }
 
-            /* Botón de Enviar */
-            .mil-button-primary {
-                background: linear-gradient(90deg, #0A8CBF 0%, #0878A3 100%);
-                color: white;
-                border: none;
-                padding: 14px 28px;
-                border-radius: 10px;
-                font-size: 18px;
-                cursor: pointer;
-                transition: transform 0.2s ease, background 0.3s ease;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
+            /* Dropdown */
+            .sitecia-dropdown {
+              position: relative;
             }
 
-            .mil-button-primary:hover {
-                background: linear-gradient(90deg, #0878A3 0%, #065A82 100%);
-                transform: translateY(-2px);
+            .sitecia-dropdown-menu {
+              position: absolute;
+              top: 100%;
+              left: 0;
+              background-color: #111;
+              list-style: none;
+              padding: 10px 0;
+              margin: 0;
+              display: none;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
             }
 
-            .mil-button-primary i {
-                font-size: 16px;
+            .sitecia-dropdown:hover .sitecia-dropdown-menu {
+              display: block;
             }
 
-            /* Disclaimer */
-            .mil-disclaimer {
-                font-size: 14px;
-                color: #666;
-                text-align: center;
-                margin-top: 20px;
+            .sitecia-dropdown-menu li {
+              padding: 8px 20px;
             }
 
-            .mil-disclaimer .mil-accent {
-                color: #0A8CBF;
-                font-weight: bold;
+            .sitecia-dropdown-menu li a {
+              color: white;
+              text-decoration: none;
+              font-size: 14px;
+              transition: background-color 0.3s ease;
             }
 
-            .mil-disclaimer .mil-link {
-                color: #0A8CBF;
-                text-decoration: none;
-                font-weight: bold;
-                transition: color 0.3s ease;
+            .sitecia-dropdown-menu li a:hover {
+              background-color: #00aeef;
+              color: black;
             }
 
-            .mil-disclaimer .mil-link:hover {
-                color: #065A82;
-                text-decoration: underline;
+            /* Mostrar solo cuando el ancho sea menor o igual a 768px (tablet o móvil) */
+            @media (max-width: 1200px) {
+              .sitecia-navbar {
+                display: none;
+              }
             }
+          </style>
+          <div class="mil-inner-banner mil-p-0-120">
+            <div class="mil-banner-content mil-center mil-up">
+              <div class="container">
+                <ul class="mil-breadcrumbs mil-center mil-mb-60">
+                  <li><a href="home.html">PÁGINA PRINCIPAL</a></li>
+                  <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+                <h1 class="mil-mb-60">¡Hablemos!</h1>
+                <a
+                  href="#contacto"
+                  class="mil-link mil-dark mil-arrow-place mil-down-arrow"
+                >
+                  <span>Enviar Mensaje</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Fin Banner -->
 
-            /* Mapa */
-            .mil-map-small {
-                height: 300px;
-                margin: 0 auto;
-                max-width: 900px;
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            }
+          <!-- Formulario de Contacto -->
+          <section id="contacto">
+            <div class="container mil-p-120-90">
+              <h3 class="mil-center mil-up mil-mb-60">
+                Contáctanos <span class="mil-thin">Ahora</span>
+              </h3>
+              <form class="row">
+                <div class="col-lg-6 mil-up mil-mb-30">
+                  <div class="mil-input-frame">
+                    <input
+                      type="text"
+                      placeholder="Tu Nombre"
+                      class="mil-input"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6 mil-up mil-mb-30">
+                  <div class="mil-input-frame">
+                    <input
+                      type="email"
+                      placeholder="Tu Correo Electrónico"
+                      class="mil-input"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12 mil-up mil-mb-30">
+                  <div class="mil-input-frame">
+                    <textarea
+                      placeholder="Cuéntanos sobre tu proyecto"
+                      class="mil-textarea"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-12 mil-up mil-mb-30">
+                  <p class="mil-disclaimer">
+                    <span class="mil-accent">*</span>
+                    Tus datos estarán protegidos según nuestra
+                    <a href="#" class="mil-link"
+                      >Política de Protección de Datos</a
+                    >. No compartiremos tu información con terceros y solo la
+                    usaremos para responder a tu consulta.
+                  </p>
+                </div>
+                <div class="col-lg-12 mil-up mil-text-center">
+                  <button
+                    type="submit"
+                    class="mil-button mil-button-primary mil-arrow-place"
+                  >
+                    <span>Enviar Mensaje</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <!-- Fin Formulario de Contacto -->
 
-            .mil-map-small .mil-map {
-                height: 100%;
-                width: 100%;
-                border-radius: 10px;
-            }
+          <!-- Ubicación -->
+          <div class="container mil-text-center mil-up mil-mt-60 mil-mb-60">
+            <h2 class="mil-up mil-mb-30">
+              <a href="#mapa" class="mil-link mil-dark mil-arrow-place">
+                <span>¿Dónde nos ubicamos?</span>
+              </a>
+            </h2>
+          </div>
 
-        </style>
+          <!-- Mapa -->
+          <div class="mil-map-frame mil-up mil-map-small">
+            <div class="mil-map">
+              <iframe
+                src="https://www.google.com/maps/embed?..."
+                style="border: 0"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <!-- Fin Mapa -->
+        </div>
+      </div>
 
+      <style>
+        /* Formulario */
+        form {
+          background: #ffffff;
+          padding: 40px;
+          border-radius: 12px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
+        .mil-input-frame {
+          position: relative;
+          margin-bottom: 20px;
+        }
+
+        .mil-input,
+        .mil-textarea {
+          width: 100%;
+          padding: 14px 18px;
+          border: 2px solid #d7d7d7;
+          border-radius: 10px;
+          font-size: 16px;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          background-color: #ffffff;
+        }
+
+        .mil-input:focus,
+        .mil-textarea:focus {
+          border-color: #0a8cbf;
+          box-shadow: 0px 0px 8px rgba(10, 140, 191, 0.3);
+          outline: none;
+        }
+
+        .mil-textarea {
+          resize: vertical;
+          min-height: 180px;
+        }
+
+        /* Botón de Enviar */
+        .mil-button-primary {
+          background: linear-gradient(90deg, #0a8cbf 0%, #0878a3 100%);
+          color: white;
+          border: none;
+          padding: 14px 28px;
+          border-radius: 10px;
+          font-size: 18px;
+          cursor: pointer;
+          transition: transform 0.2s ease, background 0.3s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+
+        .mil-button-primary:hover {
+          background: linear-gradient(90deg, #0878a3 0%, #065a82 100%);
+          transform: translateY(-2px);
+        }
+
+        .mil-button-primary i {
+          font-size: 16px;
+        }
+
+        /* Disclaimer */
+        .mil-disclaimer {
+          font-size: 14px;
+          color: #666;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .mil-disclaimer .mil-accent {
+          color: #0a8cbf;
+          font-weight: bold;
+        }
+
+        .mil-disclaimer .mil-link {
+          color: #0a8cbf;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s ease;
+        }
+
+        .mil-disclaimer .mil-link:hover {
+          color: #065a82;
+          text-decoration: underline;
+        }
+
+        /* Mapa */
+        .mil-map-small {
+          height: 300px;
+          margin: 0 auto;
+          max-width: 900px;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mil-map-small .mil-map {
+          height: 100%;
+          width: 100%;
+          border-radius: 10px;
+        }
+      </style>
     </div>
     <!-- wrapper end -->
 
@@ -446,7 +521,5 @@
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
